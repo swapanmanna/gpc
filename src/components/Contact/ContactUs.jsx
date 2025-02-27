@@ -3,25 +3,23 @@ import React from "react";
 export default function ContactUs() {
     return (
         <>
-            <section className="relative z-10 overflow-hidden bg-gray-50 dark:bg-dark py-20 lg:py-[120px]">
-                <div className="container mx-auto">
-                    <div className="flex flex-wrap -mx-4 lg:justify-between">
+            <section className="relative z-10 bg-gray-50 dark:bg-dark py-20 lg:py-[120px] w-full">
+                <div className="mx-auto lg:max-w-[80rem]">
+                    <div className="lg:flex lg:justify-center lg:items-center">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-                            <div className="mb-12 max-w-[570px] lg:mb-0">
-                            <span className="block mb-4 text-base font-bold text-brand-purple">
+                            <div className="mb-12 max-w-[500px] lg:mb-0">
+                            <span className="block mb-4 text-xl font-bold text-brand-purple">
                             Contact Us
                             </span>
                             <h2
-                                className="text-brand-blue dark:text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+                                className="text-brand-blue dark:text-white mb-4 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
                                 >
                                 GET IN TOUCH WITH US
                             </h2>
                             <p
-                                className="text-base leading-relaxed text-brand-dark dark:text-dark-6 mb-9"
+                                className="text-xl leading-relaxed text-brand-dark dark:text-dark-6 mb-9"
                                 >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                adiqua minim veniam quis nostrud exercitation ullamco
+                                Send us a message, we will text back!
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div

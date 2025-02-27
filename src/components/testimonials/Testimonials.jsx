@@ -1,22 +1,26 @@
 import React from "react";
-import testimonialOne from "../../assets/testimonial-1.png";
+import pinkyPhoto from "../../assets/pinky-photo.jpg";
+import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 
 const testimonials = [
   {
-    name: "Sheryl Berge",
-    text: "I love the fitness apparel and gear I purchased from this site. The quality is exceptional and the prices are unbeatable.",
-    image: testimonialOne,
+    name: "Pinky Agarwal",
+    designation: "Head Internal Audit | Emami Limited",
+    text: "For anyone preparing for the CIA Challenge Exam, I cannot recommend the Prep Course enough. This program is designed to simplify the learning process and help you stay disciplined with your studies. Arpit Garg, who led the sessions, brought an incredible level of dedication, passion, enthusiasm and expertise to the table.",
+    image: pinkyPhoto,
   },
   {
-    name: "Leland Kiehn",
-    text: "As a professional athlete, I rely on high-performance gear for my training. This site offers a great selection of top-notch products.",
+    name: "Akshdeep Singh",
+    designation: "Manager | KPMG",
+    text: "The CIA Challenge Exam Crash Course, offered and delivered by faculty member Arpit Garg, played a key role in helping me clear the CIA Challenge Exam on my first attempt after just 2 months of preparation. The crash course sessions, held over weekends, were well-planned, thorough, and provided attendees with opportunities.",
+    image: akshdeepSingh,
+  },
+  {
+    name: "Starwin PJ",
+    designation: "AVP | Wells Fargo",
+    text: "Attended the “CIA Challenge Exam” crash course conducted by Mr. Arpit, and it was truly an outstanding learning experience. The sessions were thoughtfully structured, covering the entire syllabus with a perfect balance of depth and clarity. The interactive approach ensured key topics were highlighted.",
     image: testimonialTwo,
-  },
-  {
-    name: "Peter Renolds",
-    text: "The fitness apparel I bought here fits perfectly and feels amazing. I highly recommend this store to anyone looking for quality gear.",
-    image: "https://randomuser.me/api/portraits/men/10.jpg",
   },
 ];
 
@@ -25,7 +29,7 @@ export default function Testimonials() {
     <section id="testimonials" aria-label="What our customers are saying" className="bg- pb-32 pt-16">
       <div className="mx-auto max-w-[76rem] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
             What Our Students Say
           </h2>
         </div>
@@ -47,6 +51,7 @@ export default function Testimonials() {
                 <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
                   <div>
                     <div className="font-display text-base text-slate-900">{testimonial.name}</div>
+                    <div className="font-display text-sm text-brand-gray">{testimonial.designation}</div>
                   </div>
                   <div className="overflow-hidden rounded-full bg-slate-50">
                     <img

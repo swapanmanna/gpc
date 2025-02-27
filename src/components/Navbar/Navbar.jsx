@@ -24,7 +24,7 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      <div className={`bg-brand-contrast items-center justify-between ${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto md:order-1" id="navbar-sticky`}>
+      <div className={`bg-brand-contrast items-center justify-between ${isOpen ? "block" : "hidden"} w-full md:flex md:w-auto md:order-1 ml-32 mr-2`}>
         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-brand-contrast md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-brand-contrast dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <NavLink to="" className={({isActive}) => `block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent ${ isActive ? "md:text-brand-purple" : "md:text-brand-dark" } md:hover:text-brand-purple md:p-0 md:dark:text-blue-500`} aria-current="page">Home</NavLink>
