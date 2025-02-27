@@ -3,7 +3,7 @@ import React from "react";
 export default function Terms() {
     return (
         <>
-            <div className="pt-32 px-32 bg-gray-50 text-brand-dark">
+            <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark">
                 <h3 className="font-bold text-xl">Terms and Conditions</h3>
                 <br></br>
                 <p>Last updated: February 10, 2025</p>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PrivacyPolicy() {
     return (
-        <div className="pt-32 px-32 bg-gray-50 text-brand-dark">
+        <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark">
             <h3 className="font-bold text-xl">Privacy Policy</h3>
             <br></br>
             <p>This Privacy Policy describes Our policies for Young Stalwart Consulting LLP under the brand name Global Professional Certifications and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. </p>

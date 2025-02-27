@@ -3,7 +3,7 @@ import React from "react";
 export default function RefundPolicy() {
     return (
         <>
-            <div className="pt-32 px-32 bg-gray-50 text-brand-dark">
+            <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark w-full">
                 <h3 className="font-bold text-xl">Refund Policy</h3>
                 <br></br>
                 <p>At Young Stalwart Consulting LLP under the brand name Global Professional Certifications, we are committed to providing high-quality online education services to help our students achieve their learning goals. As our courses and digital services are instantly accessible upon purchase, we maintain a strict no-refund policy. </p>
