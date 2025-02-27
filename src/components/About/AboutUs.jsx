@@ -6,6 +6,8 @@ import arpitGarg from "../../assets/arpit-garg.jpg";
 import ourMissionOne from "../../assets/our-mission-1.webp";
 import ourMissionTwo from "../../assets/our-mission-2.png";
 import ourVision from "../../assets/our-vision.webp";
+import testimonialOne from "../../assets/testimonial-1.png";
+import testimonialTwo from "../../assets/testimonial-2.png";
 
 export default function AboutUs() {
     return (
@@ -189,7 +191,7 @@ export default function AboutUs() {
                                 <h3 class="text-lg font-semibold text-gray-600 dark:text-white">Truly an outstanding learning experience, practice MCQs after each topic solidified my understanding. Exceptional guidance and learning! </h3>
                             </blockquote>
                             <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
+                                <img class="w-9 h-9 rounded-full" src={testimonialOne} alt="profile picture" />
                                 <div class="space-y-0.5 font-medium dark:text-white text-left">
                                     <div className="text-brand-dark">Starwin PJ</div>
                                     <div class="text-sm font-light text-brand-gray dark:text-gray-400">Wells Fargo, AVP</div>
@@ -201,7 +203,7 @@ export default function AboutUs() {
                                 <h3 class="text-lg font-semibold text-brand-gray dark:text-white">Excellent faculty with comprehensive coverage and extensive MCQ practice. Revisions through the LMS are incredibly helpful.</h3>
                             </blockquote>
                             <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
+                                <img class="w-9 h-9 rounded-full" src={testimonialTwo} alt="profile picture" />
                                 <div class="space-y-0.5 font-medium dark:text-white text-left">
                                     <div className="text-brand-dark">Murtaza Ghadial</div>
                                     <div class="text-sm font-light text-brand-gray dark:text-gray-400">Ghadial & Co, Partner</div>

@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logoOne from "../../assets/logo-1.png";
+import logoTwo from "../../assets/logo-2.png";
 
 const Footer = () => {
     return (
@@ -7,11 +9,8 @@ const Footer = () => {
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img className="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
-
-                        <p className="text-base leading-relaxed text-gray-600 mt-7">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-
-                        <ul className="flex items-center space-x-3 mt-9">
+                            <img className="h-20" src={logoTwo} alt="" />
+                        <ul className="flex items-center space-x-3 mt-6 ml-5">
                             <li>
                                 <a href="#" title="" className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-[#a622e1] focus:bg-blue-600">
                                     <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -61,11 +60,11 @@ const Footer = () => {
 
                         <ul className="mt-6 space-y-4">
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-[#a622e1] focus:text-blue-600"> About </a>
+                                <NavLink to="about" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-brand-dark"} transition-all duration-200 hover:text-[#a622e1`}> About </NavLink>
                             </li>
 
                             <li>
-                                <a href="#" title="" className="flex text-base text-black transition-all duration-200 hover:text-[#a622e1] focus:text-blue-600"> Courses </a>
+                                <NavLink to="contact" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-brand-dark"} transition-all duration-200 hover:text-[#a622e1`}> Contact </NavLink>
                             </li>
 
                             <li>
