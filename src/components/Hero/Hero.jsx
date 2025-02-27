@@ -32,8 +32,8 @@ const Hero = () => {
             <div className="pb-12">
                 <div className="relative">
                     <div className="h-full"></div>
-                    <div className="relative mx-auto lg:max-w-6xl">
-                        <img className="rounded-md z-20" src={homepageHero} alt="homepage hero" />
+                    <div className="relative mx-auto lg:max-w-6xl p-2">
+                        <img className="rounded-md shadow-2xl shadow-gray-500/50 mask-image" src={homepageHero} alt="homepage hero" />
                         {/* <div className="absolute -inset-1 rounded-md blur-md bg-gray-300 z-10"></div> */}
                     </div>
                 </div>
