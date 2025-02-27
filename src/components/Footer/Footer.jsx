@@ -111,7 +111,7 @@ const Footer = () => {
 
                 <hr className="mt-16 mb-10 border-gray-200" />
 
-                <p className="text-sm text-center text-brand-gray font-semibold">© Copyright 2025, All Rights Reserved by Oneskai</p>
+                <p className="text-sm text-center text-brand-gray font-semibold">© Copyright 2025, All Rights Reserved by Global Professional Certifications</p>
             </div>
         </section>
     )

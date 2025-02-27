@@ -61,7 +61,7 @@ export default function Benefits() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center">
-                        <img src={learningToLeadership} className="w-full object-contain rounded-lg" alt="Sample" />
+                        <img src={learningToLeadership} className="w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
             </div>
