@@ -12,16 +12,16 @@ import testimonialTwo from "../../assets/testimonial-2.png";
 export default function AboutUs() {
     return (
         <>
-            <section className="bg-gray-50 py-32 relative">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <section className="bg-brand-blue py-32 relative h-screen">
+                <div className="w-full mt-10 max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                                <h2 className="text-brand-dark text-4xl font-bold font-manrope leading-normal lg:text-start text-center">About Us – Global Professional Certifications </h2>
-                                <p className="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
+                                <h2 className="text-gray-50 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">About Us – Global Professional Certifications </h2>
+                                <p className="text-gray-50 text-base font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
-                            <button className="sm:w-fit w-full px-3.5 py-2 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                                <span className="px-1.5 text-white text-sm font-medium leading-6">Enroll Now</span>
+                            <button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                                <span className="px-2 font-bold text-xl">Enroll Now</span>
                             </button>
                         </div>
                         <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover shadow-2xl shadow-gray-500/50 mask-image" src="https://pagedone.io/asset/uploads/1717751272.png" alt="about Us image" />
@@ -29,7 +29,7 @@ export default function AboutUs() {
                 </div>
             </section>   
             <section class="py-24 relative bg-gray-50">
-                <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+                <div class="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
                             class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
@@ -71,21 +71,21 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
-            <section className="bg-gray-50 py-24 relative">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <section className="bg-yellow-300 py-24 relative">
+                <div className="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1 ">
                         <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover h-108 shadow-2xl shadow-gray-500/50 mask-image" src={ourVision} alt="about Us image" />
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
                                 <h2 className="text-brand-dark text-5xl font-bold font-manrope leading-normal lg:text-start text-center">Our Vision </h2>
-                                <p className="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
+                                <p className="text-brand-dark text-base font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>  
             <section className="py-24 relative bg-gray-50">
-                <div className="md:grid md:grid-cols-3 md:gap-4 md:max-w-7xl md:mx-auto">
+                <div className="md:grid md:grid-cols-3 md:gap-4 md:max-w-[72rem] md:mx-auto">
                     <div className="col-span-2 rounded-2xl flex border border-gray-400 shadow-lg transform transition-transform duration-300 hover:scale-105">
                         <div className="p-8 flex flex-col justify-center">
                             <h1 className="text-brand-dark text-4xl pb-6 font-bold">What Sets Us Apart</h1>

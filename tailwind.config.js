@@ -18,6 +18,7 @@ export default withMT({
         "brand-blue": "#3a1292",
         "brand-gray": "#6f6d7e",
         "brand-dark": "#100e28",
+        "brand-contrast": "#ffcc33",
       },
       scale: {
         "175": "1.75",

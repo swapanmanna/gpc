@@ -7,7 +7,7 @@ export default function Card({
     price = 22000,
   }) {
     return (
-      <div className="relative mx-2 mb-10 mt-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg">
+      <div className="relative mx-2 mb-10 mt-10 flex w-[17.5rem] flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-lg">
         <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-lg" href="#">
           <img className="object-cover w-full" src={image} alt={title} />
         </a>
