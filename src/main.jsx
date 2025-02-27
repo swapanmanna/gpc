@@ -11,6 +11,8 @@ import Terms from './components/Terms/Terms.jsx';
 import PrivacyPolicy from './components/Privacy/PrivacyPolicy.jsx';
 import ContactUs from './components/Contact/ContactUs.jsx';
 import RefundPolicy from './components/Refund/RefundPolicy.jsx';
+import Login from './components/login/Login.jsx';
+import Register from './components/register/Register.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +23,8 @@ const router = createBrowserRouter(
       <Route path="privacy" element={<PrivacyPolicy />}/>
       <Route path="contact" element={<ContactUs />}/>
       <Route path="refund" element={<RefundPolicy />}/>
+      <Route path="login" element={<Login />}/>
+      <Route path="register" element={<Register />}/>
     </Route>
   )
 )
