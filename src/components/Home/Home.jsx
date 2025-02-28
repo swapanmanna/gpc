@@ -9,12 +9,14 @@ import examTwo from "../../assets/exam-2.png";
 import examThree from "../../assets/exam-3.png";
 import examFour from "../../assets/exam-4.png";
 import Testimonials from "../testimonials/Testimonials";
+import Companies from "../companies/Companies";
 
 // [text-shadow:_0_4px_4px_rgb(99_102_241_/_0.8)]
 export default function Home() {
     return (
         <div className="bg-gray-50">
             <Hero />
+            <Companies />
             <h1 className="text-center text-5xl font-extrabold mb-8 mt-16 text-brand-dark">CIA Examinations</h1>
             <div className="flex justify-center w-full">
                 <Card title="CIA Part 1" image={examOne}/>

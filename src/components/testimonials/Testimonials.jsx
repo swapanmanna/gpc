@@ -26,7 +26,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" aria-label="What our customers are saying" className="bg- pb-32 pt-16">
+    <section id="testimonials" aria-label="What our customers are saying" className="bg-gray-50 pb-32 pt-16">
       <div className="mx-auto max-w-[76rem] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
@@ -36,7 +36,7 @@ export default function Testimonials() {
         <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <li key={index}>
-              <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+              <figure className="relative border border-gray-300 rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
                 <svg
                   aria-hidden="true"
                   width="105"
