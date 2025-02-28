@@ -11,14 +11,14 @@ import examFour from "../../assets/exam-4.png";
 import Testimonials from "../testimonials/Testimonials";
 import Companies from "../companies/Companies";
 
-// [text-shadow:_0_4px_4px_rgb(99_102_241_/_0.8)]
 export default function Home() {
     return (
         <div className="bg-gray-50">
             <Hero />
             <Companies />
-            <h1 className="text-center text-5xl font-extrabold mb-8 mt-16 text-brand-dark">CIA Examinations</h1>
-            <div className="flex justify-center w-full">
+            <h1 className="text-center text-5xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Examinations</h1>
+            <h3 className="text-center text-2xl font-semibold mb-8 mt-8 text-brand-dark">Set the benchmark of excellence with CIA certification</h3>
+            <div className="flex justify-center w-full mb-20">
                 <Card title="CIA Part 1" image={examOne}/>
                 <Card title="CIA Part 2" image={examTwo}/>
                 <Card title="CIA Part 3" image={examThree}/>

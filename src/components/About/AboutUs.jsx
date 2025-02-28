@@ -12,13 +12,13 @@ import testimonialTwo from "../../assets/testimonial-2.png";
 export default function AboutUs() {
     return (
         <>
-            <section className="bg-brand-blue py-32 relative h-screen">
+            <section className="bg-brand-blue py-32 relative h-screen mb-10">
                 <div className="w-full mt-10 max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
                                 <h2 className="text-gray-50 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">About Us – Global Professional Certifications </h2>
-                                <p className="text-gray-50 text-base font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
+                                <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
                             <button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
                                 <span className="px-2 font-bold text-xl">Enroll Now</span>
@@ -28,7 +28,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>   
-            <section class="py-24 relative bg-gray-50">
+            <section class="py-24 relative bg-gray-50 mb-10">
                 <div class="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
@@ -71,14 +71,14 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
-            <section className="bg-yellow-300 py-24 relative">
+            <section className="bg-brand-blue py-32 relative">
                 <div className="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1 ">
                         <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover h-108 shadow-2xl shadow-gray-500/50 mask-image" src={ourVision} alt="about Us image" />
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
-                            <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                                <h2 className="text-brand-dark text-5xl font-bold font-manrope leading-normal lg:text-start text-center">Our Vision </h2>
-                                <p className="text-brand-dark text-base font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
+                            <div className="w-full flex-col justify-start lg:items-start items-center gap-4 pl-4 flex">
+                                <h2 className="text-gray-50 text-5xl font-bold font-manrope leading-normal lg:text-start text-center">Our Vision </h2>
+                                <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ export default function AboutUs() {
                     </div>  
                 </div>
             </section>
-            <section class="bg-gray-200 dark:bg-gray-900">
+            <section class="bg-gray-200 py-14 dark:bg-gray-900">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
                     <div class="mx-auto max-w-screen-sm">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">What Our Students Say</h2>

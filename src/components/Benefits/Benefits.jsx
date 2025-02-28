@@ -43,7 +43,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 export default function Benefits() {
     return (
         <>
-            <div className="flex justify-center bg-yellow-300">
+            <div className="flex justify-center bg-[#ffcccc] my-20 relative">
                 <div className="my-20 grid grid-cols-1 md:grid-cols-2 md:max-w-[77rem] gap-6">
                     <div className="flex flex-col px-10">
                         <h1 className="text-3xl text-brand-blue font-bold mb-8">From Learning to Leadership</h1>

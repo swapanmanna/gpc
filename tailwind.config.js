@@ -21,6 +21,7 @@ export default withMT({
         "brand-contrast": "#ffcc33",
       },
       scale: {
+        "130": "1.325",
         "175": "1.75",
         "200": "2",
         "225": "2.25",

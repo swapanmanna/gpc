@@ -63,8 +63,9 @@ export default function Demand() {
                     </div>
                 </div>
             </div> */}
-            <div className="flex justify-center bg-red-700">
-                <div className="my-7 grid grid-cols-1 md:grid-cols-2 md:max-w-[77rem] gap-6">
+            <div className="mt-40 w-full">
+            <div className="flex justify-center">
+                <div className=" bg-red-700 grid grid-cols-1 md:grid-cols-2 md:w-[72rem] py-10 rounded-2xl">
                     <div className="flex flex-col px-10">
                         <h1 className="text-4xl text-gray-50 font-bold mb-8">From Learning to Leadership!</h1>
                         <div className="flex space-x-2 mb-4 items-center">
@@ -84,10 +85,11 @@ export default function Demand() {
                             <span className="text-gray-200 text-xl font-semibold">Career Growth</span>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center relative transform scale-125">
-                        <img src={benefitsLady} className="absolute bottom-[4.5px] right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
+                    <div className="flex items-center justify-center relative transform scale-130">
+                        <img src={benefitsLady} className="absolute bottom-1 right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )
