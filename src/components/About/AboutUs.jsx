@@ -1,7 +1,5 @@
 import React from "react";
-import setApart from "../../assets/setApart.jpg";
 import { PiBrain } from "react-icons/pi";
-import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import arpitGarg from "../../assets/arpit-garg.jpg";
 import ourMissionOne from "../../assets/our-mission-1.webp";
 import ourMissionTwo from "../../assets/our-mission-2.png";
@@ -113,7 +111,7 @@ export default function AboutUs() {
                             <path d="M16.6352 14.5566L17.7705 14.9939C19.9235 15.8233 21 16.238 21 17.0001C21 17.7621 19.9235 18.1767 17.7704 19.006L14.3138 20.3373C13.1668 20.779 12.5934 20.9999 11.9996 20.9999C11.4058 20.9999 10.8324 20.779 9.68542 20.3372L6.22946 19.006C4.07649 18.1768 3.00001 17.7621 3 17.0001C2.99999 16.238 4.07647 15.8234 6.22941 14.994L7.36476 14.5567" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         <h1 className="pt-4 text-xl font-bold text-brand-dark">Expert-Led Traning</h1>
-                        <p className="pt-2 text-brand-gray font-semibold">Our programs are delivered by industry veterans and subject matter experts who bring years of practical experience, ensuring you receive the highest quality.  </p>
+                        <p className="pt-2 text-brand-gray font-semibold">Our programs are delivered by industry veterans and subject matter experts who bring years of practical experience, ensuring you receive the highest quality.</p>
                     </div>
                     <div className="col-span-1 border border-gray-400 rounded-2xl shadow-lg flex flex-col py-8 px-8 transform transition-transform duration-300 hover:scale-105">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={45} height={45} fill={"none"} className="text-brand-blue">
@@ -122,7 +120,7 @@ export default function AboutUs() {
                             <path d="M8.5 3.05857C9.51136 2.38797 10.7089 2 11.9926 2C13.2825 2 14.4855 2.39177 15.5 3.06841M13.6222 5.5C13.1421 5.21025 12.5857 5.04459 11.9926 5.04459C11.4058 5.04459 10.855 5.20674 10.3784 5.49078" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                         <h1 className="pt-4 text-xl font-bold text-brand-dark">Flexible Learning on Weekends</h1>
-                        <p className="pt-2 text-brand-gray font-semibold">We understand the demands of a busy professional life. Our live online sessions, conducted on weekends. . </p>
+                        <p className="pt-2 text-brand-gray font-semibold">We understand the demands of a busy professional life. Our live online sessions, conducted on weekends.</p>
                     </div>
                     <div className="col-span-1 border border-gray-400 rounded-2xl shadow-lg flex flex-col py-8 px-8 transform transition-transform duration-300 hover:scale-105">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={45} height={45} fill={"none"} className="text-brand-blue">
@@ -132,7 +130,7 @@ export default function AboutUs() {
                             <path d="M10.2854 11.7889C10.2854 13.3202 9.04129 14.5616 7.50664 14.5616C5.97199 14.5616 4.72791 13.3202 4.72791 11.7889C4.72791 10.2576 5.97199 9.01624 7.50664 9.01624C9.04129 9.01624 10.2854 10.2576 10.2854 11.7889Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         <h1 className="pt-4 text-xl font-bold text-brand-dark">Comprehensive Support</h1>
-                        <p className="pt-2 text-brand-gray font-semibold">From enrollment to certification and beyond, we provide personalized guidance, mentorship, and resources. </p>
+                        <p className="pt-2 text-brand-gray font-semibold">From enrollment to certification and beyond, we provide personalized guidance, mentorship, and resources.</p>
                     </div>
                 </div>
             </section>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logoOne from "../../assets/logo-1.png";
-import logoTwo from "../../assets/logo-2.png";
 import wappLogo from "../../assets/wapp-grp-logo.png";
 
 const Footer = () => {

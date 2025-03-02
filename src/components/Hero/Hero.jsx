@@ -1,7 +1,6 @@
 import React from 'react';
 import heroGirl from '../../assets/hero-girl.webp';
 
-// gradient = bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 inset-0 blur-lg
 
 const Hero = () => {
     return (
