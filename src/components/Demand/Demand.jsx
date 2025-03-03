@@ -43,6 +43,7 @@ import { BsGraphUpArrow } from "react-icons/bs";
 // }
 
 import benefitsLady from "../../assets/benefits-red-lady.png";
+import indianMaleProfessional from "../../assets/indian-male-professional.png";
 
 export default function Demand() {
     return (
@@ -65,28 +66,28 @@ export default function Demand() {
             </div> */}
             <div className="mt-40 w-full">
             <div className="flex justify-center">
-                <div className=" bg-brand-blue grid grid-cols-1 md:grid-cols-2 md:w-[72rem] py-10 rounded-2xl">
+                <div className=" bg-[#ffebcd] grid grid-cols-1 md:grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
                     <div className="flex flex-col px-10">
-                        <h1 className="text-4xl text-gray-50 font-bold mb-8">From Learning to Leadership!</h1>
+                        <h1 className="text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
                         <div className="flex space-x-2 mb-4 items-center">
-                            <span><FaMoneyBillTrendUp className="h-8 w-8 mt-1 mr-2 text-gray-200" /></span>
-                            <span className="text-gray-200 text-xl font-semibold">High Salaries</span>
+                            <span><FaMoneyBillTrendUp className="h-8 w-8 mt-1 mr-2 text-black" /></span>
+                            <span className="text-black text-xl font-semibold">Earn competitive pay with great growth potential</span>
                         </div>
                         <div className="flex space-x-2 mb-4 items-center">
-                            <span><MdOutlineSecurity className="h-8 w-8 mt-1 mr-2 text-gray-200" /></span>
-                            <span className="text-gray-200 text-xl font-semibold">Job Security</span>
+                            <span><MdOutlineSecurity className="h-8 w-8 mt-1 mr-2 text-black" /></span>
+                            <span className="text-black text-xl font-semibold">Enjoy stability in a thriving industry</span>
                         </div>
                         <div className="flex space-x-2 mb-4 items-center">
-                            <span><RiGlobalFill className="h-8 w-8 mt-1 mr-2 text-gray-200" /></span>
-                            <span className="text-gray-200 text-xl font-semibold">Global Recognition</span>
+                            <span><RiGlobalFill className="h-8 w-8 mt-1 mr-2 text-grayblack" /></span>
+                            <span className="text-black text-xl font-semibold">Build a career with worldwide opportunities</span>
                         </div>
                         <div className="flex space-x-2 mb-4 items-center">
-                            <span><BsGraphUpArrow className="h-8 w-8 mt-1 mr-2 text-gray-200" /></span>
-                            <span className="text-gray-200 text-xl font-semibold">Career Growth</span>
+                            <span><BsGraphUpArrow className="h-8 w-8 mt-1 mr-2 text-black" /></span>
+                            <span className="text-black text-xl font-semibold">Progress from entry-level to leadership roles</span>
                         </div>
                     </div>
                     <div className="flex items-center justify-center relative transform scale-130">
-                        <img src={benefitsLady} className="absolute bottom-1 right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
+                        <img src={indianMaleProfessional} className="absolute bottom-1 right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
             </div>

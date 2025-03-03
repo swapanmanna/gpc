@@ -1,10 +1,13 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Card({
     image = "https://flowbite.com/docs/images/blog/image-1.jpg",
     title = "CIA Part 1",
-    price = 22000,
+    price = 23599,
+    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.",
+    linkTo = "https://pages.razorpay.com/pl_PbHL4oa3lyfSzL/view", // all the 3 parts
     imageStyle = "h-32",
   }) {
     return (
@@ -15,21 +18,24 @@ export default function Card({
         <div className="mt-4 px-5 pb-5">
             <div className="flex flex-col mb-4">
                 <a href="#">
-                    <h5 className="text-2xl font-bold tracking-tight text-brand-dark">{title}</h5>
+                    <h5 className="text-xl font-bold tracking-tight text-brand-dark">{title}</h5>
                 </a>
-                <p className="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.</p>
+                <p className="pt-2 text-sm">{text}</p>
             </div>
           <div className="flex justify-between items-end">
-            <p>
-                <span className="text-brand-gray">INR {price}</span>
-            </p>
-            <a
-              href="#"
+            <div className="flex flex-col text-sm justify-center">
+              <p>
+                  <span className="text-brand-gray">INR {price}</span>
+              </p>
+              <p className="text-brand-gray">Including GST</p>
+            </div>
+            <Link
+              to={linkTo} target="blank"
               className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
             >
               Enroll Now
               <FaArrowRightLong className="ml-2 h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

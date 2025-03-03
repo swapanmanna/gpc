@@ -42,8 +42,8 @@ export default function ContactUs() {
                                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                         Our Location
                                     </h4>
-                                    <p className="text-base text-body-color dark:text-dark-6">
-                                        99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                                    <p className="text-sm text-body-color dark:text-dark-6">
+                                        A1-328, Sushant Lok-2 Gurugram Gurugram, Haryana, India - 122001
                                     </p>
                                 </div>
                             </div>
@@ -83,8 +83,8 @@ export default function ContactUs() {
                                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                         Phone Number
                                     </h4>
-                                    <p className="text-base text-body-color dark:text-dark-6">
-                                        (+62)81 414 257 9980
+                                    <p className="text-sm text-body-color dark:text-dark-6">
+                                        (+91) 78275 97250
                                     </p>
                                 </div>
                             </div>
@@ -109,8 +109,8 @@ export default function ContactUs() {
                                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                                         Email Address
                                     </h4>
-                                    <p className="text-base text-body-color dark:text-dark-6">
-                                        info@yourdomain.com
+                                    <p className="text-sm text-body-color dark:text-dark-6">
+                                        cia@globalprofessionalcertifications.com
                                     </p>
                                 </div>
                             </div>

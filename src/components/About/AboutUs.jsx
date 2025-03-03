@@ -15,7 +15,7 @@ export default function AboutUs() {
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                                <h2 className="text-gray-50 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">About Us – Global Professional Certifications </h2>
+                                <h2 className="text-gray-50 text-3xl md:pb-4 font-bold font-manrope leading-normal lg:text-start text-center">Take your career to the next level in Risk Assurance and Advisory Domain</h2>
                                 <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
                             <button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
@@ -48,16 +48,16 @@ export default function AboutUs() {
                                 </div>
                                 <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                     <div class="flex-col justify-start items-start inline-flex">
-                                        <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">33+</h3>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Years of Experience</h6>
+                                        <h3 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">100 +</h3>
+                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">CIAs</h6>
                                     </div>
                                     <div class="flex-col justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">125+</h4>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Successful Projects</h6>
+                                        <h4 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">25 +</h4>
+                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Batches Completed</h6>
                                     </div>
                                     <div class="flex-col justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">52+</h4>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Happy Clients</h6>
+                                        <h4 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">100 +</h4>
+                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +139,7 @@ export default function AboutUs() {
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
                     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">Experienced Course Mentor</h2>
+                        <h4 className="text-xl font-semibold">Most Renowned Faculty in India for CIA</h4>
                     </div> 
                     <div class="grid gap-8 mb-6 lg:mb-16 md:flex md:items-center md:justify-center">
                         <div class="items-center bg-gray-100 rounded-lg shadow-lg sm:flex dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105">

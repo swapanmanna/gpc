@@ -16,13 +16,15 @@ export default function Home() {
         <div className="bg-gray-50">
             <Hero />
             <Companies />
-            <h1 className="text-center text-5xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Examinations</h1>
-            <h3 className="text-center text-2xl font-semibold mb-8 mt-8 text-brand-dark">Set the benchmark of excellence with CIA certification</h3>
+            <div className="md:max-w-[52rem] mx-auto">
+                <h1 className="text-center text-4xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Enrollment (All 3 Parts), Your Path to Success</h1>
+                <h3 className="text-center text-2xl font-semibold mb-8 mt-8 text-brand-dark">Earn the Certified Internal Auditor (CIA) certification and accelerate your career with global recognition, high salaries, and job security</h3>
+            </div>
             <div className="flex justify-center w-full mb-20">
-                <Card title="CIA Part 1" image={examOne}/>
-                <Card title="CIA Part 2" image={examTwo}/>
-                <Card title="CIA Part 3" image={examThree}/>
-                <Card title="CIA Part 4" image={examFour}/>
+                <Card title="CIA all 3 Parts with Gleim Content" image={examOne} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo={"https://pages.razorpay.com/CIASessions"}/>
+                <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/>
+                <Card title="CIA Part 2 with Gleim Content" image={examThree} text={"Strengthen your skills in risk management, governance, and control processes"}/>
+                <Card title="CIA Part 3 with Gleim Content" image={examFour} text={"Gain expertise in business acumen, financial management, and data analytics"}/>
             </div>
             <Benefits />
             <Training />

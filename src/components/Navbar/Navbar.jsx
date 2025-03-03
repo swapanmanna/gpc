@@ -97,10 +97,10 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex space-x-8">
-          {["Home", "About", "Services", "Contact"].map((item, index) => (
+          {["Home", "About", "Success Stories", "Contact"].map((item, index) => (
             <NavLink
               key={index}
-              to={item.toLowerCase()}
+              to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
               className={({ isActive }) =>
                 `text-lg font-medium ${isActive ? "text-brand-purple" : "text-brand-dark"} hover:text-brand-purple`
               }
@@ -122,7 +122,7 @@ const Navbar = () => {
           {["Home", "About", "Services", "Contact"].map((item, index) => (
             <li key={index} className="w-full text-center">
               <NavLink
-                to={item.toLowerCase()}
+                to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
                 className={({ isActive }) =>
                   `block w-full py-2 text-lg font-medium ${
                     isActive ? "text-brand-purple" : "text-brand-dark"
