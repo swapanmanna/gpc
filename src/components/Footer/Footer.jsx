@@ -22,7 +22,6 @@ const Footer = () => {
 
                     <div>
                         <p className="text-sm font-semibold tracking-widest text-gray-50 uppercase">Company</p>
-
                         <ul className="mt-6 space-y-4">
                             <li>
                                 <NavLink to="about" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> About </NavLink>

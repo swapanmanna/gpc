@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex space-x-8">
-          {["Home", "About", "Success Stories", "Contact"].map((item, index) => (
+          {["Home", "About", "Success", "Contact"].map((item, index) => (
             <NavLink
               key={index}
               to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
@@ -105,7 +105,7 @@ const Navbar = () => {
                 `text-lg font-medium ${isActive ? "text-brand-purple" : "text-brand-dark"} hover:text-brand-purple`
               }
             >
-              {item}
+              {item === "Success" ? "Success Stories" : item}
             </NavLink>
           ))}
         </div>
