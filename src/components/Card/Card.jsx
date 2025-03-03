@@ -11,7 +11,7 @@ export default function Card({
     imageStyle = "h-32",
   }) {
     return (
-      <div className="relative mx-2 mb-10 mt-10 flex w-[17.5rem] flex-col overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg">
+      <div className="relative mx-2 mb-10 md:mt-10 w-[20rem] md:w-[17.5rem] flex-col rounded-lg border border-gray-300 bg-white shadow-lg">
         <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-lg" href="#">
           <img className = "object-cover w-full h-72" w-full src={image} alt={title} />
         </a>

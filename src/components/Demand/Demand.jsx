@@ -64,7 +64,7 @@ export default function Demand() {
                     </div>
                 </div>
             </div> */}
-            <div className="mt-40 w-full">
+            <div className=" mt-20 md:mt-40 w-full">
             <div className="flex justify-center">
                 <div className=" bg-[#ffebcd] grid grid-cols-1 md:grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
                     <div className="flex flex-col px-10">
@@ -87,7 +87,7 @@ export default function Demand() {
                         </div>
                     </div>
                     <div className="flex items-center justify-center relative transform scale-130">
-                        <img src={indianMaleProfessional} className="absolute bottom-1 right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
+                        <img src={indianMaleProfessional} className="absolute bottom-1 hidden md:block right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
             </div>

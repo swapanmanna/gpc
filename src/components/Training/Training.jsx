@@ -9,7 +9,7 @@ export default function Training() {
     return (
         <>
             <div className="flex justify-center">
-                <div className="my-20 grid grid-cols-1 md:grid-cols-2 md:max-w-6xl gap-8">
+                <div className="md:my-20 grid grid-cols-1 md:grid-cols-2 md:max-w-6xl gap-8">
                     <div className="flex items-center justify-center">
                         <img src={training} className="w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>

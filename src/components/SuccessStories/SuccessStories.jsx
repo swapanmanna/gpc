@@ -2,8 +2,6 @@ import React from "react";
 import hero2 from "../../assets/image-removebg-preview.png";
 import Companies from "../companies/Companies";
 import Testimonials from "../testimonials/Testimonials";
-import { FaArrowDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function SuccessStories() {
     return (
