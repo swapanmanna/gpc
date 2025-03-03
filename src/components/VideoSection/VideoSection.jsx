@@ -17,7 +17,7 @@ import React from "react";
 export default function VideoSection() {
     return (
         <>
-            <div className="md:h-screen flex justify-center items-center">
+            <div className="flex justify-center items-center">
                 <div className="md:max-w-[77rem] w-full flex justify-center items-center h-auto shadow-2xl">
                     <div className="relative w-full pb-[56.25%] h-0">
                         <iframe 
