@@ -6,11 +6,15 @@ import ourMissionTwo from "../../assets/our-mission-2.png";
 import ourVision from "../../assets/our-vision.webp";
 import testimonialOne from "../../assets/testimonial-1.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { TbWorldWww } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
     return (
         <>
-            <section className="bg-brand-blue py-32 relative h-screen mb-10">
+            <section className="bg-brand-blue py-32 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
                 <div className="w-full mt-10 max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
@@ -18,15 +22,15 @@ export default function AboutUs() {
                                 <h2 className="text-gray-50 text-3xl md:pb-4 font-bold font-manrope leading-normal lg:text-start text-center">Take your career to the next level in Risk Assurance and Advisory Domain</h2>
                                 <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
-                            <button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                            <Link to="https://pages.razorpay.com/CIASessions" target="blank"><button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
                                 <span className="px-2 font-bold text-xl">Enroll Now</span>
-                            </button>
+                            </button></Link>
                         </div>
                         <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover shadow-2xl shadow-gray-500/50 mask-image" src="https://pagedone.io/asset/uploads/1717751272.png" alt="about Us image" />
                     </div>
                 </div>
             </section>   
-            <section class="py-24 relative bg-gray-50 mb-10">
+            <section class="py-24 relative mb-10">
                 <div class="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
@@ -46,7 +50,7 @@ export default function AboutUs() {
                                     <p class="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">
                                     Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. Headquartered in India and affiliated with The Institute of Internal Auditors, we specialize in preparing individuals for prestigious credentials like the Certified Internal Auditor (CIA), which is widely regarded as the gold standard in the risk assurance and advisory domain. </p>
                                 </div>
-                                <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                                <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 flex">
                                     <div class="flex-col justify-start items-start inline-flex">
                                         <h3 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">100 +</h3>
                                         <h6 class="text-gray-500 text-base font-normal leading-relaxed">CIAs</h6>
@@ -61,10 +65,10 @@ export default function AboutUs() {
                                     </div>
                                 </div>
                             </div>
-                            <button
-                                class="sm:w-fit w-full px-3.5 py-2 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                                <span class="px-1.5 text-white text-sm font-medium leading-6">Join Us</span>
-                            </button>
+                            <Link to="https://pages.razorpay.com/CIASessions" target="blank"><button
+                                class="sm:w-fit w-full px-6 py-3 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                                <span class="text-white font-bold leading-6">Join Us</span>
+                            </button></Link>
                         </div>
                     </div>
                 </div>
@@ -154,19 +158,13 @@ export default function AboutUs() {
                                 <p class="mt-3 mb-4 font-light text-brand-gray dark:text-gray-400">CA, CIA, CRMA, CISA</p>
                                 <ul class="flex space-x-4 sm:mt-0">
                                     <li>
-                                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                                        </a>
+                                        <Link to="mailto:cia@globalprofessionalcertifications.com"><AiOutlineMail className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                                        </a>
+                                        <Link to="https://www.linkedin.com/in/arpit-garg-88070560" target="blank"><AiOutlineLinkedin className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                     <li>
-                                        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                                        </a>
+                                        <Link to="https://www.globalprofessionalcertifications.com/" target="blank"><TbWorldWww className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                 </ul>
                             </div>

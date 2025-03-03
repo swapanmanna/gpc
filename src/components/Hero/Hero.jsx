@@ -1,5 +1,6 @@
 import React from 'react';
 import heroGirl from '../../assets/hero-girl.webp';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -15,14 +16,15 @@ const Hero = () => {
                     </div>
 
                     <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
-                        <a
-                            href="#"
+                        <Link
+                            to="https://pages.razorpay.com/CIASessions"
+                            target='blank'
                             title=""
                             className="inline-flex items-center justify-center w-full px-8 py-2 text-lg font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                             role="button"
                         >
                             Enroll Now
-                        </a>
+                        </Link>
                     </div>
                 </div>
             

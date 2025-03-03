@@ -12,7 +12,7 @@ export default function Companies() {
         <>
             <div className="w-full">
                 <div className="mt-32 mb-32 ml-40 max-w-[77rem] flex flex-col items-center">
-                    <h1 className="text-3xl mb-8 font-bold text-brand-dark">Our students are from 500+ corporates</h1>
+                    <h1 className="text-3xl mb-8 font-bold text-brand-dark">Our students are from Top 500+ corporates</h1>
                     <div className="flex gap-[68px] justify-center mt-8">
                         <img src={wellsFargo} className="h-16"></img>
                         <img src={emami} className="h-16"></img>

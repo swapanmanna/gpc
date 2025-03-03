@@ -67,12 +67,12 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex md:order-2 space-x-3">
-          <Link to="login" className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2">
-            Log In
+          <Link to="contact" className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2">
+            Contact Us
           </Link>
-          <Link to="register" className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2">
+          {/* <Link to="register" className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2">
             Sign Up
-          </Link>
+          </Link> */}
         </div>
 
         {/* Hamburger Button (Mobile) */}
@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex space-x-8">
-          {["Home", "About", "Success", "Contact"].map((item, index) => (
+          {["Home", "About", "Success"].map((item, index) => (
             <NavLink
               key={index}
               to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
@@ -119,7 +119,7 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <ul className="flex flex-col items-center w-full space-y-4 p-4">
-          {["Home", "About", "Services", "Contact"].map((item, index) => (
+          {["Home", "About", "Services"].map((item, index) => (
             <li key={index} className="w-full text-center">
               <NavLink
                 to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
@@ -136,17 +136,17 @@ const Navbar = () => {
           {/* Login & Signup Buttons (Inside Mobile Menu) */}
           <li className="w-full flex flex-col space-y-2 mt-2">
             <Link
-              to="login"
+              to="contact"
               className="w-full text-center text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2"
             >
-              Log In
+              Contact Us
             </Link>
-            <Link
+            {/* <Link
               to="register"
               className="w-full text-center text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2"
             >
               Sign Up
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </div>
