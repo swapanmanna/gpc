@@ -22,7 +22,7 @@ export default function Home() {
                 <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Enrollment (All 3 Parts), Your Path to Success</h1>
                 <h3 className="text-center text-xl md:text-2xl font-semibold mb-16 md:mb-8 mt-8 text-brand-dark">Earn the Certified Internal Auditor (CIA) certification and accelerate your career with global recognition, high salaries, and job security</h3>
             </div>
-            <div className="flex md:justify-center flex-col items-center md:w-full md:mb-[115px]">
+            <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-[115px]">
                 <Card title="CIA all 3 Parts with Gleim Content" image={examOne} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo={""}/>
                 <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/>
                 <Card title="CIA Part 2 with Gleim Content" image={examThree} text={"Strengthen your skills in risk management, governance, and control processes"}/>
