@@ -14,13 +14,13 @@ import { Link } from "react-router-dom";
 export default function AboutUs() {
     return (
         <>
-            <section className="bg-brand-blue py-32 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
-                <div className="w-full mt-10 max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
+            <section className="bg-brand-blue py-20 md:py-32 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
+                <div className="w-full mt-10 max-w-sm md:max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-                                <h2 className="text-gray-50 text-3xl md:pb-4 font-bold font-manrope leading-normal lg:text-start text-center">Take your career to the next level in Risk Assurance and Advisory Domain</h2>
-                                <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
+                                <h2 className="text-gray-50 text-xl md:text-3xl md:pb-4 font-bold font-manrope leading-normal lg:text-start text-center">Take your career to the next level in Risk Assurance and Advisory Domain</h2>
+                                <p className="text-gray-50 text-medium font-normal leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
                             <Link to="https://pages.razorpay.com/CIASessions" target="blank"><button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
                                 <span className="px-2 font-bold text-xl">Enroll Now</span>
@@ -30,8 +30,8 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>   
-            <section class="py-24 relative mb-10">
-                <div class="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
+            <section class="py-16 d:py-24 relative mb-10">
+                <div class="w-full max-w-sm md:max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                         <div
                             class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
@@ -50,18 +50,18 @@ export default function AboutUs() {
                                     <p class="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">
                                     Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. Headquartered in India and affiliated with The Institute of Internal Auditors, we specialize in preparing individuals for prestigious credentials like the Certified Internal Auditor (CIA), which is widely regarded as the gold standard in the risk assurance and advisory domain. </p>
                                 </div>
-                                <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 flex">
-                                    <div class="flex-col justify-start items-start inline-flex">
-                                        <h3 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">100 +</h3>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">CIAs</h6>
+                                <div class="w-full lg:justify-start md:justify-center sm:gap-10 gap-5 flex">
+                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
+                                        <h3 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">100+</h3>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">CIAs</h6>
                                     </div>
-                                    <div class="flex-col justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">25 +</h4>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Batches Completed</h6>
+                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
+                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">25+</h4>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Batches Completed</h6>
                                     </div>
-                                    <div class="flex-col justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-3xl font-bold font-manrope leading-normal">100 +</h4>
-                                        <h6 class="text-gray-500 text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
+                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
+                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">100+</h4>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
                                     </div>
                                 </div>
                             </div>
@@ -74,13 +74,13 @@ export default function AboutUs() {
                 </div>
             </section>
             <section className="bg-brand-blue py-32 relative">
-                <div className="w-full max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
+                <div className="w-full max-w-sm md:max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1 ">
-                        <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover h-108 shadow-2xl shadow-gray-500/50 mask-image" src={ourVision} alt="about Us image" />
+                        <img className="lg:mx-0 transform scale-110 md:scale-100 mx-auto h-full rounded-3xl object-cover h-108 shadow-2xl shadow-gray-500/50 mask-image" src={ourVision} alt="about Us image" />
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 pl-4 flex">
-                                <h2 className="text-gray-50 text-5xl font-bold font-manrope leading-normal lg:text-start text-center">Our Vision </h2>
-                                <p className="text-gray-50 text-xl font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
+                                <h2 className="text-gray-50 text-4xl md:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">Our Vision </h2>
+                                <p className="text-gray-50 text-base md:text-xl font-normal leading-relaxed lg:text-start text-center">We envision a world where professionals are equipped with the knowledge, skills, and confidence to excel in their careers and make a lasting impact in their industries. By offering cutting-edge training and support, we aim to foster a community of highly skilled auditors, risk managers, and advisors who drive organizational success on a global scale. </p>
                             </div>
                         </div>
                     </div>
