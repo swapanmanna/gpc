@@ -87,7 +87,7 @@ export default function AboutUs() {
                 </div>
             </section>  
             <section className="py-24 relative bg-gray-50">
-                <div className="md:grid md:grid-cols-3 md:gap-4 md:max-w-[72rem] md:mx-auto">
+                <div className=" md:grid md:grid-cols-3 md:gap-4 md:max-w-[72rem] md:mx-auto">
                     <div className="col-span-2 rounded-2xl flex border border-gray-400 shadow-lg transform transition-transform duration-300 hover:scale-105">
                         <div className="p-8 flex flex-col justify-center">
                             <h1 className="text-brand-dark text-4xl pb-6 font-bold">What Sets Us Apart</h1>

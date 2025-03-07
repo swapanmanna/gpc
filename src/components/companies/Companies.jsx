@@ -32,7 +32,7 @@ import hpLogo from "../../assets/hp-logo.png";
 export default function Companies() {
     return (
         <div className="w-full px-4 md:px-8">
-            <div className="pt-20 pb-20 mb-10 md:mb-20 max-w-[77rem] mx-auto flex flex-col items-center">
+            <div className="pt-32 pb-20 mb-10 md:mb-20 max-w-[77rem] mx-auto flex flex-col items-center">
                 <h1 className="text-xl md:text-3xl mb-8 font-bold text-brand-dark text-center">Our students are from Top 500+ corporates</h1>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:justify-center gap-4 md:gap-[68px] mt-8">
                     <img src={wellsFargo} className="h-16 mx-auto" alt="Wells Fargo" />

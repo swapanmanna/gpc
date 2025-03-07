@@ -10,8 +10,8 @@ export default function Training() {
         <>
             <div className="flex justify-center">
                 <div className="md:my-20 grid grid-cols-1 md:grid-cols-2 md:max-w-6xl gap-8">
-                    <div className="flex items-center justify-center">
-                        <img src={training} className=" max-w-sm md:w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
+                    <div className="flex items-center justify-center max-w-sm md:max-w-full">
+                        <img src={training} className="md:w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                     <div className="flex flex-col px-10">
                         <h1 className="text-3xl font-bold mb-8 text-brand-blue">Your Path to Success Starts Here</h1>

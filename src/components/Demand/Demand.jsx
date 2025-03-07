@@ -66,7 +66,7 @@ export default function Demand() {
             </div> */}
             <div className=" mt-20 md:mt-40 w-full">
             <div className="flex justify-center">
-                <div className=" max-w-sm bg-[#ffebcd] grid grid-cols-1 md:grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
+                <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
                     <div className="flex flex-col px-10">
                         <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
                         <div className="flex space-x-2 mb-4 items-center">
