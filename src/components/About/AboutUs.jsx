@@ -205,8 +205,7 @@ export default function AboutUs() {
                         </figure>
                     </div>
                 </div>
-        </section>
-                                                                         
+        </section>                                                          
         </>
     )
 }
