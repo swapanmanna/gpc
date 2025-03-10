@@ -1,5 +1,6 @@
 import React from "react";
 import { PiBrain } from "react-icons/pi";
+import professionalWorkingOnHerDesktop from "../../assets/professional-working-on-her-desktop.png"
 import arpitGarg from "../../assets/arpit-garg.jpg";
 import ourMissionOne from "../../assets/our-mission-1.webp";
 import ourMissionTwo from "../../assets/our-mission-2.png";
@@ -26,7 +27,7 @@ export default function AboutUs() {
                                 <span className="px-2 font-bold text-xl">Enroll Now</span>
                             </button></Link>
                         </div>
-                        <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover shadow-2xl shadow-gray-500/50 mask-image" src="https://pagedone.io/asset/uploads/1717751272.png" alt="about Us image" />
+                        <img className="lg:mx-0 mx-auto h-full rounded-3xl object-cover shadow-2xl shadow-gray-500/50 mask-image" src={professionalWorkingOnHerDesktop} alt="about Us image" />
                     </div>
                 </div>
             </section>   
