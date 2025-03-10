@@ -26,7 +26,7 @@ import atlas from "../../assets/atlas.jpg";
 import gitlab from "../../assets/gitlab.png";
 import kpmg from "../../assets/kpmg.png";
 import suzlon from "../../assets/suzlon.png";
-import wellsFargo from "../../assets/wells-fargo.png";
+import wellsFargo from "../../assets/wells-fargo.webp";
 import hpLogo from "../../assets/hp-logo.png";
 
 export default function Companies() {

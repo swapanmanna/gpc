@@ -1,11 +1,11 @@
 import React from "react";
 import { PiBrain } from "react-icons/pi";
-import professionalWorkingOnHerDesktop from "../../assets/professional-working-on-her-desktop.png"
-import arpitGarg from "../../assets/arpit-garg.jpg";
+import professionalWorkingOnHerDesktop from "../../assets/professional-working-on-her-desktop.webp"
+import arpitGarg from "../../assets/arpit-garg.webp";
 import ourMissionOne from "../../assets/our-mission-1.webp";
-import ourMissionTwo from "../../assets/our-mission-2.png";
+import ourMissionTwo from "../../assets/our-mission-2.webp";
 import ourVision from "../../assets/our-vision.webp";
-import testimonialOne from "../../assets/testimonial-1.png";
+import testimonialOne from "../../assets/testimonial-1.webp";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -149,7 +149,7 @@ export default function AboutUs() {
                     <div class="grid gap-8 mb-6 lg:mb-16 md:flex md:items-center md:justify-center">
                         <div class="items-center bg-gray-100 rounded-lg shadow-lg sm:flex dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105">
                             <a href="#">
-                                <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-72 object-cover" src={arpitGarg} alt="Bonnie Avatar" />
+                                <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-72 object-cover" src={arpitGarg} alt="Arpit-Garg-image" />
                             </a>
                             <div class="p-5">
                                 <h3 class="text-xl font-bold tracking-tight text-brand-dark dark:text-white">
