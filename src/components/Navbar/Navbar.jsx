@@ -18,10 +18,14 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex md:order-2 space-x-3">
-          <a href="https://learn.globalprofessionalcertifications.com/learn/account/signin" className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2">
+          <a href="https://learn.globalprofessionalcertifications.com/learn/account/signin" 
+             className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2"
+             target="_blank">
             Log In
           </a>
-          <a href="https://learn.globalprofessionalcertifications.com/learn/account/signup?" className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2">
+          <a href="https://learn.globalprofessionalcertifications.com/learn/account/signup?"
+             className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2"
+             target="_blank">
             Sign Up
           </a>
         </div>
@@ -88,12 +92,14 @@ const Navbar = () => {
           <li className="w-full flex flex-col space-y-2 mt-2">
             <a
               href="https://learn.globalprofessionalcertifications.com/learn/account/signin"
+              target="_blank"
               className="w-full text-center text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2"
             >
               Log In
             </a>
             <a
               href="https://learn.globalprofessionalcertifications.com/learn/account/signup?"
+              target="_blank"
               className="w-full text-center text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2"
             >
               Sign Up
