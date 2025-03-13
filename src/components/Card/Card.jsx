@@ -8,7 +8,7 @@ export default function Card({
     price = 23599,
     text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.",
     linkTo = "https://pages.razorpay.com/pl_PbHL4oa3lyfSzL/view", // all the 3 parts
-    imageStyle = "h-32",
+    // imageStyle = "h-32",
   }) {
     return (
       <div className="relative mx-2 mb-10 md:mt-10 w-[20rem] md:w-[17.5rem] flex-col rounded-lg border border-gray-300 bg-white shadow-lg">
