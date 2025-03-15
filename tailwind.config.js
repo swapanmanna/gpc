@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const { fontFamily } = require("tailwindcss/defaultTheme");
 import withMT from "@material-tailwind/react/utils/withMT";
 
 export default withMT({
@@ -9,6 +10,9 @@ export default withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ["Roboto", ...fontFamily.serif]
+      },
       colors: {
         "brand-purple": "#a622e1",
         "brand-blue": "#3a1292",
