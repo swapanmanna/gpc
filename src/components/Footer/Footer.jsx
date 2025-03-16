@@ -53,7 +53,7 @@ const Footer = () => {
 
                     <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
                         <p className="text-sm font-semibold tracking-widest text-gray-50 uppercase">JOIN OUR COMMUNITY</p>
-                        <img src={wappLogo} className="h-32 w-32 pt-2"></img>
+                        <img src={wappLogo} className="h-32 w-32 pt-2" alt="whatsapp group QR code"></img>
                     </div>
                 </div>
 
