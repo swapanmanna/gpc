@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logoOne from "../../assets/logo-1.png";
-import wappLogo from "../../assets/wapp-grp-logo.png";
+import wappLogo from "../../assets/GPC_WhatsApp_Community_White.webp";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
