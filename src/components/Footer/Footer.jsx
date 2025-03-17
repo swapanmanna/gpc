@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                             <Link to=""><img className="h-20" src={logoOne} alt="" /></Link>
                         <ul className="flex items-center space-x-3 ml-10">
-                            <li><Link to="https://www.youtube.com/watch?v=2FWaO_Cf0eg&t=46s&ab_channel=GlobalProfessionalCertifications" target="blank"><AiOutlineYoutube className="text-white h-7 w-7 cursor-pointer"/></Link></li>
+                            <li><Link to="https://www.youtube.com/watch?v=2FWaO_Cf0eg" target="blank"><AiOutlineYoutube className="text-white h-7 w-7 cursor-pointer"/></Link></li>
                             <li><Link to="https://www.instagram.com/global__professionals/" target="blank"><AiOutlineInstagram className="text-white h-6 w-6 cursor-pointer"/></Link></li>
                             <li><Link to="https://www.linkedin.com/company/global-professional-certifications/" target="blank"><AiOutlineLinkedin className="text-white h-6 w-6 cursor-pointer"/></Link></li>
                         </ul>
