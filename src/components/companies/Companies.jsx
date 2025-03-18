@@ -14,7 +14,7 @@ export default function Companies() {
             initial = {{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ 
-                // once: true,
+                once: true,
                 amount: "all"
             }}
             transition = {{ duration: 1 }}

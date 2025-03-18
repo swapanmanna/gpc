@@ -11,7 +11,6 @@ import examFour from "../../assets/exam-4.webp";
 import Testimonials from "../testimonials/Testimonials";
 import Companies from "../companies/Companies";
 import VideoSection from "../VideoSection/VideoSection";
-import { motion } from "motion/react";
 
 export default function Home() {
     return (
