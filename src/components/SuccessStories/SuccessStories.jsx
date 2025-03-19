@@ -58,7 +58,9 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </section>
+
             <Companies />
+            
             <div className="mx-auto max-w-sm md:max-w-[76rem] px-4 sm:px-6 lg:px-8 mb-20">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {testimonialsData.map((testimonial) => (
