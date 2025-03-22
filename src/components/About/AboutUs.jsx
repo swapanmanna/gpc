@@ -51,20 +51,55 @@ export default function AboutUs() {
                                     <p class="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">
                                     Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. Headquartered in India and affiliated with The Institute of Internal Auditors, we specialize in preparing individuals for prestigious credentials like the Certified Internal Auditor (CIA), which is widely regarded as the gold standard in the risk assurance and advisory domain. </p>
                                 </div>
-                                <div class="w-full lg:justify-start md:justify-center sm:gap-10 gap-5 flex">
-                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
-                                        <h3 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">100+</h3>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">CIAs</h6>
+                                {/* <div class="w-full lg:justify-start md:justify-center sm:gap-10 gap-5 flex">
+                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
+                                        <h3 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">250+</h3>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">CIA's</h6>
                                     </div>
-                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
+                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
+                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">5+</h4>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Years of Teaching Experience</h6>
+                                    </div>
+                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
+                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">1000+</h4>
+                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
+                                    </div>
+                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
                                         <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">25+</h4>
                                         <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Batches Completed</h6>
                                     </div>
-                                    <div class="flex-col w-1/3 justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">100+</h4>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
+                                </div> */}
+                                <div class="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 p-4 md:p-6 bg-gray-50 rounded-2xl shadow-lg">
+                                    {/* <!-- Card 1 --> */}
+                                    <div
+                                        class="flex flex-col w-full justify-start items-start bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                                        <h3 class="text-gray-900 text-lg md:text-2xl font-bold font-manrope leading-snug">250+</h3>
+                                        <h6 class="text-gray-500 text-xs md:text-sm font-medium leading-normal">CIA's</h6>
+                                    </div>
+
+                                    {/* <!-- Card 2 --> */}
+                                    <div
+                                        class="flex flex-col w-full justify-start items-start bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                                        <h4 class="text-gray-900 text-lg md:text-2xl font-bold font-manrope leading-snug">5+</h4>
+                                        <h6 class="text-gray-500 text-xs md:text-sm font-medium leading-normal">Years of Teaching Experience</h6>
+                                    </div>
+
+                                    {/* <!-- Card 3 --> */}
+                                    <div
+                                        class="flex flex-col w-full justify-start items-start bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                                        <h4 class="text-gray-900 text-lg md:text-2xl font-bold font-manrope leading-snug">1000+</h4>
+                                        <h6 class="text-gray-500 text-xs md:text-sm font-medium leading-normal">Professionals from Top Companies</h6>
+                                    </div>
+
+                                    {/* <!-- Card 4 --> */}
+                                    <div
+                                        class="flex flex-col w-full justify-start items-start bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                                        <h4 class="text-gray-900 text-lg md:text-2xl font-bold font-manrope leading-snug">25+</h4>
+                                        <h6 class="text-gray-500 text-xs md:text-sm font-medium leading-normal">Batches Completed</h6>
                                     </div>
                                 </div>
+
+
                             </div>
                             <Link to="https://pages.razorpay.com/CIASessions" target="blank"><button
                                 class="sm:w-fit w-full px-6 py-3 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">

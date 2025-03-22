@@ -43,7 +43,7 @@ export default function ContactUs() {
                                         Our Location
                                     </h4>
                                     <p className="text-sm text-body-color dark:text-dark-6">
-                                        A1-328, Sushant Lok-2 Gurugram Gurugram, Haryana, India - 122001
+                                        Innov8 Building, Orchid Centre, Golf course road, Gurugram, Haryana, India - 122002
                                     </p>
                                 </div>
                             </div>
