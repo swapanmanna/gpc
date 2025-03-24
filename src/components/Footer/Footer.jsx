@@ -30,6 +30,10 @@ const Footer = () => {
                             <li>
                                 <NavLink to="contact" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> Contact </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink to="success" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> Success Stories </NavLink>
+                            </li>
                         </ul>
                     </div>
 
