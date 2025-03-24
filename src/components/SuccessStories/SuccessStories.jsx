@@ -49,7 +49,8 @@ const SuccessTestimonials = () => {
         { id: 2, image: studentTestimonialTwo, alt: "Testimonial 2" },
         { id: 3, image: studentTestimonialThree, alt: "Testimonial 3" },
         { id: 4, image: studentTestimonialFour, alt: "Testimonial 4" },
-        { id: 5, image: studentTestimonialFive, alt: "Testimonial 5" }
+        { id: 5, image: studentTestimonialFive, alt: "Testimonial 5" },
+        { id: 6, image: studentTestimonialTwo, alt: "Testimonial 6" }
     ];
 
     // const [current, setCurrent] = useState(0)
