@@ -31,7 +31,8 @@ export default function Home() {
             <Benefits />
             <Training />
             <Demand />
-            <Testimonials />
+            <div className="mb-40"></div>
+            {/* <Testimonials /> */}
         </div>
     )
 }

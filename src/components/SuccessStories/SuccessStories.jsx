@@ -8,6 +8,7 @@ import studentTestimonialThree from "../../assets/testimonial-mobile-screenshot-
 import studentTestimonialFour from "../../assets/testimonial-mobile-screenshot-4.png"
 import studentTestimonialFive from "../../assets/testimonial-mobile-screenshot-5.png"
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
+import Testimonials from "../testimonials/Testimonials";
 
 export default function SuccessStories() {
 
@@ -36,7 +37,8 @@ export default function SuccessStories() {
             <SuccessTestimonials />
             <Companies />
             <SuccessTestimonials />
-            <div className="mb-20"></div>
+            <Testimonials />
+            {/* <div className="mb-20"></div> */}
 
         </>
     );
@@ -128,7 +130,7 @@ const SuccessTestimonials = () => {
                 {testimonialsData.map((testimonial, index) => (
                     <div
                     key={index}
-                    className="relative overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+                    className="relative overflow-hidden border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
                     >
                     <img
                         src={testimonial.image}
