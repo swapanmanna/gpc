@@ -110,7 +110,11 @@ export default function ContactUs() {
                                         Email Address
                                     </h4>
                                     <p className="text-sm text-body-color dark:text-dark-6">
-                                        cia@globalprofessionalcertifications.com
+                                        <a 
+                                        href="mailto:cia@globalprofessionalcertifications.com?subject=Inquiry&body=Hi there, I would like to know more about..." 
+                                        className="hover:underline hover:text-brand-blue">
+                                            cia@globalprofessionalcertifications.com
+                                        </a>
                                     </p>
                                 </div>
                             </div>

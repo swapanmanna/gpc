@@ -31,7 +31,7 @@ export default function Home() {
             <Benefits />
             <Training />
             <Demand />
-            <div className="mb-40"></div>
+            <div className="h-[10rem]"></div>
             {/* <Testimonials /> */}
         </div>
     )
