@@ -21,7 +21,7 @@ import studentTestimonialSixteen from "../../assets/Testimonial-screenshot-11.pn
 import studentTestimonialSeventeen from "../../assets/Testimonial-screenshot-12.png"
 import studentTestimonialEighteen from "../../assets/Testimonial-screenshot-13.png"
 import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.png"
-import studentTestimonialTwenty from "../../assetsTtestimonial-screenshot-15.png"
+import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
 import Testimonials from "../testimonials/Testimonials";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
