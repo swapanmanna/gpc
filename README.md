@@ -8,4 +8,5 @@ At Global Professional Certifications (GPC), we are dedicated to empowering prof
 * TailwindCss
 
 ## Watch this video to more about Global Professional Certifications
+### Note: This is a redirecting link, right-click and open in a new tab
 [![Watch the video](https://img.youtube.com/vi/2FWaO_Cf0eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=2FWaO_Cf0eg)

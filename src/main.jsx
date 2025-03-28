@@ -14,6 +14,7 @@ import RefundPolicy from './components/Refund/RefundPolicy.jsx';
 // import Login from './components/login/Login.jsx';
 // import Register from './components/register/Register.jsx';
 import SuccessStories from './components/SuccessStories/SuccessStories.jsx';
+import Services from './components/Services/Services.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       {/* <Route path="login" element={<Login />}/>
       <Route path="register" element={<Register />}/> */}
       <Route path="success" element={<SuccessStories />}/>
+      <Route path="services" element={<Services />}/>
     </Route>
   )
 )

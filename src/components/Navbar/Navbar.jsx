@@ -52,7 +52,7 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex space-x-8">
-          {["Home", "About", "Success", "Contact"].map((item, index) => (
+          {["Home", "About", "Success", "Contact", "Services"].map((item, index) => (
             <NavLink
               key={index}
               to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
@@ -74,7 +74,7 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <ul className="flex flex-col items-center w-full space-y-4 p-4">
-          {["Home", "About", "Services", "Contact Us"].map((item, index) => (
+          {["Home", "About", "Success", "Contact Us", "Services"].map((item, index) => (
             <li key={index} className="w-full text-center">
               <NavLink
                 to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}

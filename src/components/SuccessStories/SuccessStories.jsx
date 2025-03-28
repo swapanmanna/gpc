@@ -7,6 +7,22 @@ import studentTestimonialTwo from "../../assets/testimonial-mobile-screenshot-2.
 import studentTestimonialThree from "../../assets/testimonial-mobile-screenshot-3.png"
 import studentTestimonialFour from "../../assets/testimonial-mobile-screenshot-4.png"
 import studentTestimonialFive from "../../assets/testimonial-mobile-screenshot-5.png"
+import studentTestimonialSix from "../../assets/testimonial-screenshot-1.png"
+import studentTestimonialSeven from "../../assets/testimonial-screenshot-2.png"
+import studentTestimonialEight from "../../assets/testimonial-screenshot-3.png"
+import studentTestimonialNine from "../../assets/testimonial-screenshot-4.png"
+import studentTestimonialTen from "../../assets/testimonial-screenshot-5.png"
+import studentTestimonialEleven from "../../assets/testimonial-screenshot-6.png"
+import studentTestimonialTwelve from "../../assets/testimonial-screenshot-7.png"
+import studentTestimonialThirteen from "../../assets/testimonial-screenshot-8.png"
+import studentTestimonialFourteen from "../../assets/testimonial-screenshot-9.png"
+import studentTestimonialFifteen from "../../assets/testimonial-screenshot-10.png"
+import studentTestimonialSixteen from "../../assets/testimonial-screenshot-11.png"
+import studentTestimonialSeventeen from "../../assets/testimonial-screenshot-12.png"
+import studentTestimonialEighteen from "../../assets/testimonial-screenshot-13.png"
+import studentTestimonialNineteen from "../../assets/testimonial-screenshot-14.png"
+import studentTestimonialTwenty from "../../assets/testimonial-screenshot-15.png"
+import studentTestimonialTwentyOne from "../../assets/testimonial-screenshot-16.png"
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
 import Testimonials from "../testimonials/Testimonials";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
@@ -31,15 +47,18 @@ export default function SuccessStories() {
                     <img src={hero2} className="h-[500px] absolute right-[13rem] transform scale-110 top-[8.5rem]"></img>
                 </div>
             </section>
-            <div className="mx-auto max-w-2xl text-center mt-20 mb-20">
+            <div className="mx-auto max-w-2xl text-center mt-[140px] mb-20">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
                     What Our Students Say
                 </h2>
             </div>
 
-            <SuccessTestimonials />
+            <SuccessTestimonials start={0} end={8} /> {/* First 8 testimonials */}
             <Companies />
-            <SuccessTestimonials />
+            <h2 className="font-display text-center text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl mb-12">
+                    More Success Stories
+            </h2>
+            <SuccessTestimonials start={8} end={20} /> {/* Remaining 13 testimonials */}
             <ExamTestimonials />
             {/* <div className="mb-20"></div> */}
 
@@ -47,106 +66,54 @@ export default function SuccessStories() {
     );
 }
 
-const SuccessTestimonials = () => {
-
+const SuccessTestimonials = ({ start, end }) => {
     const testimonialsData = [
         { id: 1, image: studentTestimonialOne, alt: "Testimonial 1" },
         { id: 2, image: studentTestimonialTwo, alt: "Testimonial 2" },
         { id: 3, image: studentTestimonialThree, alt: "Testimonial 3" },
         { id: 4, image: studentTestimonialFour, alt: "Testimonial 4" },
         { id: 5, image: studentTestimonialFive, alt: "Testimonial 5" },
-        { id: 6, image: studentTestimonialTwo, alt: "Testimonial 6" }
+        { id: 6, image: studentTestimonialSix, alt: "Testimonial 6" },
+        { id: 7, image: studentTestimonialSeven, alt: "Testimonial 7" },
+        { id: 8, image: studentTestimonialEight, alt: "Testimonial 8" },
+        { id: 9, image: studentTestimonialNine, alt: "Testimonial 9" },
+        { id: 10, image: studentTestimonialTen, alt: "Testimonial 10" },
+        { id: 11, image: studentTestimonialEleven, alt: "Testimonial 11" },
+        { id: 12, image: studentTestimonialTwelve, alt: "Testimonial 12" },
+        { id: 13, image: studentTestimonialThirteen, alt: "Testimonial 13" },
+        { id: 14, image: studentTestimonialFourteen, alt: "Testimonial 14" },
+        { id: 15, image: studentTestimonialFifteen, alt: "Testimonial 15" },
+        { id: 16, image: studentTestimonialSixteen, alt: "Testimonial 16" },
+        { id: 17, image: studentTestimonialSeventeen, alt: "Testimonial 17" },
+        { id: 18, image: studentTestimonialEighteen, alt: "Testimonial 18" },
+        { id: 19, image: studentTestimonialNineteen, alt: "Testimonial 19" },
+        { id: 20, image: studentTestimonialTwenty, alt: "Testimonial 20" },
     ];
 
-    // const [current, setCurrent] = useState(0)
-    // const [isFocus, setIsFocus] = useState(false)
-
-    // const onPrevClick = () => {
-    //     if (current > 0){
-    //         setCurrent(current - 1)
-    //     }
-    // }
-
-    // const onNextClick = () => {
-    //     if (current < testimonialsData.length - 1){
-    //         setCurrent(current + 1)
-    //     }
-    // }
+    // Slice the array based on start and end props
+    const displayedTestimonials = testimonialsData.slice(start, end);
 
     return (
-        // <section className="mx-auto max-w-sm md:max-w-[76rem] overflow-hidden px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between">
-        //     <MotionConfig transition={{duration:0.7, ease: [0.32, 0.72, 0 , 1]}}>
-        //         <div className="relative w-full max-w-[30rem] flex items-center">
-        //             <AnimatePresence>
-        //                 {isFocus && (
-        //                     <motion.div 
-        //                     className="absolute left-2 right-2 flex justify-between z-10"
-        //                     initial={{opacity: 0}}
-        //                     animate={{opacity: 1}}
-        //                     exit={{opacity: 0}}
-        //                     onHoverStart={() => setIsFocus(true)}
-        //                     onHoverEnd={() => setIsFocus(false)}
-        //                     >
-        //                         <button onClick={onPrevClick}>
-        //                             <FaChevronLeft className="h-8 w-8" />
-        //                         </button>
-        //                         <button onClick={onNextClick}>
-        //                             <FaChevronRight className="h-8 w-8" />
-        //                         </button>
-        //                     </motion.div>
-        //                 )}
-        //             </AnimatePresence>
-        //             <motion.div 
-        //                 className="flex shrink-0 gap-6"
-        //                 animate={{ x: `-${current * (480 + 24)}px` }} 
-        //                 onHoverStart={() => setIsFocus(true)}
-        //                 onHoverEnd={() => setIsFocus(false)}
-        //             >
-        //                 {testimonialsData.map((testimonial, idx) => (
-        //                     <motion.img
-        //                         key = {idx}
-        //                         src={testimonial.image}
-        //                         alt={testimonial.alt}
-        //                         animate = {{ opacity: idx === current ? 1 : 0.2 }}
-        //                         className="object-cover w-[30rem] shadow-lg border border-gray-300 rounded-xl"
-        //                     />
-        //                 ))}
-        //             </motion.div>
-        //             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-        //                 <div className="flex gap-3 px-3 py-2 bg-gray-400 rounded-full opacity-80">
-        //                     {testimonialsData.map((_, idx) => {
-        //                         return (
-        //                             <button key={idx} onClick={() => setCurrent(idx)}>
-        //                                 <div className={`w-2 h-2 rounded-full ${idx === current ? "bg-white" : "bg-gray-600"}`}></div>
-        //                             </button>
-        //                         )
-        //                     })}
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </MotionConfig>
-        // </section>
         <section className="py-12 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Grid Layout */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                {testimonialsData.map((testimonial, index) => (
-                    <div
-                    key={index}
-                    className="relative overflow-hidden border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
-                    >
-                    <img
-                        src={testimonial.image}
-                        alt={testimonial.alt}
-                        className="w-full h-auto object-cover"
-                    />
-                    </div>
-                ))}
+                    {displayedTestimonials.map((testimonial, index) => (
+                        <div
+                            key={index}
+                            className="relative overflow-hidden border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+                        >
+                            <img
+                                src={testimonial.image}
+                                alt={testimonial.alt}
+                                className="w-full h-[338.4px] object-contain"
+                            />
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 const ExamTestimonials = () => {
     const testimonials = [
