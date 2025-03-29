@@ -7,6 +7,8 @@ import examTwo from "../../assets/exam-2.webp";
 import testimonialOne from "../../assets/testimonial-1.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import pinkyPhoto from "../../assets/pinky-photo.jpg";
+import akshdeepSingh from "../../assets/akshdeep-singh.png";
 
 export default function Services() {
     useEffect(() => {
@@ -148,10 +150,10 @@ export default function Services() {
                                 <h3 class="text-lg font-semibold text-brand-gray dark:text-white">The learning modules are well-structured, making complex topics easy to understand. The practice tests provided a solid foundation for exam preparation.</h3>
                             </blockquote>
                             <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialOne} alt="profile picture" />
+                                <img class="w-9 h-9 rounded-full" src={pinkyPhoto} alt="profile picture" />
                                 <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Ashoor Marikar</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Atlas Corp., Associate Manager</div>
+                                    <div className="text-brand-dark">Pinky Agarwal</div>
+                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Emami Limited, Head Internal Audit</div>
                                 </div>
                             </figcaption>    
                         </figure>
@@ -160,10 +162,10 @@ export default function Services() {
                                 <h3 class="text-lg font-semibold text-brand-gray dark:text-white">The faculty's expertise and personalized guidance made the learning process seamless. The extensive practice questions helped me build confidence for the exam.</h3>
                             </blockquote>
                             <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialOne} alt="profile picture" />
+                                <img class="w-9 h-9 rounded-full" src={akshdeepSingh} alt="profile picture" />
                                 <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Ashoor Marikar</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Atlas Corp., Associate Manager</div>
+                                    <div className="text-brand-dark">Akshdeep Singh</div>
+                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">KPMG, Manager</div>
                                 </div>
                             </figcaption>    
                         </figure>
