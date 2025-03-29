@@ -24,16 +24,20 @@ const Footer = () => {
                         <p className="text-sm font-semibold tracking-widest text-gray-50 uppercase">Company</p>
                         <ul className="mt-6 space-y-4">
                             <li>
-                                <NavLink to="about" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> About </NavLink>
+                                <NavLink to="services" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> Services </NavLink>
                             </li>
 
                             <li>
-                                <NavLink to="contact" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> Contact </NavLink>
+                                <NavLink to="success" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> Success Stories </NavLink>
                             </li>
 
                             <li>
-                                <NavLink to="success" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1`}> Success Stories </NavLink>
+                                <NavLink to="about" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> About </NavLink>
                             </li>
+
+                            {/* <li>
+                                <NavLink to="contact" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> Contact </NavLink>
+                            </li> */}
                         </ul>
                     </div>
 
