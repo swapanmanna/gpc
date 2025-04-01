@@ -15,6 +15,7 @@ import RefundPolicy from './components/Refund/RefundPolicy.jsx';
 // import Register from './components/register/Register.jsx';
 import SuccessStories from './components/SuccessStories/SuccessStories.jsx';
 import Services from './components/Services/Services.jsx';
+import Events from "./components/Events/Events.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="register" element={<Register />}/> */}
       <Route path="success" element={<SuccessStories />}/>
       <Route path="services" element={<Services />}/>
+      <Route path="events" element={<Events />} />
     </Route>
   )
 )
