@@ -18,7 +18,7 @@ To run this project locally, follow these steps:
 git clone https://github.com/Priyanshu-Oneskai/Duplicate-GPC.git
 
 # Navigate to the project folder
-cd global-professional-certifications
+cd Duplicate-GPC
 
 # Install dependencies
 npm install
