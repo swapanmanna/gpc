@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import heroGirl from '../../assets/hero-girl.webp';
 import { Link } from "react-router-dom";
-import Card from "../Card/Card.jsx";
 import examOne from "../../assets/exam-1.webp";
 import examTwo from "../../assets/exam-2.webp";
 import testimonialOne from "../../assets/testimonial-1.png";
@@ -13,8 +12,6 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
-
-import indianMaleProfessional from "../../assets/indian-male-professional.png";
 
 export default function Services() {
     useEffect(() => {
@@ -63,8 +60,6 @@ export default function Services() {
             <section className="flex md:justify-center flex-col items-center md:mt-20">
                 <h1 className="text-4xl font-bold text-brand-blue mb-10">SERVICES</h1>
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-                    {/* <Card title="CIA all 3 Parts with Gleim Content" image={examOne} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo = "https://pages.razorpay.com/CIASessions"/>
-                    <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/> */}
                     <div class="mx-auto my-10 flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
                         <div class="mb-4 md:mr-6 md:mb-0">
                             <img class="h-56 rounded-lg object-cover md:w-full" src={examOne} alt="" />

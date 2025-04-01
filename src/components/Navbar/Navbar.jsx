@@ -52,10 +52,10 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex space-x-8">
-          {["Home", "Services", "About", "Success", "Contact"].map((item, index) => (
+          {["Services", "About", "Success", "Contact"].map((item, index) => (
             <NavLink
               key={index}
-              to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
+              to={item.toLowerCase()}
               className={({ isActive }) =>
                 `text-lg font-medium ${isActive ? "text-brand-purple" : "text-brand-dark"} hover:text-brand-purple`
               }
@@ -74,10 +74,10 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <ul className="flex flex-col items-center w-full space-y-4 p-4">
-          {["Home", "Services", "About", "Success", "Contact"].map((item, index) => (
+          {["Services", "About", "Success", "Contact"].map((item, index) => (
             <li key={index} className="w-full text-center">
               <NavLink
-                to={item.toLowerCase() === "home" ? "/" : item.toLowerCase()}
+                to={item.toLowerCase()}
                 className={({ isActive }) =>
                   `block w-full py-2 text-lg font-medium ${
                     isActive ? "text-brand-purple" : "text-brand-dark"
