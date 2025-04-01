@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/global-professional-certifications.git
+git clone https://github.com/Priyanshu-Oneskai/Duplicate-GPC.git
 
 # Navigate to the project folder
 cd global-professional-certifications
