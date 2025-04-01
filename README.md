@@ -10,15 +10,6 @@ At **Global Professional Certifications (GPC)**, we are dedicated to empowering 
 ## Watch This Video to Learn More About Global Professional Certifications
 [![Watch the video](https://img.youtube.com/vi/2FWaO_Cf0eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=2FWaO_Cf0eg)
 
-### 📌 Note: Click the link below to open the video in a new tab
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=2FWaO_Cf0eg" target="_blank" rel="noopener noreferrer">
-    Open Video in a New Tab
-  </a>
-</p>
-
----
-
 ### 🚀 Get Started
 To run this project locally, follow these steps:
 
