@@ -10,32 +10,32 @@ export default function Demand() {
     return (
         <>
             <div className=" mt-20 md:mt-40 w-full">
-            <div className="flex justify-center">
-                <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
-                    <div className="flex flex-col px-10">
-                        <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
-                        <div className="flex space-x-2 mb-4 items-center">
-                            <span><FaMoneyBillTrendUp className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                            <span className="text-black font-semibold">Earn competitive pay with great growth potential</span>
+                <div className="flex justify-center">
+                    <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
+                        <div className="flex flex-col px-10">
+                            <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
+                            <div className="flex space-x-2 mb-4 items-center">
+                                <span><FaMoneyBillTrendUp className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Earn competitive pay with great growth potential</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center">
+                                <span><MdOutlineSecurity className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Enjoy stability in a thriving industry</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center">
+                                <span><RiGlobalFill className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
+                                <span className="text-black font-semibold">Build a career with worldwide opportunities</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center">
+                                <span><BsGraphUpArrow className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Progress from entry-level to leadership roles</span>
+                            </div>
                         </div>
-                        <div className="flex space-x-2 mb-4 items-center">
-                            <span><MdOutlineSecurity className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                            <span className="text-black font-semibold">Enjoy stability in a thriving industry</span>
+                        <div className="flex items-center justify-center relative transform scale-130">
+                            <img src={indianMaleProfessional} className="absolute bottom-1 hidden md:block right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                         </div>
-                        <div className="flex space-x-2 mb-4 items-center">
-                            <span><RiGlobalFill className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
-                            <span className="text-black font-semibold">Build a career with worldwide opportunities</span>
-                        </div>
-                        <div className="flex space-x-2 mb-4 items-center">
-                            <span><BsGraphUpArrow className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                            <span className="text-black font-semibold">Progress from entry-level to leadership roles</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center relative transform scale-130">
-                        <img src={indianMaleProfessional} className="absolute bottom-1 hidden md:block right-20 w-full object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
-            </div>
             </div>
         </>
     )

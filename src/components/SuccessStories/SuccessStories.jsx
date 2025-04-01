@@ -28,6 +28,7 @@ import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 
+
 export default function SuccessStories() {
 
     return (
@@ -178,5 +179,7 @@ const ExamTestimonials = () => {
                 </ul>
             </div>
         </section>
+
+        
     )
 }

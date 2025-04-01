@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                            <Link to=""><img className="h-20" src={logoOne} alt="" /></Link>
+                            <Link to="/"><img className="h-20" src={logoOne} alt="Global Professoinal Certifications logo" /></Link>
                         <ul className="flex items-center space-x-3 ml-10">
                             <li><Link to="https://www.youtube.com/watch?v=2FWaO_Cf0eg" target="blank"><AiOutlineYoutube className="text-white h-7 w-7 cursor-pointer"/></Link></li>
                             <li><Link to="https://www.instagram.com/global__professionals/" target="blank"><AiOutlineInstagram className="text-white h-6 w-6 cursor-pointer"/></Link></li>
@@ -35,9 +35,9 @@ const Footer = () => {
                                 <NavLink to="about" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> About </NavLink>
                             </li>
 
-                            {/* <li>
+                            <li>
                                 <NavLink to="contact" title="" className={({isActive}) => `flex text-base ${isActive ? "text-brand-purple" : "text-gray-50"} transition-all duration-200 hover:text-[#a622e1]`}> Contact </NavLink>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
 

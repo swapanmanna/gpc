@@ -9,6 +9,12 @@ import testimonialTwo from "../../assets/testimonial-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { MdOutlineSecurity } from "react-icons/md";
+import { RiGlobalFill } from "react-icons/ri";
+import { BsGraphUpArrow } from "react-icons/bs";
+
+import indianMaleProfessional from "../../assets/indian-male-professional.png";
 
 export default function Services() {
     useEffect(() => {
@@ -171,7 +177,42 @@ export default function Services() {
                         </figure>
                     </div>
                 </div>
-            </section>      
+            </section> 
+
+            <div className="md:mt-20 md:mb-20 w-full">
+                <div className="flex justify-center">
+                    <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
+                        <div className="flex flex-col px-10">
+                            <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
+                            <div className="flex space-x-2 mb-4 items-center text-xl">
+                                <span><FaMoneyBillTrendUp className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Earn competitive pay with great growth potential</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center text-xl">
+                                <span><MdOutlineSecurity className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Enjoy stability in a thriving industry</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center text-xl">
+                                <span><RiGlobalFill className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
+                                <span className="text-black font-semibold">Build a career with worldwide opportunities</span>
+                            </div>
+                            <div className="flex space-x-2 mb-4 items-center text-xl">
+                                <span><BsGraphUpArrow className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Progress from entry-level to leadership roles</span>
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-center relative">
+                            <Link
+                                to={"https://pages.razorpay.com/CIASessions"} target="blank"
+                                className="flex items-center justify-center rounded-xl bg-[#E0C4A8] px-16 py-8 text-center text-3xl font-medium text-gray-800 hover:bg-[#D4B190] transition ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
+                            >
+                                Enroll Now
+                                <FaArrowRightLong className="ml-2 h-8 w-8" />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
