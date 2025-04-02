@@ -138,7 +138,7 @@ export default function Events(){
                 </div>
                 <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
                     <div className="flex gap-8 max-w-[77rem]">
-                        <img src={schedule} className="rounded-xl"></img>
+                        <img src={scheduleTwo} className="rounded-xl"></img>
                         <div className="flex flex-col gap-4">
                             <h5 className="md:text-4xl font-bold text-[#141418]">Innovate 2025 Your Pathway to Business Transformation Energy Save</h5>
                             <div className="flex gap-10">
@@ -154,7 +154,7 @@ export default function Events(){
                             <p className="text-[#444444] mb-[25px] text-lg">When an unknown printer took a galley of type and scrambled it to make a type specimen bookIt has survived not only five centuries, but also the leap into electronic.</p>
                             <div className="flex gap-6">
                                 <div className="flex justify-center items-center gap-2 border-r border-r-3 border-r-gray-500 pr-8">
-                                    <img src={user} className="rounded-full"></img>
+                                    <img src={userTwo} className="rounded-full"></img>
                                     <div className="flex flex-col">
                                         <p className="text-[#141418] font-bold text-lg">Parker Roben</p>
                                         <p className="text-sm text-[#444444]">Author, Cleaner</p>
@@ -167,7 +167,7 @@ export default function Events(){
                 </div>
                 <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
                     <div className="flex gap-8 max-w-[77rem]">
-                        <img src={schedule} className="rounded-xl"></img>
+                        <img src={scheduleThree} className="rounded-xl"></img>
                         <div className="flex flex-col gap-4">
                             <h5 className="md:text-4xl font-bold text-[#141418]">Innovate 2025 Your Pathway to Business Transformation Energy Save</h5>
                             <div className="flex gap-10">
@@ -183,36 +183,7 @@ export default function Events(){
                             <p className="text-[#444444] mb-[25px] text-lg">When an unknown printer took a galley of type and scrambled it to make a type specimen bookIt has survived not only five centuries, but also the leap into electronic.</p>
                             <div className="flex gap-6">
                                 <div className="flex justify-center items-center gap-2 border-r border-r-3 border-r-gray-500 pr-8">
-                                    <img src={user} className="rounded-full"></img>
-                                    <div className="flex flex-col">
-                                        <p className="text-[#141418] font-bold text-lg">Parker Roben</p>
-                                        <p className="text-sm text-[#444444]">Author, Cleaner</p>
-                                    </div>
-                                </div>
-                                <button className="bg-brand-blue text-gray-50 hover:bg-brand-purple transition ease-in-out px-6 rounded-lg text-lg font-bold">ENROLL NOW</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                    <div className="flex gap-8 max-w-[77rem]">
-                        <img src={schedule} className="rounded-xl"></img>
-                        <div className="flex flex-col gap-4">
-                            <h5 className="md:text-4xl font-bold text-[#141418]">Innovate 2025 Your Pathway to Business Transformation Energy Save</h5>
-                            <div className="flex gap-10">
-                                <div className="flex gap-1">
-                                    <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
-                                    <p className="font-bold text-[#444444]">Apple Upper West Side, Brooklyn</p>
-                                </div>
-                                <div className="flex gap-1">
-                                    <MdOutlineAccessTime className="h-6 w-6 text-brand-blue"/>
-                                    <p className="font-bold text-[#444444]">19:15 a.m. – 07:15 a.m.</p>
-                                </div>
-                            </div>
-                            <p className="text-[#444444] mb-[25px] text-lg">When an unknown printer took a galley of type and scrambled it to make a type specimen bookIt has survived not only five centuries, but also the leap into electronic.</p>
-                            <div className="flex gap-6">
-                                <div className="flex justify-center items-center gap-2 border-r border-r-3 border-r-gray-500 pr-8">
-                                    <img src={user} className="rounded-full"></img>
+                                    <img src={userThree} className="rounded-full"></img>
                                     <div className="flex flex-col">
                                         <p className="text-[#141418] font-bold text-lg">Parker Roben</p>
                                         <p className="text-sm text-[#444444]">Author, Cleaner</p>
