@@ -62,7 +62,7 @@ export default function Events(){
                 </div>
             </section>
 
-            <section className="md:mt-20 h-screen grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[77rem] mx-auto text-[#141418]">
+            <section className="md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[77rem] mx-auto text-[#141418]">
                 <div>
                     <img src={thumbImage} className="pt-16"></img>
                 </div>
