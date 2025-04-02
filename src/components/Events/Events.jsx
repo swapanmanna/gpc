@@ -98,7 +98,9 @@ export default function Events(){
                 </div>
             </section>
 
-            <section className="flex flex-col items-center gap-6 bg-[url('assets/bg.jpg')] py-20">
+
+            <div className="bg-[url('assets/bg.jpg')]">
+            <section className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
                 <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold">EVENT SCHEDULE</button>
                 <h4 className="text-3xl md:text-5xl font-bold">Our Events Schedule Plan</h4>
                 <p className="w-[520px] text-center text-[#444444] text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rem repellendus corporis ullam magnam sit!</p>
@@ -195,6 +197,7 @@ export default function Events(){
                     </div>
                 </div>
             </section>
+            </div>
         </>
     )
 }
