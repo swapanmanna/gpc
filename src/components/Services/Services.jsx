@@ -12,6 +12,8 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
+import onlineCourses from "../../assets/online-courses.png";
+import onlineCoursesTwo from "../../assets/online-courses-2.png";
 
 export default function Services() {
     useEffect(() => {
