@@ -91,7 +91,7 @@ export default function Events(){
                             <img src={phoneIcon} className="h-14 w-14 bg-brand-purple rounded-full p-3"></img>
                             <div className="flex flex-col">
                                 <p>Call Us:</p>
-                                <p className="font-bold font-md">919999999999</p>
+                                <p className="font-bold font-md">+91 7827597250</p>
                             </div>
                         </div>
                     </div>
