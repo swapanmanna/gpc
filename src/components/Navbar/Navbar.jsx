@@ -19,12 +19,12 @@ const Navbar = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex md:order-2 space-x-3">
           <a href="https://learn.globalprofessionalcertifications.com/learn/account/signin" 
-             className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2"
+             className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2 transition duration-200 ease-in-out"
              target="_blank">
             Log In
           </a>
           <a href="https://learn.globalprofessionalcertifications.com/learn/account/signup?"
-             className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2"
+             className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2 transition duration-200 ease-in-out"
              target="_blank">
             Sign Up
           </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
               key={index}
               to={item.toLowerCase()}
               className={({ isActive }) =>
-                `text-lg font-medium ${isActive ? "text-brand-purple" : "text-brand-dark"} hover:text-brand-purple`
+                `nav text-lg font-medium ${isActive ? "text-brand-purple" : "text-brand-dark"} hover:text-brand-purple`
               }
             >
               {item === "Success" ? "Success Stories" : item}
