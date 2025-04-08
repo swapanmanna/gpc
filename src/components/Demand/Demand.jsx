@@ -16,19 +16,19 @@ export default function Demand() {
                             <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
                             <div className="flex space-x-2 mb-4 items-center">
                                 <span><FaMoneyBillTrendUp className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Earn competitive pay with great growth potential</span>
+                                <span className="text-black font-semibold text-lg">Earn competitive pay with great growth potential</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center">
                                 <span><MdOutlineSecurity className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Enjoy stability in a thriving industry</span>
+                                <span className="text-black font-semibold text-lg">Enjoy stability in a thriving industry</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center">
                                 <span><RiGlobalFill className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
-                                <span className="text-black font-semibold">Build a career with worldwide opportunities</span>
+                                <span className="text-black font-semibold text-lg">Build a career with worldwide opportunities</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center">
                                 <span><BsGraphUpArrow className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Progress from entry-level to leadership roles</span>
+                                <span className="text-black font-semibold text-lg">Progress from entry-level to leadership roles</span>
                             </div>
                         </div>
                         <div className="flex items-center justify-center relative transform scale-130">

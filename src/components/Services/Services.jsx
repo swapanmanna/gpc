@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import heroGirl from '../../assets/hero-girl.webp';
 import heroGirlCorrectedTwo from '../../assets/heroGirlCorrectedTwo.png';
+import heroGirlThree from "../../assets/heroGirlThree.png"
 import { Link } from "react-router-dom";
 import examOne from "../../assets/exam-1.webp";
 import examTwo from "../../assets/exam-2.webp";
