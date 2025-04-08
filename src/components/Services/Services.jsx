@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import heroGirl from '../../assets/hero-girl.webp';
+import heroGirlCorrectedTwo from '../../assets/heroGirlCorrectedTwo.png';
 import { Link } from "react-router-dom";
 import examOne from "../../assets/exam-1.webp";
 import examTwo from "../../assets/exam-2.webp";
@@ -12,8 +13,6 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
-import onlineCourses from "../../assets/online-courses.png";
-import onlineCoursesTwo from "../../assets/online-courses-2.png";
 
 export default function Services() {
     useEffect(() => {
@@ -50,8 +49,8 @@ export default function Services() {
                     </div>
                     <div className="pb-12">
                         <div className="relative">
-                            <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-125">
-                                <img className="h-[500px] rounded-md hidden md:block" src={heroGirl} alt="homepage hero" />
+                            <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-110">
+                                <img className="h-[500px] rounded-md hidden md:block" src={heroGirlCorrectedTwo} alt="homepage hero" />
                             </div>
                         </div>
                     </div>
