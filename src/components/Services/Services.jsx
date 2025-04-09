@@ -200,7 +200,7 @@ export default function Services() {
                         </div>
                         <div className="flex items-center justify-center relative">
                             <Link
-                                to={"https://pages.razorpay.com/CIASessions"} target="blank"
+                                to={"/contact"}
                                 className="flex items-center justify-center rounded-xl bg-[#E0C4A8] px-16 py-8 text-center text-3xl font-medium text-gray-800 hover:bg-[#D4B190] transition ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
                             >
                                 Enroll Now
