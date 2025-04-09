@@ -60,7 +60,7 @@ export default function Services() {
 
             {/* Services */}
             <section className="flex md:justify-center flex-col items-center md:mt-20">
-                <h1 className="text-4xl font-bold text-brand-blue mb-10">SERVICES</h1>
+                <h1 className="text-4xl font-bold text-brand-blue mb-10">COURSES</h1>
                 <div className="flex flex-col md:flex-row gap-4 md:gap-8">
                     <div class="mx-auto my-10 flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
                         <div class="mb-4 md:mr-6 md:mb-0">
