@@ -63,7 +63,7 @@ const Hero = () => {
                         <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj text-left">
                             Become a Certified Internal Auditor
                         </p>
-                        <h1 className="pt-6 md:text-xl text-gray-50">Become a globally recognized certified Internal Auditor. Join the league of 100+ successful CIA-certified professionals today under our mentor’s guidance! </h1>
+                        <h1 className="pt-6 md:text-xl text-gray-50">Gain global recognition as a CIA-certified professional. Join over 1000 successful professionals who advanced their careers with our expert mentorship! </h1>
                     </div>
 
                     <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
