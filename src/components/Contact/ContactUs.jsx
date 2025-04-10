@@ -80,11 +80,14 @@ export default function ContactUs() {
                                     </svg>
                                 </div>
                                 <div className="w-full">
-                                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                    <h4 className="text-xl font-bold text-dark dark:text-white">
                                         Phone Number
                                     </h4>
                                     <p className="text-sm text-body-color dark:text-dark-6">
                                         (+91) 78275 97250
+                                    </p>
+                                    <p className="text-sm text-body-color dark:text-dark-6">
+                                        (+91) 87360 83099
                                     </p>
                                 </div>
                             </div>

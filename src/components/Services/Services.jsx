@@ -14,12 +14,22 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { MdOutlineSecurity } from "react-icons/md";
 import { RiGlobalFill } from "react-icons/ri";
 import { BsGraphUpArrow } from "react-icons/bs";
+import coursesPhoto from "../../assets/Courses-photo.png";
+import { SiGoogleclassroom } from "react-icons/si";
+import { IoBookOutline } from "react-icons/io5";
+import { CgNotes } from "react-icons/cg";
+import { IoTimerOutline } from "react-icons/io5";
+import speakerIcon from "../../assets/speaker.png";
+import surpriseIcon from "../../assets/surprise.png";
+import networkingIcon from "../../assets/networking.png";
+import requestIcon from "../../assets/request.png";
+import Card from "../Card/Card";
 
 export default function Services() {
     useEffect(() => {
         // Preload the hero image when the component mounts
         const img = new Image();
-        img.src = heroGirl;
+        img.src = coursesPhoto;
     }, []);
 
     return (
@@ -33,7 +43,7 @@ export default function Services() {
                             <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight font-pj text-left">
                             Elevate Your Expertise: Master the Art of Auditing and Risk Management
                             </p>
-                            <h1 className="pt-6 md:text-xl text-gray-50">Discover our prestigious CIA, IAP, CRMA, and CISA certifications, meticulously crafted to propel your career to new heights of excellence and recognition. </h1>
+                            <h1 className="pt-6 md:text-2xl text-gray-50">Discover our prestigious certifications, meticulously crafted to propel your career to new heights of excellence and recognition. </h1>
                         </div>
 
                         <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
@@ -51,18 +61,18 @@ export default function Services() {
                     <div className="pb-12">
                         <div className="relative">
                             <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-110">
-                                <img className="h-[500px] rounded-md hidden md:block" src={heroGirlCorrectedTwo} alt="homepage hero" />
+                                <img className="h-[500px] rounded-md hidden md:block" src={coursesPhoto} alt="homepage hero" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Services */}
-            <section className="flex md:justify-center flex-col items-center md:mt-20">
+            {/* Courses */}
+            {/* <section className="flex md:justify-center flex-col items-center md:my-20">
                 <h1 className="text-4xl font-bold text-brand-blue mb-10">COURSES</h1>
-                <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-                    <div class="mx-auto my-10 flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8">
+                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
                         <div class="mb-4 md:mr-6 md:mb-0">
                             <img class="h-56 rounded-lg object-cover md:w-full" src={examOne} alt="" />
                         </div>
@@ -86,7 +96,55 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                    <div class="mx-auto my-10 flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
+                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
+                        <div class="mb-4 md:mr-6 md:mb-0">
+                            <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
+                        </div>
+                        <div class="w-1/2 flex flex-col justify-between h-full">
+                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
+                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
+                            <div className="flex justify-between gap-4">
+                                <div className="flex flex-col text-sm justify-center">
+                                    <p>
+                                        <span className="text-brand-gray">INR 58999</span>
+                                    </p>
+                                    <p className="text-brand-gray">Incl. GST</p>
+                                </div>
+                                <Link
+                                    target="blank"
+                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                >
+                                    Enroll Now
+                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
+                        <div class="mb-4 md:mr-6 md:mb-0">
+                            <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
+                        </div>
+                        <div class="w-1/2 flex flex-col justify-between h-full">
+                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
+                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
+                            <div className="flex justify-between gap-4">
+                                <div className="flex flex-col text-sm justify-center">
+                                    <p>
+                                        <span className="text-brand-gray">INR 58999</span>
+                                    </p>
+                                    <p className="text-brand-gray">Incl. GST</p>
+                                </div>
+                                <Link
+                                    target="blank"
+                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                >
+                                    Enroll Now
+                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
                         <div class="mb-4 md:mr-6 md:mb-0">
                             <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
                         </div>
@@ -112,7 +170,17 @@ export default function Services() {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
+            {/* End of courses section */}
+
+            {/* Courses cards in single row */}
+            <h1 className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">COURSES</h1>
+            <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
+                <Card title="CIA all 3 Parts with Gleim Content" image={examOne} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo = "https://pages.razorpay.com/CIASessions"/>
+                <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/>
+                <Card title="CIA Part 2 with Gleim Content" image={examTwo} text={"Strengthen your skills in risk management, governance, and control processes"}/>
+                <Card title="CIA Part 3 with Gleim Content" image={examTwo} text={"Gain expertise in business acumen, financial management, and data analytics"}/>
+            </div>
 
             {/* Testimonials */}
             <section class="bg-gray-200 py-8 dark:bg-gray-900">
@@ -179,28 +247,29 @@ export default function Services() {
             <div className="md:mt-20 md:mb-20 w-full">
                 <div className="flex justify-center">
                     <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
+                        <h1 className="text-2xl md:col-span-2 px-10 md:text-4xl black font-bold mb-8">CIA All Parts with Gleim Content as Per the New Syllabus</h1>
                         <div className="flex flex-col px-10">
-                            <h1 className="text-2xl md:text-4xl black font-bold mb-8">From Learning to Leadership!</h1>
                             <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><FaMoneyBillTrendUp className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Earn competitive pay with great growth potential</span>
+                                <span><SiGoogleclassroom className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Live Classes</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><MdOutlineSecurity className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Enjoy stability in a thriving industry</span>
+                                <span><IoBookOutline className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Gleim Soft Book + 1000+ MCQs</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><RiGlobalFill className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
-                                <span className="text-black font-semibold">Build a career with worldwide opportunities</span>
+                                <span><CgNotes className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
+                                <span className="text-black font-semibold">Class Notes + In-Class MCQs</span>
                             </div>
                             <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><BsGraphUpArrow className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Progress from entry-level to leadership roles</span>
+                                <span><IoTimerOutline className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
+                                <span className="text-black font-semibold">Offer valid till 15th April only!</span>
                             </div>
                         </div>
                         <div className="flex items-center justify-center relative">
                             <Link
-                                to={"/contact"}
+                                to={"https://pages.razorpay.com/CIASessions"}
+                                target="_blank"
                                 className="flex items-center justify-center rounded-xl bg-[#E0C4A8] px-16 py-8 text-center text-3xl font-medium text-gray-800 hover:bg-[#D4B190] transition ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
                             >
                                 Enroll Now

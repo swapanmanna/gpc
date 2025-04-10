@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import hero2 from "../../assets/image-removebg-preview.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Companies from "../companies/Companies";
@@ -27,6 +27,7 @@ import Testimonials from "../testimonials/Testimonials";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
+import successStoriesHero from "../../assets/Success-stories-hero-2.webp";
 
 
 export default function SuccessStories() {
@@ -34,7 +35,7 @@ export default function SuccessStories() {
     return (
         <>
             <section className="w-full bg-brand-blue flex justify-center items-center h-screen"> 
-                <div className="py-[161px] md:grid md:grid-cols-2 md:max-w-[72rem] md:mx-auto">
+                <div className="py-[161px] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
                     <div className="relative flex justify-center h-full items-center gap-32">
                         <div className="flex flex-col justify-center">
                             <h1 className="font-bold text-4xl pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
@@ -44,23 +45,22 @@ export default function SuccessStories() {
                             </div>
                         </div>
                     </div>
-                    <img src={hero2} className="h-[500px] absolute right-[13rem] transform scale-110 top-[8.5rem]"></img>
+                    <img src={successStoriesHero} className="h-[450px] rounded-xl"></img>
                 </div>
             </section>
-            <div className="mx-auto max-w-2xl text-center mt-[140px] mb-20">
+            <div className="mx-auto text-center pt-[140px] pb-20 bg-gray-50">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
                     What Our Students Say
                 </h2>
             </div>
 
             <SuccessTestimonials start={0} end={8} /> {/* First 8 testimonials */}
-            <Companies />
-            <h2 className="font-display text-center text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl mb-12">
+            <ExamTestimonials />
+            <h2 className="font-display text-center text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl pb-12 bg-gray-50">
                     More Success Stories
             </h2>
             <SuccessTestimonials start={8} end={20} /> {/* Remaining 13 testimonials */}
-            <ExamTestimonials />
-            {/* <div className="mb-20"></div> */}
+            <div className="pb-20 bg-gray-50"></div>  
 
         </>
     );

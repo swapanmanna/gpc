@@ -11,6 +11,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import Companies from "../companies/Companies";
 
 export default function AboutUs() {
     return (
@@ -49,7 +50,7 @@ export default function AboutUs() {
                                         class="text-brand-dark text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
                                         Our Mission</h2>
                                     <p class="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">
-                                    Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. Headquartered in India and affiliated with The Institute of Internal Auditors, we specialize in preparing individuals for prestigious credentials like the Certified Internal Auditor (CIA), which is widely regarded as the gold standard in the risk assurance and advisory domain. </p>
+                                    Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. We specialize in preparing individuals for prestigious programs, including the Certified Internal Auditor (CIA), Certification in Risk Management Assurance (CRMA), Internal Audit Practitioner (IAP), and Certified Information Systems Auditor (CISA), each widely regarded as the gold standard in the risk assurance and advisory domain. </p>
                                 </div>
                                 {/* <div class="w-full lg:justify-start md:justify-center sm:gap-10 gap-5 flex">
                                     <div class="flex-col w-1/4 justify-start items-start inline-flex">
@@ -101,9 +102,9 @@ export default function AboutUs() {
 
 
                             </div>
-                            <Link to="https://pages.razorpay.com/CIASessions" target="blank"><button
+                            <Link to="/courses"><button
                                 class="sm:w-fit w-full px-6 py-3 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                                <span class="text-white font-bold leading-6">Join Us</span>
+                                <span class="text-white font-bold leading-6">Explore our Programs</span>
                             </button></Link>
                         </div>
                     </div>
@@ -141,7 +142,7 @@ export default function AboutUs() {
                             <path d="M16 16C16 17.1046 15.1046 18 14 18C12.8954 18 12 17.1046 12 16C12 14.8954 12.8954 14 14 14C15.1046 14 16 14.8954 16 16Z" stroke="currentColor" strokeWidth="1.5" />
                         </svg>
                         <h1 className="pt-4 text-xl font-bold text-brand-dark">Globally Recognized Certification</h1>
-                        <p className="pt-2 text-brand-gray font-semibold">Our CIA program is internationally accredited, opening doors to opportunities across borders and industries, with endorsements from top companies. </p>
+                        <p className="pt-2 text-brand-gray font-semibold">Our programs is internationally accredited, opening doors to opportunities across borders and industries, with endorsements from top companies. </p>
                     </div>
                     <div className="col-span-1 border border-gray-400 rounded-2xl shadow-lg flex flex-col py-8 px-8 transform transition-transform duration-300 hover:scale-105">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={45} height={45} fill={"none"} className="text-brand-blue">
@@ -176,12 +177,12 @@ export default function AboutUs() {
             </section>
             
             <section class="bg-gray-50 dark:bg-gray-900">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 ">
                     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">Experienced Course Mentor</h2>
-                        <h4 className="text-xl font-semibold">Most Renowned Faculty in India for CIA</h4>
+                        <h4 className="text-xl font-semibold">Most Renowned Faculty in India</h4>
                     </div> 
-                    <div class="grid gap-8 mb-6 lg:mb-16 md:flex md:items-center md:justify-center">
+                    <div class="grid gap-8 md:flex md:items-center md:justify-center">
                         <div class="items-center bg-gray-100 rounded-lg shadow-lg sm:flex dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105">
                             <a href="#">
                                 <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-72 object-cover" src={arpitGarg} alt="Arpit-Garg-image" />
@@ -208,39 +209,7 @@ export default function AboutUs() {
                     </div>  
                 </div>
             </section>
-            <section class="bg-gray-200 py-14 dark:bg-gray-900">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-                    <div class="mx-auto max-w-screen-sm">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">What Our Students Say</h2>
-                    </div> 
-                    <div class="grid mb-8 mt-16 lg:mb-12 lg:grid-cols-2 gap-4">
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border border-gray-400 rounded-xl md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl text-brand-gray dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-600 dark:text-white">Truly an outstanding learning experience, practice MCQs after each topic solidified my understanding. Exceptional guidance and learning! </h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialTwo} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Starwin PJ</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Wells Fargo, AVP</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border rounded-xl border-gray-400 md:p-12 dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-brand-gray dark:text-white">Excellent faculty with comprehensive coverage and extensive MCQ practice. Revisions through the LMS are incredibly helpful.</h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialOne} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Ashoor Marikar</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Atlas Corp., Associate Manager</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                    </div>
-                </div>
-        </section>                                                          
+            <Companies />                                                        
         </>
     )
 }
