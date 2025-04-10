@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import heroGirl from '../../assets/hero-girl.webp';
-import heroGirlCorrectedTwo from '../../assets/heroGirlCorrectedTwo.png';
-import heroGirlThree from "../../assets/heroGirlThree.png"
 import { Link } from "react-router-dom";
 import examOne from "../../assets/exam-1.webp";
 import examTwo from "../../assets/exam-2.webp";
@@ -10,20 +7,16 @@ import testimonialTwo from "../../assets/testimonial-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
-import { FaMoneyBillTrendUp } from "react-icons/fa6";
-import { MdOutlineSecurity } from "react-icons/md";
-import { RiGlobalFill } from "react-icons/ri";
-import { BsGraphUpArrow } from "react-icons/bs";
 import coursesPhoto from "../../assets/Courses-photo.png";
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoBookOutline } from "react-icons/io5";
 import { CgNotes } from "react-icons/cg";
 import { IoTimerOutline } from "react-icons/io5";
-import speakerIcon from "../../assets/speaker.png";
-import surpriseIcon from "../../assets/surprise.png";
-import networkingIcon from "../../assets/networking.png";
-import requestIcon from "../../assets/request.png";
 import Card from "../Card/Card";
+import cisaLogo from "../../assets/cisa-logo-1.png"
+import ciaLogo from "../../assets/cia-logo.webp"
+import iapLogo from "../../assets/iap-logo-cropped.webp"
+import crmaLogoOne from "../../assets/crma-logo-1.png"
 
 export default function Services() {
     useEffect(() => {
@@ -176,10 +169,10 @@ export default function Services() {
             {/* Courses cards in single row */}
             <h1 className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">COURSES</h1>
             <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
-                <Card title="CIA all 3 Parts with Gleim Content" image={examOne} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo = "https://pages.razorpay.com/CIASessions"/>
-                <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/>
-                <Card title="CIA Part 2 with Gleim Content" image={examTwo} text={"Strengthen your skills in risk management, governance, and control processes"}/>
-                <Card title="CIA Part 3 with Gleim Content" image={examTwo} text={"Gain expertise in business acumen, financial management, and data analytics"}/>
+                <Card title="CIA all 3 Parts with Gleim Content" image={ciaLogo} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo = "https://pages.razorpay.com/CIASessions" imageStyle={"object-cover w-full"}/>
+                <Card title="CIA Part 1 with Gleim Content" image={cisaLogo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"} imageStyle={"object-cover w-full"}/>
+                <Card title="CIA Part 2 with Gleim Content" image={iapLogo} text={"Strengthen your skills in risk management, governance, and control processes"} imageStyle={"object-contain"}/>
+                <Card title="CIA Part 3 with Gleim Content" image={crmaLogoOne} text={"Gain expertise in business acumen, financial management, and data analytics"} imageStyle={"object-contain"}/>
             </div>
 
             {/* Testimonials */}

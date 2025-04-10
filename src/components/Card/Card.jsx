@@ -8,12 +8,12 @@ export default function Card({
     price = 23599,
     text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.",
     linkTo = "https://pages.razorpay.com/pl_PbHL4oa3lyfSzL/view", // all the 3 parts
-    // imageStyle = "h-32",
+    imageStyle = "object-cover w-full h-72",
   }) {
     return (
       <div className="relative mx-2 mb-10 md:mt-10 w-[20rem] md:w-[17.5rem] flex-col rounded-lg border border-gray-300 bg-white shadow-lg">
         <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-lg" href="#">
-          <img className = "object-cover w-full h-72" w-full src={image} alt={title} />
+          <img className = {imageStyle} src={image} alt={title} />
         </a>
         <div className="mt-4 px-5 pb-5">
             <div className="flex flex-col mb-4">
