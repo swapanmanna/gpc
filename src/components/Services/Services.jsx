@@ -1,277 +1,113 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import examOne from "../../assets/exam-1.webp";
-import examTwo from "../../assets/exam-2.webp";
-import testimonialOne from "../../assets/testimonial-1.png";
-import testimonialTwo from "../../assets/testimonial-2.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import pinkyPhoto from "../../assets/pinky-photo.jpg";
-import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import coursesPhoto from "../../assets/Courses-photo.png";
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoBookOutline } from "react-icons/io5";
 import { CgNotes } from "react-icons/cg";
 import { IoTimerOutline } from "react-icons/io5";
 import Card from "../Card/Card";
-import cisaLogo from "../../assets/cisa-logo-1.png"
-import ciaLogo from "../../assets/cia-logo.webp"
-import iapLogo from "../../assets/iap-logo-cropped.webp"
-import crmaLogoOne from "../../assets/crma-logo-1.png"
+import cisaLogo from "../../assets/cisa-logo-1.png";
+import ciaLogo from "../../assets/cia-logo.webp";
+import iapLogo from "../../assets/iap-logo-cropped.webp";
+import crmaLogoOne from "../../assets/crma-logo-1.png";
 
 export default function Services() {
-    useEffect(() => {
-        // Preload the hero image when the component mounts
-        const img = new Image();
-        img.src = coursesPhoto;
-    }, []);
+  useEffect(() => {
+    const img = new Image();
+    img.src = coursesPhoto;
+  }, []);
 
-    return (
-        <>
-            {/* Hero */}
-            <section className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
-                <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">
-                    <div className="max-w-sm md:max-w-2xl mx-auto md:mr-20 md:mt-16">
-                        <button className="px-10 py-3 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter">Globally recognised</button>
-                        <div className="relative max-w-xl mt-8">
-                            <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight font-pj text-left">
-                            Elevate Your Expertise: Master the Art of Auditing and Risk Management
-                            </p>
-                            <h1 className="pt-6 md:text-2xl text-gray-50">Discover our prestigious certifications, meticulously crafted to propel your career to new heights of excellence and recognition. </h1>
-                        </div>
-
-                        <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
-                            <Link
-                                to="https://pages.razorpay.com/CIASessions"
-                                target='blank'
-                                title=""
-                                className="inline-flex items-center justify-center w-full px-12 py-3 text-xl font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                                role="button"
-                            >
-                                Enroll Now
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="pb-12">
-                        <div className="relative">
-                            <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-110">
-                                <img className="h-[500px] rounded-md hidden md:block" src={coursesPhoto} alt="homepage hero" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Courses */}
-            {/* <section className="flex md:justify-center flex-col items-center md:my-20">
-                <h1 className="text-4xl font-bold text-brand-blue mb-10">COURSES</h1>
-                <div className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-8">
-                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
-                        <div class="mb-4 md:mr-6 md:mb-0">
-                            <img class="h-56 rounded-lg object-cover md:w-full" src={examOne} alt="" />
-                        </div>
-                        <div class="w-1/2 flex flex-col justify-between h-full">
-                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
-                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
-                            <div className="flex justify-between gap-4">
-                                <div className="flex flex-col text-sm justify-center">
-                                    <p>
-                                        <span className="text-brand-gray">INR 58999</span>
-                                    </p>
-                                    <p className="text-brand-gray">Incl. GST</p>
-                                </div>
-                                <Link
-                                    target="blank"
-                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
-                                >
-                                    Enroll Now
-                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
-                        <div class="mb-4 md:mr-6 md:mb-0">
-                            <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
-                        </div>
-                        <div class="w-1/2 flex flex-col justify-between h-full">
-                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
-                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
-                            <div className="flex justify-between gap-4">
-                                <div className="flex flex-col text-sm justify-center">
-                                    <p>
-                                        <span className="text-brand-gray">INR 58999</span>
-                                    </p>
-                                    <p className="text-brand-gray">Incl. GST</p>
-                                </div>
-                                <Link
-                                    target="blank"
-                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
-                                >
-                                    Enroll Now
-                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
-                        <div class="mb-4 md:mr-6 md:mb-0">
-                            <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
-                        </div>
-                        <div class="w-1/2 flex flex-col justify-between h-full">
-                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
-                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
-                            <div className="flex justify-between gap-4">
-                                <div className="flex flex-col text-sm justify-center">
-                                    <p>
-                                        <span className="text-brand-gray">INR 58999</span>
-                                    </p>
-                                    <p className="text-brand-gray">Incl. GST</p>
-                                </div>
-                                <Link
-                                    target="blank"
-                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
-                                >
-                                    Enroll Now
-                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-auto  flex max-w-xs flex-col items-center rounded-xl border px-4 py-4 text-center md:max-w-lg md:flex-row md:items-start md:text-left shadow-lg">
-                        <div class="mb-4 md:mr-6 md:mb-0">
-                            <img class="h-56 rounded-lg object-cover md:w-full" src={examTwo} alt="" />
-                        </div>
-                        <div class="w-1/2 flex flex-col justify-between h-full">
-                            <p class="text-xl font-medium text-brand-dark">CIA All 3 Parts with Gleim Content</p> 
-                            <p className="font-medium text-brand-gray mb-8">Master the complete CIA exam with expert guidance and comprehensive study materials</p>
-                            <div className="flex justify-between gap-4">
-                                <div className="flex flex-col text-sm justify-center">
-                                    <p>
-                                        <span className="text-brand-gray">INR 58999</span>
-                                    </p>
-                                    <p className="text-brand-gray">Incl. GST</p>
-                                </div>
-                                <Link
-                                    target="blank"
-                                    className="flex items-center justify-center rounded-md bg-brand-blue px-4 py-2 text-center font-medium text-white hover:bg-brand-purple focus:outline-none focus:ring-4 focus:ring-blue-300"
-                                >
-                                    Enroll Now
-                                    <FaArrowRightLong className="ml-2 h-4 w-4" />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section> */}
-            {/* End of courses section */}
-
-            {/* Courses cards in single row */}
-            <h1 className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">COURSES</h1>
-            <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
-                <Card title="CIA all 3 Parts with Gleim Content" image={ciaLogo} text={"Master the complete CIA exam with expert guidance and comprehensive study materials"} price={58999} linkTo = "https://pages.razorpay.com/CIASessions" imageStyle={"object-cover w-full"}/>
-                <Card title="CIA Part 1 with Gleim Content" image={cisaLogo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"} imageStyle={"object-cover w-full"}/>
-                <Card title="CIA Part 2 with Gleim Content" image={iapLogo} text={"Strengthen your skills in risk management, governance, and control processes"} imageStyle={"object-contain"}/>
-                <Card title="CIA Part 3 with Gleim Content" image={crmaLogoOne} text={"Gain expertise in business acumen, financial management, and data analytics"} imageStyle={"object-contain"}/>
+  return (
+    <>
+      {/* Hero */}
+      <section className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
+        <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">
+          <div className="max-w-sm md:max-w-2xl mx-auto md:mr-20 md:mt-16">
+            <button className="px-10 py-3 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter">
+              Globally recognised
+            </button>
+            <div className="relative max-w-xl mt-8">
+              <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight font-pj text-left">
+                Elevate Your Expertise: Master the Art of Auditing and Risk Management
+              </p>
+              <h1 className="pt-6 md:text-2xl text-gray-50">
+                Discover our prestigious certifications, meticulously crafted to propel your career to new heights of excellence and recognition.
+              </h1>
             </div>
 
-            {/* Testimonials */}
-            <section class="bg-gray-200 py-8 dark:bg-gray-900">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-                    {/* Header before Testimonials */}
-                    <div class="mx-auto max-w-screen-sm">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">What Our Students Say</h2>
-                    </div> 
-
-                    {/* Testimonials container starts */}
-                    <div class="grid mb-8 mt-16 lg:mb-12 lg:grid-cols-2 gap-4">
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border border-gray-400 rounded-xl md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl text-brand-gray dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-600 dark:text-white">Truly an outstanding learning experience, practice MCQs after each topic solidified my understanding. Exceptional guidance and learning! </h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialTwo} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Starwin PJ</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Wells Fargo, AVP</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border rounded-xl border-gray-400 md:p-12 dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-brand-gray dark:text-white">Excellent faculty with comprehensive coverage and extensive MCQ practice. Revisions through the LMS are incredibly helpful.</h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={testimonialOne} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Ashoor Marikar</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Atlas Corp., Associate Manager</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border rounded-xl border-gray-400 md:p-12 dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-brand-gray dark:text-white">The learning modules are well-structured, making complex topics easy to understand. The practice tests provided a solid foundation for exam preparation.</h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={pinkyPhoto} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Pinky Agarwal</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">Emami Limited, Head Internal Audit</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border rounded-xl border-gray-400 md:p-12 dark:bg-gray-800 dark:border-gray-700 shadow-lg transform transition-transform duration-300 hover:scale-105">
-                            <blockquote class="mx-auto mb-8 max-w-2xl dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-brand-gray dark:text-white">The faculty's expertise and personalized guidance made the learning process seamless. The extensive practice questions helped me build confidence for the exam.</h3>
-                            </blockquote>
-                            <figcaption class="flex justify-center items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full" src={akshdeepSingh} alt="profile picture" />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
-                                    <div className="text-brand-dark">Akshdeep Singh</div>
-                                    <div class="text-sm font-light text-brand-gray dark:text-gray-400">KPMG, Manager</div>
-                                </div>
-                            </figcaption>    
-                        </figure>
-                    </div>
-                </div>
-            </section> 
-
-            <div className="md:mt-20 md:mb-20 w-full">
-                <div className="flex justify-center">
-                    <div className=" bg-[#ffebcd] grid grid-cols-1 grid-cols-2 md:w-[72rem] py-10 rounded-2xl shadow-xl">
-                        <h1 className="text-2xl md:col-span-2 px-10 md:text-4xl black font-bold mb-8">CIA All Parts with Gleim Content as Per the New Syllabus</h1>
-                        <div className="flex flex-col px-10">
-                            <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><SiGoogleclassroom className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Live Classes</span>
-                            </div>
-                            <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><IoBookOutline className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Gleim Soft Book + 1000+ MCQs</span>
-                            </div>
-                            <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><CgNotes className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
-                                <span className="text-black font-semibold">Class Notes + In-Class MCQs</span>
-                            </div>
-                            <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><IoTimerOutline className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Offer valid till 15th April only!</span>
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center relative">
-                            <Link
-                                to={"https://pages.razorpay.com/CIASessions"}
-                                target="_blank"
-                                className="flex items-center justify-center rounded-xl bg-[#E0C4A8] px-16 py-8 text-center text-3xl font-medium text-gray-800 hover:bg-[#D4B190] transition ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
-                            >
-                                Enroll Now
-                                <FaArrowRightLong className="ml-2 h-8 w-8" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+            <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
+              <Link
+                to="https://pages.razorpay.com/CIASessions"
+                target="_blank"
+                title=""
+                className="inline-flex items-center justify-center w-full px-12 py-3 text-xl font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                Enroll Now
+              </Link>
             </div>
-        </>
-    )
+          </div>
+          <div className="pb-12">
+            <div className="relative">
+              <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-110">
+                <img
+                  className="h-[500px] rounded-md hidden md:block"
+                  src={coursesPhoto}
+                  alt="homepage hero"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Courses cards in single row */}
+      <h1 className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">
+        COURSES WE OFFER
+      </h1>
+      <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
+        <Card
+          title="CIA all 3 Parts with Gleim Content"
+          image={ciaLogo}
+          text="Master the complete CIA exam with expert guidance and comprehensive study materials"
+          price={58999}
+          linkTo="/courses/cia" // Internal route for CIA details
+          enrollLink="https://pages.razorpay.com/CIASessions" // External enrollment link
+          imageStyle="object-cover w-full"
+          gst="Plus GST"
+        />
+        <Card
+          title="Certified Informations Systems Auditor (CISA)"
+          image={cisaLogo}
+          text="Become a certified expert in IT auditing and risk management with our comprehensive CISA course"
+          price={19999}
+          linkTo="#" // Internal route for Part 1 details
+          enrollLink="#" // External enrollment link
+          imageStyle="object-cover w-full"
+          gst="Plus GST"
+        />
+        <Card
+          title="Internal Audit Practioner (IAP)"
+          image={iapLogo}
+          text="Showcase your audit skills and start your CIA journey with our Internal Audit Practitioner course covering audit fundamentals and risk assessment."
+          price={20000}
+          linkTo="#" // Internal route for Part 2 details
+          enrollLink="#" // External enrollment link
+          imageStyle="object-contain"
+          gst="Plus GST"
+        />
+        <Card
+          title="Certification in Risk Management Assurance"
+          image={crmaLogoOne}
+          text="Boost your career in risk management with our CRMA course, focused on assurance, governance, and risk mitigation"
+          price={25000}
+          linkTo="#" // Internal route for Part 3 details
+          enrollLink="#" // External enrollment link
+          imageStyle="object-contain"
+          gst="Plus GST"
+        />
+      </div>
+    </>
+  );
 }

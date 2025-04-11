@@ -8,7 +8,6 @@ import examOne from "../../assets/exam-1.webp";
 import examTwo from "../../assets/exam-2.webp";
 import examThree from "../../assets/exam-3.webp";
 import examFour from "../../assets/exam-4.webp";
-import Testimonials from "../testimonials/Testimonials";
 import Companies from "../companies/Companies";
 import VideoSection from "../VideoSection/VideoSection";
 
@@ -18,7 +17,7 @@ export default function Home() {
             <Hero />
             <Companies />
             <VideoSection />
-            <div className="max-w-sm md:max-w-[52rem] mx-auto md:mt-40 mt-24">
+            {/* <div className="max-w-sm md:max-w-[52rem] mx-auto md:mt-40 mt-24">
                 <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Enrollment (All 3 Parts), Your Path to Success</h1>
                 <h2 className="text-center text-xl md:text-2xl font-semibold mb-16 md:mb-8 mt-8 text-brand-dark">Earn the Certified Internal Auditor (CIA) certification and accelerate your career with global recognition, high salaries, and job security</h2>
             </div>
@@ -27,7 +26,7 @@ export default function Home() {
                 <Card title="CIA Part 1 with Gleim Content" image={examTwo} text={"Build a strong foundation in internal audit essentials with in-depth preparation"}/>
                 <Card title="CIA Part 2 with Gleim Content" image={examThree} text={"Strengthen your skills in risk management, governance, and control processes"}/>
                 <Card title="CIA Part 3 with Gleim Content" image={examFour} text={"Gain expertise in business acumen, financial management, and data analytics"}/>
-            </div>
+            </div> */}
             <Benefits />
             <Training />
             <Demand />

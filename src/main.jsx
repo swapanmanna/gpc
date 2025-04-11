@@ -16,6 +16,7 @@ import RefundPolicy from './components/Refund/RefundPolicy.jsx';
 import SuccessStories from './components/SuccessStories/SuccessStories.jsx';
 import Services from './components/Services/Services.jsx';
 import Events from "./components/Events/Events.jsx";
+import Cia from './components/Courses/Cia.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,10 +27,9 @@ const router = createBrowserRouter(
       <Route path="privacy" element={<PrivacyPolicy />}/>
       <Route path="contact" element={<ContactUs />}/>
       <Route path="refund" element={<RefundPolicy />}/>
-      {/* <Route path="login" element={<Login />}/>
-      <Route path="register" element={<Register />}/> */}
       <Route path="success" element={<SuccessStories />}/>
-      <Route path="courses" element={<Services />}/>
+      <Route path="courses" element={<Services />} />
+      <Route path="courses/cia" element={<Cia />}/>
       <Route path="events" element={<Events />} />
     </Route>
   )
