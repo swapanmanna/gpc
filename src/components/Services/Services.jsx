@@ -11,6 +11,7 @@ import cisaLogo from "../../assets/cisa-logo-1.png";
 import ciaLogo from "../../assets/cia-logo.webp";
 import iapLogo from "../../assets/iap-logo-cropped.webp";
 import crmaLogoOne from "../../assets/crma-logo-1.png";
+import { FaArrowTurnDown } from "react-icons/fa6";
 
 export default function Services() {
   useEffect(() => {
@@ -37,15 +38,14 @@ export default function Services() {
             </div>
 
             <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
-              <Link
-                to="https://pages.razorpay.com/CIASessions"
-                target="_blank"
+              <a
+                href="#courses"
                 title=""
-                className="inline-flex items-center justify-center w-full px-12 py-3 text-xl font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                className="relative inline-flex items-center justify-center w-full pl-8 pr-12 pt-3 pb-5 text-xl font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
-                Enroll Now
-              </Link>
+                Kickstart your Career <span><FaArrowTurnDown className="absolute bottom-4 ml-2 font-semibold" /></span>
+              </a>
             </div>
           </div>
           <div className="pb-12">
@@ -63,7 +63,7 @@ export default function Services() {
       </section>
 
       {/* Courses cards in single row */}
-      <h1 className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">
+      <h1 id="courses" className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">
         COURSES WE OFFER
       </h1>
       <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
@@ -75,7 +75,7 @@ export default function Services() {
           linkTo="/courses/cia" // Internal route for CIA details
           enrollLink="https://pages.razorpay.com/CIASessions" // External enrollment link
           imageStyle="object-cover w-full"
-          gst="Plus GST"
+          gst="Including GST"
         />
         <Card
           title="Certified Informations Systems Auditor (CISA)"
@@ -90,7 +90,7 @@ export default function Services() {
         <Card
           title="Internal Audit Practioner (IAP)"
           image={iapLogo}
-          text="Showcase your audit skills and start your CIA journey with our Internal Audit Practitioner course covering audit fundamentals and risk assessment."
+          text="Kickstart your CIA journey with our IAP course—covering audit fundamentals and risk assessment"
           price={20000}
           linkTo="#" // Internal route for Part 2 details
           enrollLink="#" // External enrollment link
@@ -100,7 +100,7 @@ export default function Services() {
         <Card
           title="Certification in Risk Management Assurance"
           image={crmaLogoOne}
-          text="Boost your career in risk management with our CRMA course, focused on assurance, governance, and risk mitigation"
+          text="Advance your risk career with our CRMA course on assurance, governance, and mitigation"
           price={25000}
           linkTo="#" // Internal route for Part 3 details
           enrollLink="#" // External enrollment link
