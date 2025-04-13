@@ -56,7 +56,7 @@ export default function SuccessStories() {
                             <h1 className="font-bold text-4xl pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
                             <h3 className="font-semibold text-2xl pb-8 text-gray-50">Join over 250 professionals who have elevated their careers with the Certified Internal Auditor (CIA) certification.</h3>
                             <div className="flex gap-4">
-                                <a href="#testimonials"><button className="py-4 px-8 text-lg bg-orange-500 text-gray-50 font-semibold transition ease-in-out duration-300 hover:bg-gray-50 hover:text-black rounded-md">Read Testimonials below</button></a>
+                                <a href="#testimonials"><button className="py-3 px-6 text-xl bg-orange-500 text-gray-50 font-semibold transition ease-in-out duration-300 hover:bg-gray-50 hover:text-black rounded-lg">Read Testimonials below</button></a>
                             </div>
                         </div>
                     </div>

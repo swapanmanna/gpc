@@ -8,11 +8,11 @@ export default function ContactUs() {
                     <div className="lg:flex lg:justify-center lg:items-center">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div className="mb-12 max-w-[500px] lg:mb-0">
-                            <span className="block mb-4 text-xl font-bold text-brand-purple">
+                            <span className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[12rem] border border-[#5033FF] rounded-lg text-sm font-bold">
                             Contact Us
                             </span>
                             <h2
-                                className="text-brand-blue dark:text-white mb-4 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+                                className="mt-4 text-brand-blue dark:text-white mb-4 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]"
                                 >
                                 GET IN TOUCH WITH US
                             </h2>

@@ -25,7 +25,7 @@ export default function Services() {
       <section className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
         <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">
           <div className="max-w-sm md:max-w-2xl mx-auto md:mr-20 md:mt-16">
-            <button className="px-10 py-3 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter">
+            <button className="px-10 py-3 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transform hover:scale-105 transition duration-300 ease-in-out">
               Globally recognised
             </button>
             <div className="relative max-w-xl mt-8">

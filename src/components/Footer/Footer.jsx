@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold tracking-widest text-gray-50 uppercase">Help</p>
+                        <p className="text-sm font-semibold tracking-widest text-gray-50 uppercase">legal</p>
 
                         <ul className="mt-6 space-y-4">
                             <li>
