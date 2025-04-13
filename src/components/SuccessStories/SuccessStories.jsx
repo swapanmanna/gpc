@@ -62,7 +62,7 @@ export default function SuccessStories() {
                     </div>
                     <div className="flex flex-col"> {/* Wrap image and caption in a flex container */}
                         <img src={passoutStudents} className="h-[450px] rounded-xl mb-2"></img> {/* Added margin-bottom */}
-                        <p className="text-gray-50 text-sm">Pass out students from our community at the IIA Bombay International conference</p> {/* Caption */}
+                        <p className="text-gray-50 text-sm">Pass out students from our community at the IIA Bombay International Conference</p> {/* Caption */}
                     </div>
                 </div>
             </section>

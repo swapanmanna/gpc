@@ -176,7 +176,7 @@ export default function AboutUs() {
                 </div>
             </section>
             
-            <section class="bg-gray-50 dark:bg-gray-900">
+            <section class="bg-gray-50 dark:bg-gray-900 pb-20">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 ">
                     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">Experienced Course Mentor</h2>
@@ -209,7 +209,7 @@ export default function AboutUs() {
                     </div>  
                 </div>
             </section>
-            <Companies />                                                        
+            {/* <Companies />                                                         */}
         </>
     )
 }

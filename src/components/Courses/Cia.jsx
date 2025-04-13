@@ -11,6 +11,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { CgNotes } from "react-icons/cg";
 import { IoTimerOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ciaHero from "../../assets/cia-hero.jpg";
 
 const Cia = () => {
     useEffect(() => {
@@ -22,11 +23,11 @@ const Cia = () => {
     return (
         <>
             <div className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
-                <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">
-                    <div className="max-w-sm md:max-w-2xl mx-auto md:mr-20 md:mt-16">
+                <div className="md:py-32 pt-32 mx-auto md:max-w-8xl md:flex md:justify-center md:items-center">
+                    <div className="max-w-sm md:max-w-2xl mx-auto">
                         {/* <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-200 ease-in-out">Globally recognised</button> */}
-                        <div className="relative max-w-xl mt-8">
-                            <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj text-left">
+                        <div className="relative max-w-xl">
+                            <p className="text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj text-left">
                                 Become a <span className="text-orange-500">Globally Recognised</span> Certified Internal Auditor
                             </p>
                             <h1 className="pt-6 md:text-lg text-gray-50">Our comprehensive CIA course prepares you for the certification exam, covering internal audit principles, practices, and standards. Gain expertise in risk management, control, and governance, and enhance your career prospects in internal audit. Join over 1000 professionals who have advanced their careers with our expert mentorship! </h1>
@@ -46,8 +47,8 @@ const Cia = () => {
                     </div>
                     <div className="pb-12">
                         <div className="relative">
-                            <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-125">
-                                <img className="h-[500px] rounded-md hidden md:block" src={heroGirl} alt="homepage hero" />
+                            <div className="relative mx-auto ml-[80px] lg:max-w-6xl">
+                                <img className="h-[500px] rounded-lg hidden md:block" src={ciaHero} alt="homepage hero" />
                             </div>
                         </div>
                     </div>
