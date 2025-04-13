@@ -5,7 +5,7 @@ At **Global Professional Certifications (GPC)**, we are dedicated to empowering 
 
 ## Tech Stack Used for This Project
 - React -> Javascript library
-- Tailwind CSS -> CSS framework
+- Tailwind -> CSS framework
 
 ## Watch This Video to Learn More About Global Professional Certifications
 [![Watch the video](https://img.youtube.com/vi/2FWaO_Cf0eg/maxresdefault.jpg)](https://www.youtube.com/watch?v=2FWaO_Cf0eg)
