@@ -1,13 +1,8 @@
 import React from "react";
-import speakerIcon from "../../assets/speaker.png";
-import surpriseIcon from "../../assets/surprise.png";
-import networkingIcon from "../../assets/networking.png";
-import requestIcon from "../../assets/request.png";
 import thumbImage from "../../assets/thumb.png";
 import meetingIcon from "../../assets/meeting.png";
 import dealIcon from "../../assets/deal.png";
 import phoneIcon from "../../assets/phone-call.png";
-import { FiPhone } from "react-icons/fi";
 import schedule from "../../assets/schedule.jpg";
 import scheduleTwo from "../../assets/schedule-2.jpg";
 import scheduleThree from "../../assets/schedule-3.jpg";
@@ -16,16 +11,18 @@ import { MdOutlineAccessTime } from "react-icons/md";
 import user from "../../assets/user.jpg";
 import userTwo from "../../assets/user-2.jpg";
 import userThree from "../../assets/user-3.jpg";
+import { FaHandshakeAngle } from "react-icons/fa6";
+import { MdTipsAndUpdates } from "react-icons/md";
 
 export default function Events(){
     return (
         <>
             <div className="mt-[64px">
-                <div className="relative flex h-screen bg-[url('assets/slider.jpg')] bg-cover bg-center">
+                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
                     <h1 className="absolute top-[200px] left-[180px] text-5xl text-white font-bold">Global Professional Certifications</h1>
                 </div>
             </div>
-            <section className="w-full bg-brand-blue">
+            {/* <section className="w-full bg-brand-blue">
                 <div className="flex gap-6 max-w-[77rem] mx-auto py-20">
                     <div className="flex flex-col items-center text-center bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <img src={speakerIcon} className="h-16 w-16 mb-4" />
@@ -60,38 +57,40 @@ export default function Events(){
                         </h2>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[77rem] mx-auto text-[#141418]">
                 <div>
                     <img src={thumbImage} className="pt-16"></img>
                 </div>
                 <div className="flex flex-col gap-6">
-                    <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[12rem] border border-[#5033FF] rounded-lg text-sm font-bold">ABOUT THIS MEETUP</button>
-                    <h3 className="text-5xl font-bold">Why you should join our Event Program</h3>
-                    <p className="font-bold text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita laboriosam iusto, quos non aut, magni laborum in atque aliquid, deleniti sapiente nisi necessitatibus praesentium iure?</p>
+                    <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR EVENTS</button>
+                    <h3 className="md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
+                    <p className="font-bold text-lg">At Global Professional Certifications, we don’t just talk about growth—we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div className="flex flex-col w-full gap-4 border-r border-r-4 border-r-gray-200">
                             {/* <div className="bg-[#EFECFF] rounded-none"> Removed padding and adjusted rounding */}
-                                <img src={meetingIcon} className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl" />
-                                <p className="text-xl font-bold">6000+ people's In person Meet-up</p>
+                                {/* <img src={meetingIcon} className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl" /> */}
+                                <FaHandshakeAngle className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
+                                <p className="text-xl font-bold">Listen to our Mentor</p>
                             {/* </div> */}
                         </div>
                         <div className="flex flex-col gap-4">
                             {/* <div className="inline-flex bg-[#EFECFF] rounded-none"> Removed padding and adjusted rounding */}
-                                <img src={dealIcon} className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl" />
-                                <p className="text-xl font-bold">Connect with Industry Leaders</p>
+                                {/* <img src={dealIcon} className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl" /> */}
+                                <MdTipsAndUpdates className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
+                                <p className="text-xl font-bold">Get latest updates</p>
                             {/* </div> */}
                         </div>
                     </div>
-                    <p className="text-[#444444]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio expedita enim, voluptates facilis voluptatibus fugiat, ut quasi cum perspiciatis, sunt provident eius eligendi omnis quae iure dolore dolorum fuga? Incidunt.</p>
+                    <p className="text-[#444444]">Joining us at events isn’t just about attending—it’s about engaging, evolving, and becoming part of a powerful global community.</p>
                     <div className="flex gap-6">
-                        <button className="px-6 py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-lg rounded-lg font-semibold">ENROLL NOW</button>
+                        <button className="px-6 py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-lg rounded-lg font-semibold">JOIN US</button>
                         <div className="flex gap-2">
                             <img src={phoneIcon} className="h-14 w-14 bg-brand-purple rounded-full p-3"></img>
                             <div className="flex flex-col">
                                 <p>Call Us:</p>
-                                <p className="font-bold font-md">+91 7827597250</p>
+                                <p className="font-bold font-md">+917827597250</p>
                             </div>
                         </div>
                     </div>
@@ -101,13 +100,14 @@ export default function Events(){
 
             <div className="bg-[url('assets/bg.jpg')]">
             <section className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
-                <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold">EVENT SCHEDULE</button>
-                <h4 className="text-3xl md:text-5xl font-bold">Our Events Schedule Plan</h4>
-                <p className="w-[520px] text-center text-[#444444] text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, rem repellendus corporis ullam magnam sit!</p>
+                <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR PAST EVENTS</button>
+                <h4 className="text-3xl md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
+                <p className="w-[600px] text-center text-[#444444] text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we’ve been a part of.</p>
                 <div className="max-w-[700px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
-                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold">Digital Marketing</button>
-                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold">Marketing Strategy</button>
-                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold">Modern Trend of Marketing</button>
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Mumbai</button>
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Bengaluru</button>
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Kolkata</button>
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">WOFA 2025</button>
                 </div>
                 <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
                     <div className="flex gap-8 max-w-[77rem]">

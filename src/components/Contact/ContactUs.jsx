@@ -8,7 +8,7 @@ export default function ContactUs() {
                     <div className="lg:flex lg:justify-center lg:items-center">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div className="mb-12 max-w-[500px] lg:mb-0">
-                            <span className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[12rem] border border-[#5033FF] rounded-lg text-sm font-bold">
+                            <span className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[12rem] border border-[#5033FF] rounded-lg text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">
                             Contact Us
                             </span>
                             <h2
