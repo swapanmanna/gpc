@@ -62,7 +62,7 @@ export default function SuccessStories() {
                     </div>
                     <div className="flex flex-col"> {/* Wrap image and caption in a flex container */}
                         <img src={passoutStudents} className="h-[450px] rounded-xl mb-2"></img> {/* Added margin-bottom */}
-                        <p className="text-gray-50 text-sm">Pass out students from our community at the IIA Bombay International Conference</p> {/* Caption */}
+                        <p className="text-gray-400 text-sm">Pass out students from our community at the IIA Bombay International Conference</p> {/* Caption */}
                     </div>
                 </div>
             </section>
@@ -159,7 +159,7 @@ const ExamTestimonials = () => {
         <section id="testimonials" aria-label="What our customers are saying" className="bg-gray-50 pb-20 md:pb-[140px] pt-20 ">
             <div className="mx-auto max-w-sm md:max-w-[76rem] px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-3xl">
+                <h2 className="font-display text-3xl font-bold text-brand-blue sm:text-3xl">
                     Real Results from CIA Challenge Exam Training
                 </h2>
                 </div>

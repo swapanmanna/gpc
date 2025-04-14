@@ -63,10 +63,10 @@ export default function Services() {
       </section>
 
       {/* Courses cards in single row */}
-      <h1 id="courses" className="text-4xl font-bold text-brand-blue mb-10 text-center mt-20">
+      <h1 id="courses" className="text-4xl font-bold text-brand-blue mb-10 text-center mt-24">
         COURSES WE OFFER
       </h1>
-      <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-20">
+      <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-24">
         <Card
           title="CIA all 3 Parts with Gleim Content"
           image={ciaLogo}
