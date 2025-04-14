@@ -122,26 +122,26 @@ const Cia = () => {
             <div className="max-w-6xl mx-auto my-16 px-4 md:px-0">
                 <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-brand-blue">CIA Exam Structure</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
                         <h2 className="text-2xl font-bold text-brand-blue mb-2 text-center">CIA Part 1</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Fundamentals</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">125 questions, 2.5 Hours</p>
-                        <p className="text-gray-700 mt-2">Topics: Foundations of Internal Auditing (35%), Ethics and Professionalism (20%), Governance, Risk Management, and Control (30%), Fraud Risks (15%)</p>
+                        <p className="text-gray-700">125 questions | 2.5 Hours</p>
+                        <p className="text-gray-700 mt-2"><span className="text-gray-800 font-bold">Topics</span>: Foundations of Internal Auditing (35%), Ethics and Professionalism (20%), Governance, Risk Management, and Control (30%), Fraud Risks (15%)</p>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="bg-white p-6 rounded-lg sshadow-lg border border-gray-300">
                         <h2 className="text-2xl text-center font-bold text-brand-blue mb-2">CIA Part 2</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Engagement</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">100 questions, 2 Hours</p>
-                        <p className="text-gray-700 mt-2">Topics: Engagement Planning (50%), Information Gathering, Analysis, and Evaluation (40%), Engagement Supervision and Communication (10%)</p>
+                        <p className="text-gray-700">100 questions | 2 Hours</p>
+                        <p className="text-gray-700 mt-2"><span className="text-gray-800 font-bold">Topics</span>: Engagement Planning (50%), Information Gathering, Analysis, and Evaluation (40%), Engagement Supervision and Communication (10%)</p>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
                         <h2 className="text-2xl font-bold text-brand-blue mb-2 text-center">CIA Part 3</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Function</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">100 questions, 2 Hours</p>
-                        <p className="text-gray-700 mt-2">Topics: Internal Audit Operations (25%), Internal Audit Plans (15%), Quality of the Internal Audit Function (15%), Engagement Results and Monitoring (45%)</p>
+                        <p className="text-gray-700">100 questions | 2 Hours</p>
+                        <p className="text-gray-700 mt-2"><span className="text-gray-800 font-bold">Topics</span>: Internal Audit Operations (25%), Internal Audit Plans (15%), Quality of the Internal Audit Function (15%), Engagement Results and Monitoring (45%)</p>
                     </div>
                 </div>
             </div>
