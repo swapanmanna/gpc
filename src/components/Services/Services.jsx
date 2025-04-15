@@ -81,31 +81,31 @@ export default function Services() {
           title="Certified Informations Systems Auditor (CISA)"
           image={cisaLogo}
           text="Become a certified expert in IT auditing and risk management with our comprehensive CISA course"
-          price={19999}
+          price={23599}
           linkTo="#" // Internal route for Part 1 details
-          enrollLink="#" // External enrollment link
+          enrollLink="https://rzp.io/rzp/VuvF84x" // External enrollment link
           imageStyle="object-cover w-full"
-          gst="Plus GST"
+          gst="Including GST"
         />
         <Card
           title="Internal Audit Practioner (IAP)"
           image={iapLogo}
           text="Kickstart your CIA journey with our IAP course—covering audit fundamentals and risk assessment"
-          price={20000}
+          price={23600}
           linkTo="#" // Internal route for Part 2 details
-          enrollLink="#" // External enrollment link
+          enrollLink="https://rzp.io/rzp/C7jUKuC" // External enrollment link
           imageStyle="object-contain"
-          gst="Plus GST"
+          gst="Including GST"
         />
         <Card
           title="Certification in Risk Management Assurance"
           image={crmaLogoOne}
           text="Advance your risk career with our CRMA course on assurance, governance, and mitigation"
-          price={25000}
+          price={29500}
           linkTo="#" // Internal route for Part 3 details
-          enrollLink="#" // External enrollment link
+          enrollLink="https://rzp.io/rzp/hjuC9dj" // External enrollment link
           imageStyle="object-contain"
-          gst="Plus GST"
+          gst="Including GST"
         />
       </div>
     </>
