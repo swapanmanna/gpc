@@ -56,7 +56,7 @@ export default function Card({
   price = 23599,
   text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.",
   linkTo = "/courses/cia",
-  enrollLink = "https://pages.razorpay.com/pl_PbHL4oa3lyfSzL",
+  enrollLink = "https://rzp.io/rzp/iFUFvKph",
   imageStyle = "object-cover w-full",
   gst = "Including GST",
 }) {

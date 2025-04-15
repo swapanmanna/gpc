@@ -154,7 +154,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#f5f6fa] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        
+
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <div className="transform scale-150 md:scale-225">
@@ -226,7 +226,7 @@ const Navbar = () => {
                         key={idx}
                         to={`/courses/${option.toLowerCase()}`}
                         className={({ isActive }) =>
-                          `block px-4 py-2 font-bold text-sm text-brand-dark dark:text-white hover:bg-orange-900 dark:hover:bg-gray-700 ${isActive ? "bg-orange-800 dark:bg-gray-700" : ""}`
+                          `block px-4 py-2 font-bold text-sm text-gray-100 dark:text-white hover:bg-orange-900 dark:hover:bg-gray-700 ${isActive ? "bg-orange-800 dark:bg-gray-700" : ""}`
                         }
                         onClick={() => setIsCoursesDropdownOpen(false)}
                       >
