@@ -56,6 +56,8 @@ export default function PrivacyPolicy() {
             <br></br>
             <p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device. </p>
             <br></br>
+            <p>We also collect course data, such as responses to in-video quizzes, standalone quizzes, exams, and surveys. You should not include any Personal Data or other information of a personal or sensitive nature, whether relating to you or another person , on assignments, exams, or surveys, except for information required to participate in or submit such assignments, exams or surveys.</p>
+            <br></br>
             <h3 className="font-bold text-xl">Tracking Technologies and Cookies</h3>
             <br></br>
             <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include: </p>
@@ -123,6 +125,7 @@ export default function PrivacyPolicy() {
                 <li><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</li>
                 <li><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred. </li>
                 <li><strong>For other purposes:</strong> We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience. </li>
+                <li><strong>To keep You updated:</strong> We may use the Personal Data that you provide to respond to your questions, provide you the specific Content Offering and/or Services you select and send you updates about Content Offerings or other events.</li>
             </ul>
             <br></br>
             <p>We may share Your personal information in the following situations: </p>
