@@ -227,7 +227,7 @@ const Cia = () => {
             </div>
 
             <div className="max-w-6xl mx-auto my-24 px-4 md:px-0">
-                <div className="bg-white shadow-lg rounded-xl py-12 px-16 border border-gray-200">
+                <div className="bg-white shadow-xl rounded-xl py-12 px-16 border border-gray-200">
                     <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-10 text-brand-blue">
                     Training Program Details
                     </h1>
@@ -255,7 +255,7 @@ const Cia = () => {
             <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-md">
                 <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 text-brand-blue">Revised pricing plan 16th April 2025 onwards...</h1>
                 <p className="text-center text-2xl font-semibold text-gray-700 mb-8">
-                    Enroll for all 3 parts along with Gleim content for only ₹49,999 + GST<br></br> Or each part for ₹19,999 + GST
+                    Enroll for all 3 parts along with Gleim content for only ₹65,000 + GST<br></br> Or each part for ₹25,000 + GST
                 </p>
                 <h2 className="text-center mb-10 md:text-4xl font-semibold text-brand-blue">Enroll now to kickstart your career and stay ahead of the curve!</h2>
                 <div className="flex justify-center gap-6">
