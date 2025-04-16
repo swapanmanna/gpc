@@ -20,7 +20,7 @@ const Hero = () => {
                         <p className="relative mt-5 text-2xl md:text-4xl font-bold leading-tight text-gray-50 sm:leading-tight lg:leading-tight font-pj text-left">
                         <span className="text-orange-500">Empowering Risk Professionals</span> Worldwide with Globally Recognized Certifications
                         </p>
-                        <h1 className="pt-6 md:text-xl text-gray-50">Join a thriving community of auditors, risk managers, and advisors across the globe. With expert mentorship and industry accredited courses like CIA, CRMA, and CISA, we help professionals unlock new career heights in risk assurance and advisory. </h1>
+                        <h1 className="pt-6 md:text-xl text-gray-50">Join a thriving community of auditors, risk managers, and advisors across the globe. With expert mentorship and industry accredited courses like CIA, CRMA, IAP and CISA, we help professionals unlock new career heights in risk assurance and advisory. </h1>
                     </div>
 
                     <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
