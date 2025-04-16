@@ -12,7 +12,7 @@ export default function Home() {
         <div className="bg-gray-50">
             <Hero />
             <Companies />
-            <h1 className="md:text-4xl text-3xl mx-auto w-screen justify-center font-bold text-brand-blue mb-24 inline-flex items-end gap-2">Watch his video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
+            <h1 className="md:text-4xl text-3xl mx-auto w-screen justify-center font-bold text-brand-blue mb-24 inline-flex items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
             <VideoSection />
             {/* <div className="max-w-sm md:max-w-[52rem] mx-auto md:mt-40 mt-24">
                 <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-8 mt-16 text-brand-blue">CIA Enrollment (All 3 Parts), Your Path to Success</h1>
