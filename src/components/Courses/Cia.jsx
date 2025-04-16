@@ -177,9 +177,10 @@ const Cia = () => {
 
             <div className="max-w-6xl mx-auto my-24 px-4 md:px-0">
                 <div className="bg-white shadow-xl rounded-xl py-12 px-16 border border-gray-300">
-                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">
+                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-10 text-brand-blue">
                     Exam Logistics
                     </h1>
+                    <hr className="border-2 border-solid border-gray-300 mb-6"></hr>
                     <ul className="space-y-6 list-disc pl-8">
                     {[
                         "CIA is a 100% MCQ-based exam with no negative marking.",
@@ -253,9 +254,10 @@ const Cia = () => {
 
             <div className="max-w-6xl mx-auto my-24 px-4 md:px-0">
                 <div className="bg-white shadow-lg rounded-xl py-12 px-16 border border-gray-200">
-                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">
+                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-10 text-brand-blue">
                     Training Program Details
                     </h1>
+                    <hr className="border-2 border-solid border-gray-300 mb-6"></hr>
                     <ul className="space-y-6 list-disc pl-8">
                     {[
                         "Complete your CIA Certification within 7–8 months.",
@@ -279,7 +281,7 @@ const Cia = () => {
             <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-md">
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-8 text-brand-blue">Special Offer – Enroll Now!</h1>
                 <p className="text-center text-2xl font-semibold text-gray-700 mb-8">
-                    Enroll for all 3 parts along with Gleim content for only ₹49,999 + GST<br></br> Or each part for ₹19,999 + GST.
+                    Enroll for all 3 parts along with Gleim content for only ₹49,999 + GST<br></br> Or each part for ₹19,999 + GST
                 </p>
                 <h2 className="text-center mb-8 md:text-4xl font-semibold text-brand-blue">Offer valid till 15th April ONLY!</h2>
                 <div className="flex justify-center gap-6">
