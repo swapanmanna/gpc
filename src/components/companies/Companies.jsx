@@ -24,7 +24,7 @@ import hexawareLogo from "../../assets/hexaware-logo.png"
 import truLogo from "../../assets/tru-logo.png"
 import powerGridLogo from "../../assets/Power-Grid-Crop.jpg"
 
-import { motion } from "motion/react"
+import { motion } from "framer-motion";
 
 export default function Companies() {
     return (

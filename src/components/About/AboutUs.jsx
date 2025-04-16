@@ -5,13 +5,10 @@ import arpitGarg from "../../assets/arpit-garg.webp";
 import ourMissionOne from "../../assets/our-mission-1.webp";
 import ourMissionTwo from "../../assets/our-mission-2.webp";
 import ourVision from "../../assets/our-vision.webp";
-import testimonialOne from "../../assets/testimonial-1.webp";
-import testimonialTwo from "../../assets/testimonial-2.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import Companies from "../companies/Companies";
 
 export default function AboutUs() {
     return (

@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { FaArrowRightLong } from "react-icons/fa6";
 import coursesPhoto from "../../assets/Courses-photo.png";
-import { SiGoogleclassroom } from "react-icons/si";
-import { IoBookOutline } from "react-icons/io5";
-import { CgNotes } from "react-icons/cg";
-import { IoTimerOutline } from "react-icons/io5";
 import Card from "../Card/Card";
 import cisaLogo from "../../assets/cisa-logo-1.png";
 import ciaLogo from "../../assets/cia-logo.webp";

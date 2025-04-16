@@ -1,7 +1,6 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
-// import App from './App.jsx'
 import { ThemeProvider } from "@material-tailwind/react";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home.jsx';
@@ -11,8 +10,6 @@ import Terms from './components/Terms/Terms.jsx';
 import PrivacyPolicy from './components/Privacy/PrivacyPolicy.jsx';
 import ContactUs from './components/Contact/ContactUs.jsx';
 import RefundPolicy from './components/Refund/RefundPolicy.jsx';
-// import Login from './components/login/Login.jsx';
-// import Register from './components/register/Register.jsx';
 import SuccessStories from './components/SuccessStories/SuccessStories.jsx';
 import Services from './components/Services/Services.jsx';
 import Events from "./components/Events/Events.jsx";

@@ -1,7 +1,4 @@
 import React from "react";
-import hero2 from "../../assets/image-removebg-preview.png";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Companies from "../companies/Companies";
 import studentTestimonialOne from "../../assets/testimonial-mobile-screenshot-1.png"
 import studentTestimonialTwo from "../../assets/testimonial-mobile-screenshot-2.png"
 import studentTestimonialThree from "../../assets/testimonial-mobile-screenshot-3.png"
@@ -22,14 +19,12 @@ import studentTestimonialSeventeen from "../../assets/Testimonial-screenshot-12.
 import studentTestimonialEighteen from "../../assets/Testimonial-screenshot-13.png"
 import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.png"
 import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
-import { AnimatePresence, motion, MotionConfig } from "motion/react";
-import Testimonials from "../testimonials/Testimonials";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
-import successStoriesHero from "../../assets/Success-stories-hero-2.webp";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 
+import { AnimatePresence, motion, MotionConfig } from "motion/react";
 
 export default function SuccessStories() {
 

@@ -1,12 +1,11 @@
 import React from "react";
-import schedule from "../../assets/schedule.jpg";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { MdTipsAndUpdates } from "react-icons/md";
 import { Link } from "react-router-dom";
 import iiaEvent from "../../assets/iia-event.jpeg";
 import { FiPhone } from "react-icons/fi";
-import { BsCalendar, BsCalendarDate } from "react-icons/bs";
+import { BsCalendarDate } from "react-icons/bs";
 import wofaBanner from "../../assets/wofa-banner.webp";
 import iiaKolkataBanner from "../../assets/iia-kolkata-banner.webp";
 import iiaBengaluruBanner from "../../assets/iia-bengaluru-banner.webp";
