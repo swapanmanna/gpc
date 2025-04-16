@@ -21,7 +21,7 @@ export default function AboutUs() {
                                 <h2 className="text-gray-50 text-xl md:text-4xl md:pb-4 font-bold font-manrope leading-normal lg:text-start text-center">Take your career to the next level in Risk Assurance and Advisory Domain</h2>
                                 <p className="text-gray-50 text-medium font-normal md:text-xl leading-relaxed lg:text-start text-center">At Global Professional Certifications (GPC), we are dedicated to empowering professionals worldwide by providing top-tier certification programs that unlock career growth, enhance expertise, and elevate industry standards.</p>
                             </div>
-                            <Link to="/courses" target="blank"><button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                            <Link to="/courses"><button className="sm:w-fit w-full px-8 py-3 bg-orange-500 text-gray-50 hover:text-brand-dark hover:bg-gray-50 transition-all duration-300 ease-in-out rounded-xl shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
                                 <span className="px-2 font-bold text-xl">Explore our Programs</span>
                             </button></Link>
                         </div>
