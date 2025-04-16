@@ -51,7 +51,7 @@ export default function Events(){
                     <p className="text-[#444444] font-semibold">Joining us at events isn’t just about attending—it’s about engaging, evolving, and becoming part of a powerful global community.</p>
                     <div className="flex gap-6">
                         <Link to="/contact" className="px-6 py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-lg rounded-lg font-semibold transition duration-300 ease-in-out">JOIN US</Link>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 items-center"> 
                             <div className="h-14 w-14 bg-brand-purple rounded-full flex items-center justify-center hover:bg-brand-blue transition duration-300">
                                 <FiPhone className="h-8 w-8 text-white" />
                             </div>

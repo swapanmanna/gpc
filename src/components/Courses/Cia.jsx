@@ -126,7 +126,7 @@ const Cia = () => {
                         <h2 className="text-2xl font-bold text-brand-blue mb-2 text-center">CIA Part 1</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Fundamentals</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">125 questions | 2.5 Hours</p>
+                        <p className="text-gray-700 text-lg">125 questions | 2.5 Hours</p>
                         <p className="text-gray-800 font-bold mt-2">Topics:</p>
                         <ul className="text-gray-700 list-disc pl-4">
                             <li>Foundations of Internal Auditing (35%)</li>
@@ -139,7 +139,7 @@ const Cia = () => {
                         <h2 className="text-2xl text-center font-bold text-brand-blue mb-2">CIA Part 2</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Engagement</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">100 questions | 2 Hours</p>
+                        <p className="text-gray-700 text-lg">100 questions | 2 Hours</p>
                         <p className="text-gray-800 font-bold mt-2">Topics:</p>
                         <ul className="text-gray-700 list-disc pl-4">
                             <li>Engagement Planning (50%)</li>
@@ -151,7 +151,7 @@ const Cia = () => {
                         <h2 className="text-2xl font-bold text-brand-blue mb-2 text-center">CIA Part 3</h2>
                         <h3 className="text-center mb-4 text-xl text-brand-purple font-bold">Internal Audit Function</h3>
                         <hr className="mb-4 border-2 border-solid border-gray-300"></hr>
-                        <p className="text-gray-700">100 questions | 2 Hours</p>
+                        <p className="text-gray-700 text-lg">100 questions | 2 Hours</p>
                         <p className="text-gray-800 font-bold mt-2">Topics:</p>
                         <ul className="text-gray-700 list-disc pl-4">
                             <li>Internal Audit Operations (25%)</li>
@@ -163,7 +163,7 @@ const Cia = () => {
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto my-16 px-4 md:px-0">
+            {/* <div className="max-w-4xl mx-auto my-16 px-4 md:px-0">
                 <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-brand-blue">Exam Logistics</h1>
                 <ul className="list-disc list-inside text-lg text-gray-700 space-y-4">
                     <li>CIA is a 100% MCQ-based exam with no negative marking.</li>
@@ -173,48 +173,71 @@ const Cia = () => {
                     <li>Appear for any part in any sequence and get results immediately.</li>
                     <li>Exams are conducted both in India and abroad; in India, exams are only at PearsonVue Centers.</li>
                 </ul>
+            </div> */}
+
+            <div className="max-w-6xl mx-auto my-24 px-4 md:px-0">
+                <div className="bg-white shadow-xl rounded-xl py-12 px-16 border border-gray-300">
+                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">
+                    Exam Logistics
+                    </h1>
+                    <ul className="space-y-6 list-disc pl-8">
+                    {[
+                        "CIA is a 100% MCQ-based exam with no negative marking.",
+                        "Score at least 600 points out of 750 (80%) to clear the exam.",
+                        "Validity of CIA registration is 3 years from the date of initial registration (when you pay application fees).",
+                        "Exam window is 180 days from the date you register for your CIA exam (when you pay exam fees).",
+                        "Appear for any part in any sequence and get results immediately.",
+                        "Exams are conducted both in India and abroad; in India, exams are only at PearsonVue Centers.",
+                    ].map((point, index) => (
+                        <li key={index} className="text-gray-800 text-lg marker:text-brand-blue marker:text-2xl">
+                            {point}
+                        </li>
+                    ))}
+                    </ul>
+                </div>
             </div>
 
-            <div className="max-w-4xl mx-auto my-16 px-4 md:px-0">
-                <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-brand-blue">Fees and Membership Benefits</h1>
+
+            <div className="max-w-5xl mx-auto my-24 px-4 md:px-0">
+                <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
                     <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
                         <thead>
-                            <tr className="bg-brand-blue text-white">
+                            <tr className="bg-brand-blue text-white text-xl">
                                 <th className="py-3 px-4 border-b">Fee Type</th>
                                 <th className="py-3 px-4 border-b">IIA Members</th>
                                 <th className="py-3 px-4 border-b">Non-Members</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-b">
+                            <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Application Fees</td>
                                 <td className="py-2 px-4">USD 90</td>
                                 <td className="py-2 px-4">USD 240</td>
                             </tr>
-                            <tr className="border-b">
+                            <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 1 Exam Fees</td>
                                 <td className="py-2 px-4">USD 232.50</td>
                                 <td className="py-2 px-4">USD 445</td>
                             </tr>
-                            <tr className="border-b">
+                            <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 2 Exam Fees</td>
                                 <td className="py-2 px-4">USD 210</td>
                                 <td className="py-2 px-4">USD 415</td>
                             </tr>
-                            <tr className="border-b">
+                            <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 3 Exam Fees</td>
                                 <td className="py-2 px-4">USD 210</td>
                                 <td className="py-2 px-4">USD 415</td>
                             </tr>
                         </tbody>
                     </table>
-                    <p className="mt-4 text-gray-700 text-center">*18% GST is applicable on the above fees.</p>
-                    <p className="mt-2 text-gray-700 text-center">IIA Membership Fees: New Member - INR 6500+GST, Annual Renewal - INR 4000+GST.</p>
+                    <p className="pl-4 mt-4 text-gray-700">*18% GST is applicable on the above fees.</p>
+                    <p className="pl-4 mt-2 text-gray-700">IIA Membership Fees: New Member - INR 6500+GST, Annual Renewal - INR 4000+GST.</p>
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto my-16 px-4 md:px-0">
+            {/* <div className="max-w-4xl mx-auto my-16 px-4 md:px-0">
                 <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-brand-blue">Training Program Details</h1>
                 <ul className="list-disc list-inside text-lg text-gray-700 space-y-4">
                     <li>Complete your CIA Certification within 7-8 months.</li>
@@ -226,20 +249,53 @@ const Cia = () => {
                     <li>Access to Gleim software with soft copies of books and over 1000 MCQs (validity of 18 months).</li>
                     <li>End-to-end support until you clear all exams.</li>
                 </ul>
+            </div> */}
+
+            <div className="max-w-6xl mx-auto my-24 px-4 md:px-0">
+                <div className="bg-white shadow-lg rounded-xl py-12 px-16 border border-gray-200">
+                    <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">
+                    Training Program Details
+                    </h1>
+                    <ul className="space-y-6 list-disc pl-8">
+                    {[
+                        "Complete your CIA Certification within 7–8 months.",
+                        "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 1 - Sep & Oct.",
+                        "15–20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST).",
+                        "Recordings uploaded within 24–48 hours after class.",
+                        "Access to LMS Portal with recorded sessions, PPT notes, and MCQs (no validity period).",
+                        "Guidance from top CIA faculty in India, Mr. Arpit Garg.",
+                        "Access to Gleim software with soft copies of books and over 1000 MCQs (validity of 18 months).",
+                        "End-to-end support until you clear all exams.",
+                    ].map((point, index) => (
+                        <li key={index} className="text-gray-800 text-lg marker:text-brand-blue marker:text-2xl">
+                            {point}
+                        </li>
+                    ))}
+                    </ul>
+                </div>
             </div>
 
-            <div className="max-w-4xl mx-auto my-16 px-4 md:px-0 bg-orange-100 p-8 rounded-lg shadow-md">
-                <h1 className="text-center text-3xl md:text-4xl font-extrabold mb-8 text-brand-blue">Special Offer – Enroll Now!</h1>
-                <p className="text-center text-lg text-gray-700 mb-6">
-                    Enroll for all 3 parts along with Gleim content for only ₹49,999+GST, or each part for ₹19,999+GST. Offer valid till 15th April ONLY!
+
+            <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-md">
+                <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-8 text-brand-blue">Special Offer – Enroll Now!</h1>
+                <p className="text-center text-2xl font-semibold text-gray-700 mb-8">
+                    Enroll for all 3 parts along with Gleim content for only ₹49,999 + GST<br></br> Or each part for ₹19,999 + GST.
                 </p>
-                <div className="flex justify-center">
+                <h2 className="text-center mb-8 md:text-4xl font-semibold text-brand-blue">Offer valid till 15th April ONLY!</h2>
+                <div className="flex justify-center gap-6">
                     <Link
                         to="https://pages.razorpay.com/CIASessions"
                         target="_blank"
-                        className="inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-600 transition duration-200"
+                        className="inline-flex items-center justify-center px-8 py-3 text-xl font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-900 transition duration-200"
                     >
-                        Enroll Now
+                        Enroll for All Parts
+                    </Link>
+                    <Link
+                        to="https://rzp.io/rzp/iFUFvKph"
+                        target="_blank"
+                        className="inline-flex items-center justify-center px-8 py-3 text-xl font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-900 transition duration-200"
+                    >
+                        Enroll for Each Part
                     </Link>
                 </div>
             </div>

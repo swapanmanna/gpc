@@ -165,12 +165,12 @@ const Navbar = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex md:order-2 space-x-3">
           <a href="https://learn.globalprofessionalcertifications.com/learn/account/signin" 
-             className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2 transition duration-200 ease-in-out"
+             className="text-white bg-brand-blue hover:bg-brand-purple font-medium rounded-lg text-sm px-4 py-2 transition duration-300 ease-in-out"
              target="_blank">
             Log In
           </a>
           <a href="https://learn.globalprofessionalcertifications.com/learn/account/signup?"
-             className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2 transition duration-200 ease-in-out"
+             className="text-white bg-brand-gray hover:bg-brand-dark font-medium rounded-lg text-sm px-4 py-2 transition duration-300 ease-in-out"
              target="_blank">
             Sign Up
           </a>
@@ -220,13 +220,13 @@ const Navbar = () => {
                   </span>
                 {/* Dropdown Menu */}
                 {isCoursesDropdownOpen && (
-                  <div className="absolute left-0 mt-2 top-8 w-48 bg-orange-500 dark:bg-gray-800 shadow-lg rounded-md z-10">
+                  <div className="absolute left-0 mt-2 top-8 w-36 bg-orange-500 dark:bg-gray-800 shadow-lg rounded-md z-10">
                     {coursesOptions.map((option, idx) => (
                       <NavLink
                         key={idx}
                         to={`/courses/${option.toLowerCase()}`}
                         className={({ isActive }) =>
-                          `block px-4 py-2 font-bold text-sm text-gray-100 dark:text-white hover:bg-orange-900 dark:hover:bg-gray-700 ${isActive ? "bg-orange-800 dark:bg-gray-700" : ""}`
+                          `block px-4 py-2 font-bold text-sm text-brand-blue dark:text-white hover:bg-orange-800 dark:hover:bg-gray-700 ${isActive ? "bg-orange-900 text-gray-100 dark:bg-gray-700" : ""}`
                         }
                         onClick={() => setIsCoursesDropdownOpen(false)}
                       >
