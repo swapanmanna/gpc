@@ -6,9 +6,16 @@ import Demand from "../Demand/Demand";
 import Companies from "../companies/Companies";
 import VideoSection from "../VideoSection/VideoSection";
 import { FaChevronDown } from "react-icons/fa";
+import MetaTags from "../MetaTags";
 
 export default function Home() {
     return (
+        <>
+        <MetaTags
+            title="Global Professional Certifications – Advance Your Career"
+            description="Get globally recognized with our CIA certification courses. Join 100+ professionals who have advanced their careers through our expert-led programs"
+            canonicalUrl="https://globalprofessionalcertifications.com/"
+        />
         <div className="bg-gray-50">
             <Hero />
             <Companies />
@@ -19,5 +26,6 @@ export default function Home() {
             <Demand />
             <div className="h-[10rem]"></div>
         </div>
+        </>
     )
 }

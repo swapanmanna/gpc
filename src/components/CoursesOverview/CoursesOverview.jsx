@@ -6,8 +6,9 @@ import ciaLogo from "../../assets/cia-logo.webp";
 import iapLogo from "../../assets/iap-logo-cropped.webp";
 import crmaLogoOne from "../../assets/crma-logo-1.png";
 import { FaArrowTurnDown } from "react-icons/fa6";
+import MetaTags from "../MetaTags";
 
-export default function Services() {
+export default function CoursesOverview() {
   useEffect(() => {
     const img = new Image();
     img.src = coursesPhoto;
@@ -15,6 +16,11 @@ export default function Services() {
 
   return (
     <>
+      <MetaTags 
+        title="Certification Courses – Global Professional Certifications"
+        description="Explore globally recognized certification programs like CIA, led by expert mentors and powered by premium content."
+        canonicalUrl="https://globalprofessionalcertifications.com/courses"
+      />
       {/* Hero */}
       <section className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
         <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">

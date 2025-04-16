@@ -9,10 +9,17 @@ import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import MetaTags from "../MetaTags";
 
 export default function AboutUs() {
     return (
         <>
+            <MetaTags 
+                title="About Global Professional Certifications" 
+                description="Learn how we empower professionals with globally recognized certifications and expert-driven learning." 
+                canonicalUrl="https://globalprofessionalcertifications.com/about"
+            />
+
             <section className="bg-brand-blue py-20 md:py-32 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
                 <div className="w-full mt-10 max-w-sm md:max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">

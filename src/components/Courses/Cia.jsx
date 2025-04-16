@@ -12,6 +12,7 @@ import { CgNotes } from "react-icons/cg";
 import { IoTimerOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ciaHero from "../../assets/cia-hero.jpg";
+import MetaTags from '../MetaTags';
 
 const Cia = () => {
     useEffect(() => {
@@ -22,6 +23,11 @@ const Cia = () => {
 
     return (
         <>
+            <MetaTags 
+                title="CIA Certification Course – Pass the Challenge Exam"
+                description="Prepare for the CIA Challenge Exam with live sessions, Gleim content, and expert guidance from Global Professional Certifications."
+                canonicalUrl="https://globalprofessionalcertifications.com/courses/cia"
+            />
             <div className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
                 <div className="md:py-32 pt-32 mx-auto md:max-w-8xl md:flex md:justify-center md:items-center">
                     <div className="max-w-sm md:max-w-2xl mx-auto">
@@ -190,7 +196,7 @@ const Cia = () => {
             <div className="max-w-5xl mx-auto my-24 px-4 md:px-0">
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
+                    <table className="min-w-full bg-white border border-gray-300 shadow-lg">
                         <thead>
                             <tr className="bg-brand-blue text-white text-xl">
                                 <th className="py-3 px-4 border-b">Fee Type</th>
@@ -221,8 +227,8 @@ const Cia = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <p className="pl-4 mt-4 text-gray-700">*18% GST is applicable on the above fees.</p>
-                    <p className="pl-4 mt-2 text-gray-700">IIA Membership Fees: New Member - INR 6500+GST, Annual Renewal - INR 4000+GST.</p>
+                    <p className="pl-4 mt-4 text-gray-700 italic">Note: 18% GST is applicable on the above fees.</p>
+                    <p className="pl-4 mt-2 text-gray-700 italic">IIA Membership Fees: New Member - INR 6500 + GST, <span className="">Annual Renewal</span> - INR 4000 + GST.</p>
                 </div>
             </div>
 

@@ -1,7 +1,14 @@
 import React from "react";
+import MetaTags from "../MetaTags";
 
 export default function PrivacyPolicy() {
     return (
+        <>
+        <MetaTags 
+            title="Privacy Policy – Global Professional Certifications"
+            description="Understand how we protect your data and privacy as you use our platform and enroll in our courses."
+            canonicalUrl="https://globalprofessionalcertifications.com/privacy"
+        />
         <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark">
             <h3 className="font-bold text-xl">Privacy Policy</h3>
             <br></br>
@@ -217,5 +224,6 @@ export default function PrivacyPolicy() {
                 <li>By email: cia@globalprofessionalcertifications.com </li>
             </ul>
         </div>
+        </>
     )
 }

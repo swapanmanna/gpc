@@ -1,8 +1,14 @@
 import React from "react";
+import MetaTags from "../MetaTags";
 
 export default function Terms() {
     return (
         <>
+            <MetaTags 
+                title="Terms & Conditions – Global Professional Certifications"
+                description="Read our terms and conditions outlining course access, use of services, and user responsibilities."
+                canonicalUrl="https://globalprofessionalcertifications.com/terms"
+            />
             <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark">
                 <h3 className="font-bold text-xl">Terms and Conditions</h3>
                 <br></br>

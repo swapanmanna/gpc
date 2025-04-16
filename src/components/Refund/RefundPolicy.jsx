@@ -1,8 +1,14 @@
 import React from "react";
+import MetaTags from "../MetaTags";
 
 export default function RefundPolicy() {
     return (
         <>
+            <MetaTags
+                title="Refund Policy – Global Professional Certifications"
+                description="Review our refund and cancellation policy before enrolling. We aim to ensure a smooth learning experience."
+                canonicalUrl="https://globalprofessionalcertifications.com/refund"
+            />
             <div className="pt-32 pl-[177px] pr-[177px] pb-20 bg-gray-50 text-brand-dark w-full">
                 <h3 className="font-bold text-xl">Refund Policy</h3>
                 <br></br>

@@ -2,7 +2,7 @@ import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { MdTipsAndUpdates } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, Meta } from "react-router-dom";
 import iiaEvent from "../../assets/iia-event.jpeg";
 import { FiPhone } from "react-icons/fi";
 import { BsCalendarDate } from "react-icons/bs";
@@ -10,10 +10,16 @@ import wofaBanner from "../../assets/wofa-banner.webp";
 import iiaKolkataBanner from "../../assets/iia-kolkata-banner.webp";
 import iiaBengaluruBanner from "../../assets/iia-bengaluru-banner.webp";
 import iiaMumbaiBanner from "../../assets/iia-mumbai-banner.webp";
+import MetaTags from "../MetaTags";
 
 export default function Events(){
     return (
         <>
+            <MetaTags
+                title="Upcoming Certification Events & Webinars – GPC"
+                description="Stay updated with live sessions, webinars, and certification events hosted by Global Professional Certifications."
+                canonicalUrl="https://globalprofessionalcertifications.com/events"
+            />
             <div className="">
                 <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
                     
