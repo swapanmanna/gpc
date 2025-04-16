@@ -12,7 +12,7 @@ export default function Home() {
         <div className="bg-gray-50">
             <Hero />
             <Companies />
-            <h1 className="md:text-4xl text-3xl mx-auto w-screen justify-center font-bold text-brand-blue mb-24 inline-flex items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
+            <h1 className="md:text-4xl text-3xl justify-center w-full font-bold text-brand-blue mb-24 inline-flex justify-center items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
             <VideoSection />
             <Benefits />
             <Training />

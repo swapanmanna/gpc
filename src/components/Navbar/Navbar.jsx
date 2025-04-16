@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [isCoursesDropdownOpen]);
 
   return (
-    <nav className="bg-[#f5f6fa] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-[#f5f6fa] dark:bg-gray-900 fixed w-screen z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}
