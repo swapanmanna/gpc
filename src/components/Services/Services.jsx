@@ -71,9 +71,9 @@ export default function Services() {
           title="CIA all 3 Parts with Gleim Content"
           image={ciaLogo}
           text="Master the complete CIA exam with expert guidance and comprehensive study materials"
-          price={58999}
+          price={76700}
           linkTo="/courses/cia" // Internal route for CIA details
-          enrollLink="https://pages.razorpay.com/CIASessions" // External enrollment link
+          enrollLink="https://rzp.io/rzp/uC1OGRim" // External enrollment link
           imageStyle="object-cover w-full"
           gst="Including GST"
         />

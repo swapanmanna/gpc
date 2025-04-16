@@ -53,10 +53,10 @@ import { Link } from "react-router-dom";
 export default function Card({
   image = "https://flowbite.com/docs/images/blog/image-1.jpg",
   title = "CIA Part 1",
-  price = 23599,
+  price = 29500,
   text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, inventore.",
   linkTo = "/courses/cia",
-  enrollLink = "https://rzp.io/rzp/iFUFvKph",
+  enrollLink = "https://rzp.io/rzp/BjsIQfL",
   imageStyle = "object-cover w-full",
   gst = "Including GST",
 }) {
