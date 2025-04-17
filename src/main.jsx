@@ -15,6 +15,9 @@ import SuccessStories from './components/SuccessStories/SuccessStories.jsx';
 import Events from "./components/Events/Events.jsx";
 import Cia from './components/Courses/Cia.jsx';
 import CoursesOverview from './components/CoursesOverview/CoursesOverview.jsx';
+import Crma from './components/Courses/Crma.jsx';
+import Cisa from './components/Courses/Cisa.jsx';
+import Iap from './components/Courses/Iap.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +31,9 @@ const router = createBrowserRouter(
       <Route path="success" element={<SuccessStories />}/>
       <Route path="courses" element={<CoursesOverview />} />
       <Route path="courses/cia" element={<Cia />}/>
+      <Route path="courses/crma" element={<Crma />}/>
+      <Route path="courses/cisa" element={<Cisa />}/>
+      <Route path="courses/iap" element={<Iap />}/>
       <Route path="events" element={<Events />} />
     </Route>
   )
