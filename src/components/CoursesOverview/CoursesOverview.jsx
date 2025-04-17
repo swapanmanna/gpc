@@ -72,8 +72,8 @@ export default function CoursesOverview() {
           image={ciaLogo}
           text="Master the complete CIA exam with expert guidance and comprehensive study materials"
           price={76700}
-          linkTo="/courses/cia" // Internal route for CIA details
-          enrollLink="https://rzp.io/rzp/uC1OGRim" // External enrollment link
+          linkTo="/courses/cia" 
+          enrollLink="https://rzp.io/rzp/uC1OGRim" 
           imageStyle="object-cover w-full"
           gst="Including GST"
         />
@@ -82,8 +82,8 @@ export default function CoursesOverview() {
           image={cisaLogo}
           text="Become a certified expert in IT auditing and risk management with our comprehensive CISA course"
           price={23599}
-          linkTo="#" // Internal route for Part 1 details
-          enrollLink="https://rzp.io/rzp/VuvF84x" // External enrollment link
+          linkTo="/courses/cisa" 
+          enrollLink="https://rzp.io/rzp/VuvF84x" 
           imageStyle="object-cover w-full"
           gst="Including GST"
         />
@@ -92,8 +92,8 @@ export default function CoursesOverview() {
           image={iapLogo}
           text="Kickstart your CIA journey with our IAP course—covering audit fundamentals and risk assessment"
           price={23600}
-          linkTo="#" // Internal route for Part 2 details
-          enrollLink="https://rzp.io/rzp/C7jUKuC" // External enrollment link
+          linkTo="/courses/iap" 
+          enrollLink="https://rzp.io/rzp/C7jUKuC" 
           imageStyle="object-contain"
           gst="Including GST"
         />
@@ -102,8 +102,8 @@ export default function CoursesOverview() {
           image={crmaLogoOne}
           text="Advance your risk career with our CRMA course on assurance, governance, and mitigation"
           price={29500}
-          linkTo="#" // Internal route for Part 3 details
-          enrollLink="https://rzp.io/rzp/hjuC9dj" // External enrollment link
+          linkTo="/courses/crma" 
+          enrollLink="https://rzp.io/rzp/hjuC9dj" 
           imageStyle="object-contain"
           gst="Including GST"
         />
