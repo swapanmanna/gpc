@@ -2,7 +2,7 @@ import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { MdTipsAndUpdates } from "react-icons/md";
-import { Link, Meta } from "react-router-dom";
+import { Link} from "react-router-dom";
 import iiaEvent from "../../assets/iia-event.jpeg";
 import { FiPhone } from "react-icons/fi";
 import { BsCalendarDate } from "react-icons/bs";
