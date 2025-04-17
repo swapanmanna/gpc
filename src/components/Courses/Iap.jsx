@@ -37,10 +37,10 @@ const Iap = () => {
             Course Highlights
           </h2>
           <ul className="list-disc list-inside text-gray-700 text-xl space-y-2">
-            <li className="marker:text-brand-blue marker:text-xl">Complete everything in RECORDED class itself - Detailed discussion of every topic, Mock Tests, MCQs discussion.</li>
-            <li className="marker:text-brand-blue marker:text-xl">Get access to LMS Portal which includes recorded sessions + PPT notes + MCQs (with no validity period).</li>
-            <li className="marker:text-brand-blue marker:text-xl">Get guidance from one of the best IAP faculty in INDIA, Mr. Arpit Garg.</li>
-            <li className="marker:text-brand-blue marker:text-xl">Enroll with us and get our end-to-end support till you clear all your exams.</li>
+            <li className="marker:text-brand-blue marker:text-xl">Complete everything in RECORDED class itself - Detailed discussion of every topic, Mock Tests, MCQs discussion</li>
+            <li className="marker:text-brand-blue marker:text-xl">Get access to LMS Portal which includes recorded sessions + PPT notes + MCQs (with no validity period)</li>
+            <li className="marker:text-brand-blue marker:text-xl">Get guidance from one of the best IAP faculty in INDIA, Mr. Arpit Garg</li>
+            <li className="marker:text-brand-blue marker:text-xl">Enroll with us and get our end-to-end support till you clear all your exams</li>
           </ul>
         </section>
 
