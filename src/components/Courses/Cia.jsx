@@ -9,7 +9,6 @@ import Card from '../Card/Card';
 import { SiGoogleclassroom } from "react-icons/si";
 import { IoBookOutline } from "react-icons/io5";
 import { CgNotes } from "react-icons/cg";
-import { IoTimerOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ciaHero from "../../assets/cia-hero.jpg";
 import MetaTags from '../MetaTags';
@@ -106,10 +105,7 @@ const Cia = () => {
                                 <span><CgNotes className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-grayblack" /></span>
                                 <span className="text-black font-semibold">Class Notes + In-Class MCQs</span>
                             </div>
-                            <div className="flex space-x-2 mb-4 items-center text-xl">
-                                <span><IoTimerOutline className="h-6 w-6 md:h-8 md:w-8 mt-1 mr-2 text-black" /></span>
-                                <span className="text-black font-semibold">Offer valid till 15th April only!</span>
-                            </div>
+                            <p className="md:text-3xl mt-4 font-semibold text-[#964b00]">Start your upskilling journey today!</p>
                         </div>
                         <div className="flex items-center justify-center relative">
                             <Link
