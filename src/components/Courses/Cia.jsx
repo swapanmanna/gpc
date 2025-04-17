@@ -196,7 +196,8 @@ const Cia = () => {
             <div className="max-w-5xl mx-auto my-24 px-4 md:px-0">
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full bg-white border border-gray-300 shadow-lg">
+                    <table className="min-w-full bg-white border border-gray-300 shadow-lg rounded-lg">
+                        {/* Style the table in a better way! */}
                         <thead>
                             <tr className="bg-brand-blue text-white text-xl">
                                 <th className="py-3 px-4 border-b">Fee Type</th>
@@ -205,25 +206,26 @@ const Cia = () => {
                             </tr>
                         </thead>
                         <tbody>
+                            {/* transform transition duration-300 ease-in-out hover:scale-110 --> remove the bottom scroll wheel */}
                             <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Application Fees</td>
-                                <td className="py-2 px-4">USD 90</td>
-                                <td className="py-2 px-4">USD 240</td>
+                                <td className="py-2 px-4 text-green-700 font-semibold">USD 90</td>
+                                <td className="py-2 px-4 text-red-700 font-semibold">USD 240</td>
                             </tr>
                             <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 1 Exam Fees</td>
-                                <td className="py-2 px-4">USD 232.50</td>
-                                <td className="py-2 px-4">USD 445</td>
+                                <td className="py-2 px-4 text-green-700 font-semibold">USD 232.50</td>
+                                <td className="py-2 px-4 text-red-700 font-semibold">USD 445</td>
                             </tr>
                             <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 2 Exam Fees</td>
-                                <td className="py-2 px-4">USD 210</td>
-                                <td className="py-2 px-4">USD 415</td>
+                                <td className="py-2 px-4 text-green-700 font-semibold">USD 210</td>
+                                <td className="py-2 px-4 text-red-700 font-semibold">USD 415</td>
                             </tr>
                             <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Part 3 Exam Fees</td>
-                                <td className="py-2 px-4">USD 210</td>
-                                <td className="py-2 px-4">USD 415</td>
+                                <td className="py-2 px-4 text-green-700 font-semibold">USD 210</td>
+                                <td className="py-2 px-4 text-red-700 font-semibold">USD 415</td>
                             </tr>
                         </tbody>
                     </table>
