@@ -243,7 +243,7 @@ const Cia = () => {
                     <ul className="space-y-6 list-disc pl-8">
                     {[
                         "Complete your CIA Certification within 7–8 months.",
-                        "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 1 - Sep & Oct.",
+                        "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 3 - Sep & Oct.",
                         "15–20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST).",
                         "Recordings uploaded within 24–48 hours after class.",
                         "Access to LMS Portal with recorded sessions, PPT notes, and MCQs (no validity period).",
