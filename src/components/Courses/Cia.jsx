@@ -173,12 +173,12 @@ const Cia = () => {
                     <hr className="border-2 border-solid border-gray-300 mb-6"></hr>
                     <ul className="space-y-6 list-disc pl-8">
                     {[
-                        "CIA is a 100% MCQ-based exam with no negative marking.",
-                        "Score at least 600 points out of 750 (80%) to clear the exam.",
-                        "Validity of CIA registration is 3 years from the date of initial registration (when you pay application fees).",
-                        "Exam window is 180 days from the date you register for your CIA exam (when you pay exam fees).",
-                        "Appear for any part in any sequence and get results immediately.",
-                        "Exams are conducted both in India and abroad; in India, exams are only at PearsonVue Centers.",
+                        "CIA is a 100% MCQ-based exam with no negative marking",
+                        "Score at least 600 points out of 750 (80%) to clear the exam",
+                        "Validity of CIA registration is 3 years from the date of initial registration (when you pay application fees)",
+                        "Exam window is 180 days from the date you register for your CIA exam (when you pay exam fees)",
+                        "Appear for any part in any sequence and get results immediately",
+                        "Exams are conducted both in India and abroad; in India, exams are only at PearsonVue Centers",
                     ].map((point, index) => (
                         <li key={index} className="text-gray-800 text-lg marker:text-brand-blue marker:text-2xl">
                             {point}
@@ -229,8 +229,8 @@ const Cia = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <p className="pl-1 mt-4 text-gray-700 italic text-sm">Note: 18% GST is applicable on the above fees.</p>
-                    <p className="pl-1 mt-2 text-gray-700 italic text-sm">IIA Membership Fees: New Member - INR 6500 + GST, <span className="">Annual Renewal</span> - INR 4000 + GST.</p>
+                    <p className="pl-1 mt-4 text-gray-700 italic text-sm">Note: 18% GST is applicable on the above fees</p>
+                    <p className="pl-1 mt-2 text-gray-700 italic text-sm">IIA Membership Fees: New Member - INR 6500 + GST | <span className="">Annual Renewal</span> - INR 4000 + GST</p>
                 </div>
             </div>
 
@@ -242,14 +242,14 @@ const Cia = () => {
                     <hr className="border-2 border-solid border-gray-300 mb-6"></hr>
                     <ul className="space-y-6 list-disc pl-8">
                     {[
-                        "Complete your CIA Certification within 7–8 months.",
-                        "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 3 - Sep & Oct.",
-                        "15–20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST).",
-                        "Recordings uploaded within 24–48 hours after class.",
-                        "Access to LMS Portal with recorded sessions, PPT notes, and MCQs (no validity period).",
-                        "Guidance from top CIA faculty in India, Mr. Arpit Garg.",
-                        "Access to Gleim software with soft copies of books and over 1000 MCQs (validity of 18 months).",
-                        "End-to-end support until you clear all exams.",
+                        "Complete your CIA Certification within 7–8 months",
+                        "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 3 - Sep & Oct",
+                        "15–20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST)",
+                        "Recordings uploaded within 24–48 hours after class",
+                        "Access to LMS Portal with recorded sessions, PPT notes, and MCQs (no validity period)",
+                        "Guidance from top CIA faculty in India, Mr. Arpit Garg",
+                        "Access to Gleim software with soft copies of books and over 1000 MCQs (validity of 18 months)",
+                        "End-to-end support until you clear all exams",
                     ].map((point, index) => (
                         <li key={index} className="text-gray-800 text-lg marker:text-brand-blue marker:text-2xl">
                             {point}
