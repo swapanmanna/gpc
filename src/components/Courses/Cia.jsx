@@ -33,7 +33,7 @@ const Cia = () => {
                         {/* <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-200 ease-in-out">Globally recognised</button> */}
                         <div className="relative max-w-xl">
                             <p className="text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj text-left">
-                                Become a <span className="text-orange-500">Globally Recognised</span> Certified Internal Auditor
+                                Become a <span className="text-orange-500">Globally Recognised</span> Certified Internal Auditor (CIA)
                             </p>
                             <h1 className="pt-6 md:text-lg text-gray-50">Our comprehensive CIA course prepares you for the certification exam, covering internal audit principles, practices, and standards. Gain expertise in risk management, control, and governance, and enhance your career prospects in internal audit. Join over 1000 professionals who have advanced their careers with our expert mentorship! </h1>
                         </div>
@@ -225,8 +225,8 @@ const Cia = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <p className="pl-4 mt-4 text-gray-700 italic">Note: 18% GST is applicable on the above fees.</p>
-                    <p className="pl-4 mt-2 text-gray-700 italic">IIA Membership Fees: New Member - INR 6500 + GST, <span className="">Annual Renewal</span> - INR 4000 + GST.</p>
+                    <p className="pl-1 mt-4 text-gray-700 italic text-sm">Note: 18% GST is applicable on the above fees.</p>
+                    <p className="pl-1 mt-2 text-gray-700 italic text-sm">IIA Membership Fees: New Member - INR 6500 + GST, <span className="">Annual Renewal</span> - INR 4000 + GST.</p>
                 </div>
             </div>
 
