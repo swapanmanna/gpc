@@ -193,7 +193,9 @@ const Cia = () => {
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
                     <table className="min-w-full bg-white border border-gray-300 shadow-lg rounded-lg">
+
                         {/* Style the table in a better way! */}
+
                         <thead>
                             <tr className="bg-brand-blue text-white text-xl">
                                 <th className="py-3 px-4 border-b">Fee Type</th>
@@ -202,7 +204,9 @@ const Cia = () => {
                             </tr>
                         </thead>
                         <tbody>
+
                             {/* transform transition duration-300 ease-in-out hover:scale-110 --> remove the bottom scroll wheel */}
+
                             <tr className="border-b text-lg text-center">
                                 <td className="py-2 px-4">CIA Application Fees</td>
                                 <td className="py-2 px-4 text-green-700 font-semibold">USD 90</td>

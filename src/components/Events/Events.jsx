@@ -27,13 +27,16 @@ export default function Events(){
                     <div className="absolute inset-0 bg-black opacity-70"></div>
 
                     {/* Heading */}
+                    {/* absolute top-[240px] left-[180px] */}
+
+                    {/* Fix this heading's alignment */}
+
                     <h1 className="absolute top-[240px] left-[180px] text-5xl text-white font-bold z-10">
                     Where Learning Meets Connection
                     </h1>
                     <p className="absolute top-[320px] left-[180px] text-white text-3xl font-semibold">Explore our journey through global conferences,<br></br> workshops, and networking events</p>
                 </div>
             </div>
-
 
             <section className="md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418]">
                 <div>
