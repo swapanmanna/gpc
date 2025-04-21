@@ -55,7 +55,7 @@ const Iap = () => {
                     Enroll Now
                 </h2>
                 <p className="text-gray-700 text-2xl mb-4">
-                    Enrollment Cost: <span className="font-bold">INR 20,000 + GST</span>
+                    Enrollment Cost: <span className="font-bold">INR 23,600</span> <span className="text-sm italic">(Including GST)</span>
                 </p>
             </div>
             <Link

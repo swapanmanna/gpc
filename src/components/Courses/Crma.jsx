@@ -55,7 +55,7 @@ const Crma = () => {
                     Enroll Now
                 </h2>
                 <p className="text-gray-700 text-2xl mb-4">
-                    Enrollment Cost: <span className="font-bold">INR 25,000 + GST</span>
+                    Enrollment Cost: <span className="font-bold">INR 29,500 </span><span className="text-sm italic">(Including GST)</span>
                 </p>
             </div>
             <Link
