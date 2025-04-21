@@ -30,4 +30,12 @@ export default withMT({
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],
+  safelist: [
+    'sm:pt-[96px]',
+    'sm:pt-24',
+    "top-12",
+    'md:pt-12',
+    "lg:py-[168px]",
+    "mt-[116px]",
+  ]
 })
