@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo-2.png";
 import { FaChevronDown } from "react-icons/fa6";
 
-const Navbar = ({topOffset}) => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isCoursesDropdownOpen, setIsCoursesDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -24,8 +24,6 @@ const Navbar = ({topOffset}) => {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
-    // top-${paddingFromTop ? paddingFromTop : 0}
-
     // Cleanup event listener
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -33,7 +31,7 @@ const Navbar = ({topOffset}) => {
   }, [isCoursesDropdownOpen]);
 
   return (
-    <nav className={`bg-[#f5f6fa] dark:bg-gray-900 fixed w-screen z-20 top-${topOffset ? topOffset : 0} start-0 border-b border-gray-200 dark:border-gray-600`}>
+    <nav className="bg-[#f5f6fa] dark:bg-gray-900 fixed w-screen z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         {/* Logo */}

@@ -20,7 +20,7 @@ export default function AboutUs() {
                 canonicalUrl="https://globalprofessionalcertifications.com/about"
             />
 
-            <section className="bg-brand-blue py-20 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
+            <section className="bg-brand-blue py-20 md:py-32 relative md:h-screen md:mb-10 md:flex md:justify-center md:items-center">
                 <div className="w-full mt-10 max-w-sm md:max-w-[75rem] px-4 md:px-5 lg:px-5 mx-auto">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">

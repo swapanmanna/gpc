@@ -12,7 +12,6 @@ import { CgNotes } from "react-icons/cg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ciaHero from "../../assets/cia-hero.jpg";
 import MetaTags from '../MetaTags';
-import { height } from '../Notifications/NotificationBanner';
 
 const Cia = () => {
     useEffect(() => {
@@ -28,7 +27,7 @@ const Cia = () => {
                 description="Prepare for the CIA Challenge Exam with live sessions, Gleim content, and expert guidance from Global Professional Certifications."
                 canonicalUrl="https://globalprofessionalcertifications.com/courses/cia"
             />
-            <div className={`md:h-screen flex justify-center items-center bg-brand-blue sm:pt-${(16 + (height ? height - 4 : 0)).toString()}`}>
+            <div className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
                 <div className="md:py-32 pt-32 mx-auto md:max-w-8xl md:flex md:justify-center md:items-center">
                     <div className="max-w-sm md:max-w-2xl mx-auto">
                         {/* <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-200 ease-in-out">Globally recognised</button> */}
@@ -261,7 +260,7 @@ const Cia = () => {
             </div>
 
 
-            <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-xl">
+            <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-md">
                 <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 text-brand-blue">Revised pricing plan 16th April 2025 onwards...</h1>
                 <p className="text-center text-2xl font-semibold text-gray-700 mb-8">
                     Enroll for all 3 parts along with Gleim content for only ₹65,000 + GST<br></br> Or each part for ₹25,000 + GST

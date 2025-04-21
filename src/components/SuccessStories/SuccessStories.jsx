@@ -24,7 +24,6 @@ import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
-import { height } from "../Notifications/NotificationBanner";
 
 import { AnimatePresence, motion, MotionConfig } from "motion/react";
 
@@ -37,7 +36,7 @@ export default function SuccessStories() {
                 description="Hear from professionals who passed the CIA Challenge Exam with our guidance. Discover how our course made a difference in their careers."
                 canonicalUrl="https://globalprofessionalcertifications.com/success"
             />
-            <section className={`w-full bg-brand-blue flex justify-center items-center md:h-screen md:pt-${height}`}> 
+            <section className="w-full bg-brand-blue flex justify-center items-center h-screen"> 
                 <div className="py-[161px] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
                     <div className="relative flex justify-center h-full items-center gap-32">
                         <div className="flex flex-col justify-center">

@@ -1,10 +1,7 @@
 import React from "react";
 import MetaTags from "../MetaTags";
-import { height } from "../Notifications/NotificationBanner";
 
 export default function ContactUs() {
-
-    // lg:py-[${120 + (4*height)}px]
     return (
         <>
             <MetaTags
@@ -12,7 +9,7 @@ export default function ContactUs() {
                 description="Reach out to our team for queries, support, or course guidance. We’re here to help you achieve your certification goals." 
                 canonicalUrl="https://globalprofessionalcertifications.com/contact"
             />
-            <section className={`relative z-10 bg-gray-50 dark:bg-dark py-20 lg:py-[${120 + (4*height)}px] w-full`}>
+            <section className="relative z-10 bg-gray-50 dark:bg-dark py-20 lg:py-[120px] w-full">
                 <div className="mx-auto lg:max-w-[80rem]">
                     <div className="lg:flex lg:justify-center lg:items-center">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
