@@ -20,7 +20,7 @@ export default withMT({
         "brand-dark": "#100e28",
         "brand-contrast": "#ffcc33",
       },
-      scale: {
+    scale: {
         "130": "1.325",
         "175": "1.75",
         "200": "2",

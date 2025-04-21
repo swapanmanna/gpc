@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { height } from '../Notifications/NotificationBanner';
 
 const Iap = () => {
+
+  const marginTop = 68 + (4 * (height ? height : 0))
+
   return (
-    <div className=" mt-[68px] bg-gray-100 font-sans">
+    <div className={`mt-[${marginTop}px] bg-gray-100 font-sans`}>
       {/* Header */}
       <header className="bg-brand-blue text-white py-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold">
