@@ -71,9 +71,9 @@ export default function CoursesOverview() {
           title="CIA all 3 Parts with Gleim Content"
           image={ciaLogo}
           text="Master the complete CIA exam with expert guidance and comprehensive study materials"
-          price={76700}
+          price={58999}
           linkTo="/courses/cia" 
-          enrollLink="https://rzp.io/rzp/uC1OGRim" 
+          enrollLink="https://rzp.io/rzp/CIASessions" 
           imageStyle="object-cover w-full"
           gst="Including GST"
         />

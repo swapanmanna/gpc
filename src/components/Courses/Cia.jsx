@@ -41,7 +41,7 @@ const Cia = () => {
 
                         <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
                             <Link
-                                to="https://pages.razorpay.com/CIASessions"
+                                to="https://rzp.io/rzp/CIASessions"
                                 target='blank'
                                 title=""
                                 className="inline-flex items-center justify-center w-full px-8 py-2 text-lg font-bold text-white transition-all duration-200 bg-orange-500 border-2 border-transparent sm:w-auto rounded-lg font-pj hover:bg-gray-50 hover:text-brand-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
@@ -70,8 +70,8 @@ const Cia = () => {
                     title="CIA all 3 Parts with Gleim Content" 
                     image={examOne} 
                     text={"Master the complete CIA exam with expert guidance and comprehensive study materials"}
-                    price={76700} 
-                    enrollLink = "https://rzp.io/rzp/uC1OGRim"
+                    price={58999} 
+                    enrollLink = "https://rzp.io/rzp/CIASessions"
                     imageStyle={"pt-4"}/>
                 <Card 
                     title="CIA Part 1 with Gleim Content" 
@@ -110,7 +110,7 @@ const Cia = () => {
                         </div>
                         <div className="flex items-center justify-center relative">
                             <Link
-                                to={"https://rzp.io/rzp/uC1OGRim"}
+                                to={"https://rzp.io/rzp/CIASessions"}
                                 target="_blank"
                                 className="flex items-center justify-center rounded-xl bg-[#E0C4A8] px-16 py-8 text-center text-3xl font-medium text-gray-800 hover:bg-[#D4B190] transition ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
                             >
@@ -264,19 +264,19 @@ const Cia = () => {
             <div className="max-w-6xl mx-auto mb-24 px-4 md:px-0 bg-orange-100 py-12 rounded-lg shadow-xl">
                 <h1 className="text-center text-3xl md:text-5xl font-bold mb-8 text-brand-blue">Revised pricing plan 16th April 2025 onwards...</h1>
                 <p className="text-center text-2xl font-semibold text-gray-700 mb-8">
-                    Enroll for all 3 parts along with Gleim content for ₹76,700 only<br></br> Or each part for ₹29,500 only
+                    Enroll for all 3 parts along with Gleim content for ₹58,999 only<br></br> Or each part for ₹23,599 only
                 </p>
                 <h2 className="text-center mb-10 md:text-4xl font-semibold text-brand-blue">Enroll now to kickstart your career and stay ahead of the curve!</h2>
                 <div className="flex justify-center gap-6">
                     <Link
-                        to="https://rzp.io/rzp/uC1OGRim"
+                        to="https://rzp.io/rzp/CIASessions"
                         target="_blank"
                         className="inline-flex items-center justify-center px-8 py-3 text-xl font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-900 transition duration-200"
                     >
                         Enroll for All Parts
                     </Link>
                     <Link
-                        to="https://rzp.io/rzp/BjsIQfL"
+                        to="https://rzp.io/rzp/iFUFvKph"
                         target="_blank"
                         className="inline-flex items-center justify-center px-8 py-3 text-xl font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-900 transition duration-200"
                     >

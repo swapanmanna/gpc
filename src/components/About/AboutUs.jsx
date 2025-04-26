@@ -10,6 +10,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import MetaTags from "../MetaTags";
+import { HiOutlineMail } from "react-icons/hi";
 
 export default function AboutUs() {
     return (
@@ -199,7 +200,7 @@ export default function AboutUs() {
                                 <p class="mt-3 mb-4 font-light text-brand-gray dark:text-gray-400">CA, CIA, CRMA, CISA</p>
                                 <ul class="flex space-x-4 sm:mt-0">
                                     <li>
-                                        <Link to="mailto:cia@globalprofessionalcertifications.com"><AiOutlineMail className="h-6 w-6 cursor-pointer"/></Link>
+                                        <Link to="mailto:cia@globalprofessionalcertifications.com"><HiOutlineMail className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                     <li>
                                         <Link to="https://www.linkedin.com/in/arpit-garg-88070560" target="blank"><AiOutlineLinkedin className="h-6 w-6 cursor-pointer"/></Link>
