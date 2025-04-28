@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsLightbulbFill } from "react-icons/bs"
+import { FaHandPointRight } from "react-icons/fa";
+import { FaHandPointLeft } from "react-icons/fa";
 
 export default function NotificationBanner () {
 
@@ -10,7 +13,7 @@ export default function NotificationBanner () {
             <div
             className="w-full">
                 <p className="text-sm md:text-base">
-                👉 Notice: The CIA course syllabus has been updated! Explore the new content and <Link to="https://rzp.io/rzp/CIASessions" target="_blank" className="text-yellow-900 hover:underline">enroll now</Link> to stay ahead | New Batch starts on 3rd May 2025 👈
+                <FaHandPointRight className="inline text-orange-800 mr-1 pb-1 h-8 w-8" /> Notice: The CIA course syllabus has been updated! Explore the new content and <Link to="https://rzp.io/rzp/CIASessions" target="_blank" className="text-yellow-900 hover:underline">enroll now</Link> to stay ahead <FaHandPointLeft className="inline text-orange-800 ml-1 pb-1 h-8 w-8" /> <span className="font-bold"><BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-6 w-6" />New Batch starts on 3rd May 2025<BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-6 w-6" /></span>
                 </p>
             </div>
         </div>
