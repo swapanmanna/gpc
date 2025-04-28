@@ -10,7 +10,7 @@ export default function NotificationBanner () {
             <div
             className="w-full">
                 <p className="text-sm md:text-base">
-                👉 Notice: The CIA course syllabus has been updated! Explore the new content and <Link to="https://rzp.io/rzp/CIASessions" target="_blank" className="text-yellow-900 hover:underline">enroll now</Link> to stay ahead 👈
+                👉 Notice: The CIA course syllabus has been updated! Explore the new content and <Link to="https://rzp.io/rzp/CIASessions" target="_blank" className="text-yellow-900 hover:underline">enroll now</Link> to stay ahead | New Batch starts on 3rd May 2025 👈
                 </p>
             </div>
         </div>

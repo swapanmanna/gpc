@@ -24,9 +24,9 @@ import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
+import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
+import { HiOutlineTrophy } from "react-icons/hi2";
 import { height } from "../Notifications/NotificationBanner";
-
-import { AnimatePresence, motion, MotionConfig } from "motion/react";
 
 export default function SuccessStories() {
 
@@ -54,7 +54,20 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </section>
-            <div className="mx-auto text-center pt-[140px] pb-20 bg-gray-50">
+            <section className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 mt-10 rounded-xl shadow-xl">
+                <div className="md:flex md:flex-col justify-center items-center">
+                    <h1 className="text-3xl sm:text-4xl text-brand-blue  font-bold pt-20 text-center">Hear from Siva</h1>
+                    <h2 className="text-3xl sm:text-4xl text-brand-blue  font-bold pt-12 text-center">Our first alumni who cleared all three parts of CIA!</h2>
+                    <div className="flex justify-center items-center gap-10">
+                        <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                        <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
+                            <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
+                        </div>
+                        <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                    </div>
+                </div>
+            </section>
+            <div className="mx-auto text-center pt-[120px] pb-20 bg-gray-50">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
                     What Our Students Say
                 </h2>

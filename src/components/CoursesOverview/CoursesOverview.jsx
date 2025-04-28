@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import coursesPhoto from "../../assets/Courses-photo.png";
+import coursesPhoto from "../../assets/Courses-photo-1.png";
 import Card from "../Card/Card";
 import cisaLogo from "../../assets/cisa-logo-1.png";
 import ciaLogo from "../../assets/cia-logo.webp";

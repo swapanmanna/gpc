@@ -9,7 +9,7 @@ const Navbar = ({topOffset}) => {
   const dropdownRef = useRef(null);
 
   // Dropdown options for Courses
-  const coursesOptions = ["CIA", "CRMA", "IAP", "CISA"];
+  const coursesOptions = ["CIA","CISA", "CRMA", "IAP"];
 
   // Handle clicks outside the dropdown
   useEffect(() => {
