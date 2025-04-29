@@ -55,21 +55,23 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </section>
-            <section className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 mt-10 rounded-xl shadow-xl">
-                <div className="md:flex md:flex-col justify-center items-center">
-                    <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
-                    <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Siva and Our Elite Alumni!</h2>
-                    <div className="flex justify-center items-center gap-10">
-                        <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
-                        <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                            <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
+            <section className="bg-gray-50 pb-10 mt-24">
+                <div className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
+                    <div className="md:flex md:flex-col justify-center items-center">
+                        <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
+                        <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Siva and Our Elite Alumni!</h2>
+                        <div className="flex justify-center items-center gap-10">
+                            <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
+                                <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
+                            </div>
+                            <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
                         </div>
-                        <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                        <p className="text-lg sm:text-2xl text-gray-800 mt-10 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
                     </div>
-                    <p className="text-lg sm:text-2xl text-gray-800 mt-10 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
                 </div>
             </section>
-            <div className="mx-auto text-center pt-[120px] pb-20 bg-gray-50">
+            <div className="mx-auto text-center pt-[100px] pb-20 bg-gray-50">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
                     What Our Students Say
                 </h2>
