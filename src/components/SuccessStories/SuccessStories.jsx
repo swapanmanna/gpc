@@ -19,13 +19,15 @@ import studentTestimonialSeventeen from "../../assets/Testimonial-screenshot-12.
 import studentTestimonialEighteen from "../../assets/Testimonial-screenshot-13.png"
 import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.png"
 import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
+import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
+import sivaSubramanianTestimonialOne from "../../assets/Siva-subramanian-testimonial-1.png"
+import sivaSubramanianTestimonialTwo from "../../assets/Siva-subramanian-testimonial-2.png"
 import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
-import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
 import { HiOutlineTrophy } from "react-icons/hi2";
 import { height } from "../Notifications/NotificationBanner";
 
@@ -55,17 +57,19 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </section>
-            <section className="bg-gray-50 pb-10 mt-24">
+            <section className="bg-gray-50 pb-10 pt-24">
                 <div className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
                         <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
                         <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Siva and Our Elite Alumni!</h2>
                         <div className="flex justify-center items-center gap-10">
-                            <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                            {/* <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/> */}
+                            <img src={sivaSubramanianTestimonialOne} className="h-[500px] rounded-lg"></img>
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
                                 <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
                             </div>
-                            <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/>
+                            {/* <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/> */}
+                            <img src={sivaSubramanianTestimonialTwo} className="h-[500px] rounded-lg"></img>
                         </div>
                         <p className="text-lg sm:text-2xl text-gray-800 mt-10 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
                     </div>
