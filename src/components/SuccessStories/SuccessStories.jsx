@@ -63,12 +63,10 @@ export default function SuccessStories() {
                         <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
                         <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Siva and Our Elite Alumni!</h2>
                         <div className="flex justify-center items-center gap-10">
-                            {/* <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/> */}
                             <img src={sivaSubramanianTestimonialOne} className="h-[500px] rounded-lg"></img>
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
                                 <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
                             </div>
-                            {/* <HiOutlineTrophy className="h-60 w-60 text-yellow-800"/> */}
                             <img src={sivaSubramanianTestimonialTwo} className="h-[500px] rounded-lg"></img>
                         </div>
                         <p className="text-lg sm:text-2xl text-gray-800 mt-10 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
