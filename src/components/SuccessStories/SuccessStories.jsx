@@ -25,6 +25,7 @@ import sivaSubramanianTestimonialOne from "../../assets/Siva-subramanian-testimo
 import sivaSubramanianTestimonialTwo from "../../assets/Siva-subramanian-testimonial-2.png"
 import sanjeevKumarTestimonialVideo from "../../assets/Sanjeev-kumar-testimonial-video.mp4"
 import sanjeevKumarTestimonialWapp from "../../assets/Sanjeev-kumar-testimonial-wapp.png"
+import vinodKumarTestimonial from "../../assets/Vinod-kumar-testimonial-wapp.png"
 import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
@@ -74,7 +75,7 @@ export default function SuccessStories() {
                             <img src={sivaSubramanianTestimonialTwo} className="h-[450px] rounded-lg mt-16"></img>
                         </div>
                         <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
-                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Hear from Sanjeev!</h4>
+                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-16">Hear from Sanjeev!</h4>
                         <div className="flex justify-center items-center gap-16">
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
                                 <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
@@ -112,7 +113,7 @@ const SuccessTestimonials = ({ start, end }) => {
         { id: 5, image: studentTestimonialFifteen, alt: "Testimonial 5" },
         { id: 6, image: studentTestimonialNineteen, alt: "Testimonial 6" },
         { id: 8, image: studentTestimonialEight, alt: "Testimonial 8" },
-        { id: 7, image: studentTestimonialSeven, alt: "Testimonial 7" },
+        { id: 7, image: vinodKumarTestimonial, alt: "Testimonial 7" },
         { id: 9, image: studentTestimonialOne, alt: "Testimonial 9" },
         { id: 10, image: studentTestimonialTen, alt: "Testimonial 10" },
         { id: 11, image: studentTestimonialTwo, alt: "Testimonial 11" },
