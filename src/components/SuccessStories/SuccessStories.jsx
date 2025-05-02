@@ -19,9 +19,13 @@ import studentTestimonialSeventeen from "../../assets/Testimonial-screenshot-12.
 import studentTestimonialEighteen from "../../assets/Testimonial-screenshot-13.png"
 import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.png"
 import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
+import studentTestimonialTwentyOne from "../../assets/Testimonial-screenshot-16.png"
 import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
 import sivaSubramanianTestimonialOne from "../../assets/Siva-subramanian-testimonial-1.png"
 import sivaSubramanianTestimonialTwo from "../../assets/Siva-subramanian-testimonial-2.png"
+import sanjeevKumarTestimonialVideo from "../../assets/Sanjeev-kumar-testimonial-video.mp4"
+import sanjeevKumarTestimonialWapp from "../../assets/Sanjeev-kumar-testimonial-wapp.png"
+import vinodKumarTestimonial from "../../assets/Vinod-kumar-testimonial-wapp.png"
 import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
@@ -61,15 +65,24 @@ export default function SuccessStories() {
                 <div className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
                         <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
-                        <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Siva and Our Elite Alumni!</h2>
+                        <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Our Elite Alumni!</h2>
+                        <h3 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Hear from Siva!</h3>
                         <div className="flex justify-center items-center gap-10">
-                            <img src={sivaSubramanianTestimonialOne} className="h-[500px] rounded-lg"></img>
+                            <img src={sivaSubramanianTestimonialOne} className="h-[450px] rounded-lg mt-16"></img>
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                                <video src={sivaSubramanianCiaTestimonial} className="h-[500px] rounded-lg" controls playsInline></video>
+                                <video src={sivaSubramanianCiaTestimonial} className="h-[450px] rounded-lg" controls playsInline></video>
                             </div>
-                            <img src={sivaSubramanianTestimonialTwo} className="h-[500px] rounded-lg"></img>
+                            <img src={sivaSubramanianTestimonialTwo} className="h-[450px] rounded-lg mt-16"></img>
                         </div>
-                        <p className="text-lg sm:text-2xl text-gray-800 mt-10 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
+                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
+                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-16">Hear from Sanjeev!</h4>
+                        <div className="flex justify-center items-center gap-16">
+                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
+                                <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
+                            </div>
+                            <img src={sanjeevKumarTestimonialWapp} className="h-[450px] rounded-lg mt-16"></img>
+                        </div>
+                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Transform your ambitions into reality like Sanjeev, who conquered all three parts of the CIA exam in just 4 months! With our expert guidance and your determination, you can fast-track your journey to becoming a globally recognized Certified Internal Auditor. Seize this opportunity and start achieving today!</p>
                     </div>
                 </div>
             </section>
@@ -93,26 +106,27 @@ export default function SuccessStories() {
 
 const SuccessTestimonials = ({ start, end }) => {
     const testimonialsData = [
-        { id: 1, image: studentTestimonialOne, alt: "Testimonial 1" },
-        { id: 2, image: studentTestimonialTwo, alt: "Testimonial 2" },
-        { id: 3, image: studentTestimonialThree, alt: "Testimonial 3" },
+        { id: 1, image: studentTestimonialNine, alt: "Testimonial 1" },
+        { id: 2, image: studentTestimonialEleven, alt: "Testimonial 2" },
+        { id: 3, image: studentTestimonialTwelve, alt: "Testimonial 3" },
         { id: 4, image: studentTestimonialFour, alt: "Testimonial 4" },
-        { id: 5, image: studentTestimonialFive, alt: "Testimonial 5" },
-        { id: 6, image: studentTestimonialSix, alt: "Testimonial 6" },
-        { id: 7, image: studentTestimonialSeven, alt: "Testimonial 7" },
+        { id: 5, image: studentTestimonialFifteen, alt: "Testimonial 5" },
+        { id: 6, image: studentTestimonialNineteen, alt: "Testimonial 6" },
         { id: 8, image: studentTestimonialEight, alt: "Testimonial 8" },
-        { id: 9, image: studentTestimonialNine, alt: "Testimonial 9" },
+        { id: 7, image: vinodKumarTestimonial, alt: "Testimonial 7" },
+        { id: 9, image: studentTestimonialOne, alt: "Testimonial 9" },
         { id: 10, image: studentTestimonialTen, alt: "Testimonial 10" },
-        { id: 11, image: studentTestimonialEleven, alt: "Testimonial 11" },
-        { id: 12, image: studentTestimonialTwelve, alt: "Testimonial 12" },
+        { id: 11, image: studentTestimonialTwo, alt: "Testimonial 11" },
+        { id: 12, image: studentTestimonialThree, alt: "Testimonial 12" },
         { id: 13, image: studentTestimonialThirteen, alt: "Testimonial 13" },
         { id: 14, image: studentTestimonialFourteen, alt: "Testimonial 14" },
-        { id: 15, image: studentTestimonialFifteen, alt: "Testimonial 15" },
+        { id: 15, image: studentTestimonialTwentyOne, alt: "Testimonial 15" },
         { id: 16, image: studentTestimonialSixteen, alt: "Testimonial 16" },
         { id: 17, image: studentTestimonialSeventeen, alt: "Testimonial 17" },
         { id: 18, image: studentTestimonialEighteen, alt: "Testimonial 18" },
-        { id: 19, image: studentTestimonialNineteen, alt: "Testimonial 19" },
+        { id: 19, image: studentTestimonialSix, alt: "Testimonial 19" },
         { id: 20, image: studentTestimonialTwenty, alt: "Testimonial 20" },
+        { id: 21, image: studentTestimonialTwentyOne, alt: "Testimonial 21" },
     ];
 
     // Slice the array based on start and end props
@@ -130,7 +144,7 @@ const SuccessTestimonials = ({ start, end }) => {
                             <img
                                 src={testimonial.image}
                                 alt={testimonial.alt}
-                                className="w-full h-[338.4px] object-contain"
+                                className="w-full h-[338.4px] object-contain py-4"
                             />
                         </div>
                     ))}
