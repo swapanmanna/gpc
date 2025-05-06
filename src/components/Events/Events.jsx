@@ -11,6 +11,8 @@ import iiaKolkataBanner from "../../assets/iia-kolkata-banner.webp";
 import iiaBengaluruBanner from "../../assets/iia-bengaluru-banner.webp";
 import iiaMumbaiBanner from "../../assets/iia-mumbai-banner.webp";
 import MetaTags from "../MetaTags";
+import { FaArrowDown } from "react-icons/fa6";
+import { motion } from "motion/react";
 
 export default function Events(){
     return (
@@ -24,17 +26,27 @@ export default function Events(){
                 <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
                     
                     {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black opacity-70"></div>
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
 
                     {/* Heading */}
                     {/* absolute top-[240px] left-[180px] */}
 
                     {/* Fix this heading's alignment */}
 
-                    <h1 className="absolute top-[240px] left-[180px] text-5xl text-white font-bold z-10">
+                    {/* <h1 className="absolute top-[240px] left-[180px] text-5xl text-white font-bold z-10">
                     Where Learning Meets Connection
                     </h1>
-                    <p className="absolute top-[320px] left-[180px] text-white text-3xl font-semibold">Explore our journey through global conferences,<br></br> workshops, and networking events</p>
+                    <p className="absolute top-[320px] left-[180px] text-white text-3xl font-semibold">Explore our journey through global conferences,<br></br> workshops, and networking events</p> */}
+                    <motion.p 
+                        // initial={{scale: 1}}
+                        animate={{scale: [1, 1.3, 1]}}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                        }}
+                        className="absolute bottom-[2rem] text-white text-center left-[45%] font-bold">
+                            Scroll down to view our events 
+                    </motion.p>
                 </div>
             </div>
 
@@ -163,6 +175,94 @@ export default function Events(){
                 
             </section>
             </div>
+
+            {/* <section className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
+                <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">UPCOMING EVENTS</button>
+                <h4 className="text-3xl md:text-5xl font-bold">A Glimpse Into What’s Ahead</h4>
+                <p className="w-[750px] text-center text-[#444444] text-xl">  From thought-provoking conferences to engaging sessions and networking opportunities, our upcoming events promise to spark ideas, foster collaboration, and keep you at the forefront of innovation
+                </p>
+                <div className="max-w-[700px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Hyderabad</button>
+                    <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Delhi</button>
+                </div>
+                <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                    <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <img src={wofaBanner} className="rounded-xl"></img>
+                        <div className="flex flex-col gap-4">
+                            <h5 className="md:text-3xl font-bold text-[#141418]">We were proud to be a part of WOFA 2025, where leaders and changemakers came together to drive innovation and empowerment.</h5>
+                            <div className="flex gap-10">
+                                <div className="flex gap-1">
+                                    <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">New Delhi, India</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">31st Jan 2025 - 2nd Feb 2025</p>
+                                </div>
+                            </div>
+                            <p className="text-[#444444] mb-[25px] text-lg">From powerful discussions to meaningful connections, the event was a celebration of global collaboration and forward thinking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                    <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <img src={iiaKolkataBanner} className="rounded-xl w-[360px] h-[270px]"></img>
+                        <div className="flex flex-col gap-4">
+                            <h5 className="md:text-3xl font-bold text-[#141418]">We engaged with leading internal audit professionals at the IIA Kolkata Chapter event, exploring emerging trends in governance and risk.</h5>
+                            <div className="flex gap-10">
+                                <div className="flex gap-1">
+                                    <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">Kolkata, West Bengal, India</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">10th Feb 2025</p>
+                                </div>
+                            </div>
+                            <p className="text-[#444444] mb-[25px] text-lg">The sessions fostered meaningful dialogue and highlighted the evolving role of auditors in today’s dynamic landscape.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                    <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <img src={iiaBengaluruBanner} className="rounded-xl"></img>
+                        <div className="flex flex-col gap-4">
+                            <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Bengaluru Chapter conference, we participated in insightful discussions on innovation in internal auditing.</h5>
+                            <div className="flex gap-10">
+                                <div className="flex gap-1">
+                                    <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">Bengaluru, Karnataka, India</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">19th Feb 2025</p>
+                                </div>
+                            </div>
+                            <p className="text-[#444444] mb-[25px] text-lg">The event brought together experts and thought leaders, creating a powerful platform for knowledge exchange and collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                    <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <img src={iiaMumbaiBanner} className="rounded-xl"></img>
+                        <div className="flex flex-col gap-4">
+                            <h5 className="md:text-3xl font-bold text-[#141418]">The IIA Mumbai Chapter event was a hub of ideas and industry insights, focused on enhancing audit excellence.</h5>
+                            <div className="flex gap-10">
+                                <div className="flex gap-1">
+                                    <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">Mumbai, Maharashtra, India</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                    <p className="font-bold text-[#444444]">5th March 2025</p>
+                                </div>
+                            </div>
+                            <p className="text-[#444444] mb-[25px] text-lg">We connected with professionals driving change and shared in the mission to elevate internal audit practices across sectors.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section> */}
         </>
     )
 }
