@@ -14,7 +14,7 @@ import MetaTags from "../MetaTags";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "motion/react";
 import iiaHyderabadArpitGarg from "../../assets/IIA_Hyderabad_Arpit_Garg.jpg";
-import iiaDelhiFlyer from "../../assets/IIA_Delhi_Flyer.png";
+import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png";
 
 export default function Events(){
     return (
