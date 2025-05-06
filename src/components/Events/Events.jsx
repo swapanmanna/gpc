@@ -189,8 +189,8 @@ export default function Events(){
                         <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Delhi</button>
                     </div>
                     <div className="flex gap-10 max-w-6xl border border-gray-300 rounded-xl p-8 shadow-lg">
-                        <img src={iiaHyderabadArpitGarg} className="h-[700px] rounded-md"></img>
-                        <img src={iiaDelhiFlyer} className="h-[700px] rounded-md"></img>
+                        <img src={iiaHyderabadArpitGarg} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300"></img>
+                        <img src={iiaDelhiFlyer} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300"></img>
                     </div>
                 </div>
             </section>
