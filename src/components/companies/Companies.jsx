@@ -1,7 +1,7 @@
 import React from "react";
 
 import emami from "../../assets/Emami-bgremoved.png";
-import atlas from "../../assets/Atlas-bgremoved.png";
+import atlas from "../../assets/atlas.png";
 import gitlab from "../../assets/Gitlab-bgremoved.png";
 import kpmg from "../../assets/kpmg.png";
 import suzlon from "../../assets/Suzlon-bgremoved.png";
@@ -10,13 +10,13 @@ import hpLogo from "../../assets/hp-logo.png";
 import pwcLogo from "../../assets/PWC-logo.svg";
 import eyLogo from "../../assets/EY-logo.png";
 import deloitteLogo from "../../assets/Deloitte-logo.png";
-import bdoLogo from "../../assets/BDO-logo-bgremoved.png"
+import bdoLogo from "../../assets/BDO-logo-bgremoved.webp"
 import comptrollerLogo from "../../assets/Comptroller-logo-bgremoved.png";
 import vodafoneLogo from "../../assets/Vodafone_Logo.png";
 import deutscheBankLogo from "../../assets/DeutscheBank-logo.png";
 import kotakMahindraBankLogo from "../../assets/Kotak-mahindra-bank-logo.png"
-import sbiLifeInsuranceLogo from "../../assets/SBI-life-insurance.webp"
-import yesBankLogo from "../../assets/yes-bank-logo.webp"
+import sbiLifeInsuranceLogo from "../../assets/SBI-life-insurance.png"
+import yesBankLogo from "../../assets/yes-bank-logo.png"
 import courseraLogo from "../../assets/coursera-logo.png"
 import eatonLogo from "../../assets/eaton-logo-mobile.png"
 import cognizantLogo from "../../assets/Cognizant-Logo.png"
@@ -60,7 +60,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesOne.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                         <motion.div 
@@ -69,7 +69,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesOne.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                     </div>
@@ -82,7 +82,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesTwo.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                         <motion.div 
@@ -91,7 +91,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesTwo.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                     </div>
@@ -104,7 +104,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesThree.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                         <motion.div 
@@ -113,7 +113,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesThree.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                     </div>
@@ -126,7 +126,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesFour.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                         <motion.div 
@@ -135,7 +135,7 @@ export default function Companies() {
                         transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                         className="flex flex-shrink-0">
                             {companiesFour.map((company, index) => {
-                                return <img className="h-24 w-50 pr-20" src={company} key={index} />
+                                return <img className="h-12 pr-20" src={company} key={index} />
                             })}
                         </motion.div>
                     </div>
