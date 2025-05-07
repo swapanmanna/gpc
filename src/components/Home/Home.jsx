@@ -22,7 +22,7 @@ export default function Home() {
             <Companies />
             <h1 className="md:text-4xl text-3xl justify-center w-full font-bold text-brand-blue mb-24 inline-flex justify-center items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
             <VideoSection />
-            <section className="flex flex-col px-20 mt-20 py-10 mx-auto md:max-w-6xl rounded-xl shadow-xl justify-center items-center border border-gray-300">
+            <section className="bg-[url('assets/bg.png')] flex flex-col px-20 mt-20 py-10 mx-auto md:max-w-6xl rounded-xl shadow-lg justify-center items-center border">
                 <h2 className="md:text-4xl text-3xl justify-center w-full font-bold text-brand-blue text-center">Learn from the Best!</h2>
                 <h3 className="text-center mt-10 md:text-3xl text-2xl text-brand-blue font-bold">Mr. Mukundan K.V, <span className="">CEO, IIA India</span></h3>
                 <img src={learningPartner} className="w-3/4 mt-12 rounded-lg"></img>
