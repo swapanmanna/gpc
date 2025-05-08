@@ -11,7 +11,6 @@ import iiaKolkataBanner from "../../assets/iia-kolkata-banner.webp";
 import iiaBengaluruBanner from "../../assets/iia-bengaluru-banner.webp";
 import iiaMumbaiBanner from "../../assets/iia-mumbai-banner.webp";
 import MetaTags from "../MetaTags";
-import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "motion/react";
 import iiaHyderabadArpitGarg from "../../assets/IIA_Hyderabad_Arpit_Garg.jpg";
 import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png";
@@ -45,6 +44,7 @@ export default function Events(){
                         transition={{
                             duration: 2,
                             repeat: Infinity,
+                            ease: "linear"
                         }}
                         className="absolute bottom-[2rem] text-white text-center left-[45%] font-bold">
                             Scroll down to view our events 

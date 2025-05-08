@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsLightbulbFill } from "react-icons/bs"
-import { FaHandPointRight } from "react-icons/fa";
-import { FaHandPointLeft } from "react-icons/fa";
 import { motion } from "motion/react";
 
 export default function NotificationBanner () {
@@ -15,7 +13,7 @@ export default function NotificationBanner () {
             className="w-full">
                 <motion.p
                 animate={{  scale: [1, 1.1, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
+                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 className="text-sm md:text-base">
                 <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-6 w-6" />New Batch has started! Watch our <span className="text-brown-700 font-semibold hover:underline"><Link className="" to="https://youtu.be/XNnXkttYQUY?si=ZnqZt5RBdUxY_LvH" target="_blank">orientation program</Link></span> to know more about the new syllabus of CIA <BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-6 w-6" />
                 </motion.p>
