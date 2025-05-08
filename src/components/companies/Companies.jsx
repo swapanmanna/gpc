@@ -1,5 +1,6 @@
 import React from "react";
 
+// importing company logos
 import emami from "../../assets/Emami-bgremoved.png";
 import atlas from "../../assets/atlas.png";
 import gitlab from "../../assets/Gitlab-bgremoved.png";
@@ -36,8 +37,8 @@ import bse from "../../assets/BSE.png"
 import wipro from "../../assets/Wipro.png"
 import zensar from "../../assets/Zensar.png"
 
-
-import { motion } from "framer-motion";
+// importing marquee
+import Marquee from "../Marquee/Marquee";
 
 export default function Companies() {
 
@@ -51,93 +52,25 @@ export default function Companies() {
 
     return (
             <div className="pt-32 pb-20 mb-10 md:mb-20 max-w-[77rem] mx-auto flex flex-col items-center overflow-x-hidden">
-                <h1 className="text-xl md:text-4xl mb-24 font-bold text-brand-blue text-center">Our students are from Top corporates</h1>
+                <h1 className="text-xl md:text-4xl mb-24 font-bold text-brand-blue text-center">Our students are from Top Corporates</h1>
                 <div className="container mx-auto">
                     <div className="flex myGradient">
-                        <motion.div 
-                        initial={{ x: 0 }}
-                        animate={{ x: "-100%" }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesOne.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
-                        <motion.div 
-                        initial={{ x: 0 }}
-                        animate={{ x: "-100%" }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesOne.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
+                        <Marquee companies={companiesOne} start={0} end={"-100%"} />
                     </div>
                 </div>
                 <div className="container mx-auto mt-20">
                     <div className="flex myGradient">
-                        <motion.div 
-                        initial={{ x: "-100%" }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesTwo.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
-                        <motion.div 
-                        initial={{ x: "-100%" }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesTwo.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
+                        <Marquee companies={companiesTwo} start={"-100%"} end={0} />
                     </div>
                 </div>
                 <div className="container mx-auto mt-20">
                     <div className="flex myGradient">
-                        <motion.div 
-                        initial={{ x: 0 }}
-                        animate={{ x: "-100%" }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesThree.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
-                        <motion.div 
-                        initial={{ x: 0 }}
-                        animate={{ x: "-100%" }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesThree.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
+                        <Marquee companies={companiesThree} start={0} end={"-100%"} />
                     </div>
                 </div>
                 <div className="container mx-auto mt-20">
                     <div className="flex myGradient">
-                        <motion.div 
-                        initial={{ x: "-100%" }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesFour.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
-                        <motion.div 
-                        initial={{ x: "-100%" }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                        className="flex flex-shrink-0">
-                            {companiesFour.map((company, index) => {
-                                return <img className="h-12 pr-20" src={company} key={index} />
-                            })}
-                        </motion.div>
+                        <Marquee companies={companiesFour} start={"-100%"} end={0} />
                     </div>
                 </div>
             </div>

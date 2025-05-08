@@ -3,7 +3,7 @@ import Hero from "../Hero/Hero";
 import Benefits from "../Benefits/Benefits";
 import Training from "../Training/Training";
 import Demand from "../Demand/Demand";
-import Companies from "../companies/Companies";
+import Companies from "../Companies/Companies";
 import VideoSection from "../VideoSection/VideoSection";
 import { FaChevronDown } from "react-icons/fa";
 import learningPartner from "../../assets/Learning_partner.jpg";
