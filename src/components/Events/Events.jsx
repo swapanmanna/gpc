@@ -59,7 +59,7 @@ export default function Events(){
                 <div className="flex flex-col gap-6">
                     <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR EVENTS</button>
                     <h3 className="md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
-                    <p className="font-bold text-lg text-[#444444]">At Global Professional Certifications, we don’t just talk about growth—we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.</p>
+                    <p className="font-bold text-lg text-[#444444]">At Global Professional Certifications, we don’t just talk about growth, we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div className="flex flex-col w-full gap-4 border-r border-r-4 border-r-gray-200">
                                 <FaHandshakeAngle className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
@@ -70,7 +70,7 @@ export default function Events(){
                                 <p className="text-xl font-bold">Get latest updates</p>
                         </div>
                     </div>
-                    <p className="text-[#444444] font-semibold">Joining us at events isn’t just about attending—it’s about engaging, evolving, and becoming part of a powerful global community.</p>
+                    <p className="text-[#444444] font-semibold">Joining us at events isn’t just about attending, it is about engaging, evolving, and becoming part of a powerful global community.</p>
                     <div className="flex gap-6">
                         <Link to="/contact" className="px-6 py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-lg rounded-lg font-semibold transition duration-300 ease-in-out">JOIN US</Link>
                         <div className="flex gap-2 items-center"> 
@@ -91,7 +91,7 @@ export default function Events(){
             <section className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
                 <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR PAST EVENTS</button>
                 <h4 className="text-3xl md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
-                <p className="w-[600px] text-center text-[#444444] text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we’ve been a part of.</p>
+                <p className="w-[600px] text-center text-[#444444] text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we’ve been a part of</p>
                 <div className="max-w-[700px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
                     <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Mumbai</button>
                     <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Bengaluru</button>

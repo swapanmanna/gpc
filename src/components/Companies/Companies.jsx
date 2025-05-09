@@ -51,6 +51,7 @@ export default function Companies() {
     const companiesFour = [rblBank, londonStockExchange, orix, sunPharmaseutical, jpMorganChase, hsbc, gspu, equitas]
 
     return (
+        <>
             <div className="pt-32 pb-20 mb-10 md:mb-20 max-w-[77rem] mx-auto flex flex-col items-center overflow-x-hidden">
                 <h1 className="text-xl md:text-4xl mb-24 font-bold text-brand-blue text-center">Our students are from Top Corporates</h1>
                 <div className="container mx-auto">
@@ -74,5 +75,6 @@ export default function Companies() {
                     </div>
                 </div>
             </div>
+        </>
     );
 }
