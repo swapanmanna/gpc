@@ -5,6 +5,7 @@ import { GrLocation } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { TiArrowRight } from "react-icons/ti";
 
 export default function ContactUs() {
     useEffect(() => {
@@ -435,7 +436,7 @@ export default function ContactUs() {
                                     </div>
                                     <div className="w-full">
                                         <h4 className="mb-1 text-xl text-dark dark:text-white">
-                                            <span className="font-bold">Our Location</span> | <span className="text-sm italic hover:text-brand-purple hover:underline"><Link to="https://maps.app.goo.gl/iJx6qe41EeEeG1vY8" target="_blank">View on map</Link></span>
+                                            <span className="font-bold">Our Location</span> <span><TiArrowRight className="inline-block" /></span> <span className="text-sm italic hover:text-brand-purple hover:underline"><Link to="https://maps.app.goo.gl/iJx6qe41EeEeG1vY8" target="_blank">View on map</Link></span>
                                         </h4>
                                         <p className="text-sm text-body-color dark:text-dark-6">
                                             Innov8 Building, Orchid Centre, Golf course road, Gurugram, Haryana, India - 122022
