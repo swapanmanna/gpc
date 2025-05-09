@@ -4,6 +4,7 @@ import { height } from "../Notifications/NotificationBanner";
 import { GrLocation } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
     useEffect(() => {
@@ -431,14 +432,13 @@ export default function ContactUs() {
                                 <div className="mb-8 flex justify-center items-center w-full max-w-[370px]">
                                     <div className="bg-primary/5 text-brand-blue shadow-lg border border-gray-200 mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                         <GrLocation size={32} className="hover:text-brand-purple transition duration-300" />
-
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                                            Our Location
+                                        <h4 className="mb-1 text-xl text-dark dark:text-white">
+                                            <span className="font-bold">Our Location</span> | <span className="text-sm italic hover:text-brand-purple hover:underline"><Link to="https://maps.app.goo.gl/iJx6qe41EeEeG1vY8" target="_blank">View on map</Link></span>
                                         </h4>
                                         <p className="text-sm text-body-color dark:text-dark-6">
-                                            Innov8 Building, Orchid Centre, Golf course road, Gurugram, Haryana, India - 122002
+                                            Innov8 Building, Orchid Centre, Golf course road, Gurugram, Haryana, India - 122022
                                         </p>
                                     </div>
                                 </div>
