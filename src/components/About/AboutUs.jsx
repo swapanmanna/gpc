@@ -5,7 +5,6 @@ import arpitGarg from "../../assets/arpit-garg.webp";
 import ourMissionOne from "../../assets/our-mission-1.webp";
 import ourMissionTwo from "../../assets/our-mission-2.webp";
 import ourVision from "../../assets/our-vision.webp";
-import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -182,19 +181,19 @@ export default function AboutUs() {
             </section>
             
             <section class="bg-gray-50 dark:bg-gray-900 pb-20">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 ">
-                    <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-brand-dark dark:text-white">Experienced Course Mentor</h2>
-                        <h4 className="text-xl font-semibold">Most Renowned Faculty in India</h4>
+                <div class="bg-white py-8 px-4 mx-auto md:max-w-2xl border border-gray-300 rounded-xl shadow-lg lg:pt-16 lg:px-6 ">
+                    <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-12">
+                        <h2 class="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-brand-blue dark:text-white">Experienced Course Mentor</h2>
+                        <h4 className="text-xl md:text-2xl font-semibold tracking-tight">Most Renowned Faculty in India</h4>
                     </div> 
                     <div class="grid gap-8 md:flex md:items-center md:justify-center">
                         <div class="items-center bg-gray-100 rounded-lg shadow-lg sm:flex dark:bg-gray-800 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105">
-                            <a href="#">
+                            <Link to="https://www.linkedin.com/in/arpit-garg-88070560" target="_blank">
                                 <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg h-72 object-cover" src={arpitGarg} alt="Arpit-Garg-image" />
-                            </a>
+                            </Link>
                             <div class="p-5">
                                 <h3 class="text-xl font-bold tracking-tight text-brand-dark dark:text-white">
-                                    <a href="#">Arpit Garg</a>
+                                    <p>Arpit Garg</p>
                                 </h3>
                                 <span class="text-brand-gray font-semibold dark:text-gray-400">Co-founding Partner, Riskman</span>
                                 <p class="mt-3 mb-4 font-light text-brand-gray dark:text-gray-400">CA, CIA, CRMA, CISA</p>
