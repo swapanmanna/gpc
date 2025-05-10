@@ -205,7 +205,7 @@ export default function AboutUs() {
                                         <Link to="https://www.linkedin.com/in/arpit-garg-88070560" target="blank"><AiOutlineLinkedin className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                     <li>
-                                        <Link to="https://www.globalprofessionalcertifications.com/" target="blank"><TbWorldWww className="h-6 w-6 cursor-pointer"/></Link>
+                                        <Link to="https://www.riskman.in/" target="blank"><TbWorldWww className="h-6 w-6 cursor-pointer"/></Link>
                                     </li>
                                 </ul>
                             </div>
