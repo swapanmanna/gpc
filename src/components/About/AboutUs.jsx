@@ -56,24 +56,7 @@ export default function AboutUs() {
                                     <p class="text-brand-gray text-base font-normal leading-relaxed lg:text-start text-center">
                                     Our mission is to bridge the gap between ambition and achievement, transforming learners into leaders through rigorous, globally recognized certifications. We specialize in preparing individuals for prestigious programs, including the Certified Internal Auditor (CIA), Certification in Risk Management Assurance (CRMA), Internal Audit Practitioner (IAP), and Certified Information Systems Auditor (CISA), each widely regarded as the gold standard in the risk assurance and advisory domain. </p>
                                 </div>
-                                {/* <div class="w-full lg:justify-start md:justify-center sm:gap-10 gap-5 flex">
-                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
-                                        <h3 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">250+</h3>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">CIA's</h6>
-                                    </div>
-                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">5+</h4>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Years of Teaching Experience</h6>
-                                    </div>
-                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">1000+</h4>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Professionals from Top Companies</h6>
-                                    </div>
-                                    <div class="flex-col w-1/4 justify-start items-start inline-flex">
-                                        <h4 class="text-gray-900 text-xl md:text-3xl font-bold font-manrope leading-normal">25+</h4>
-                                        <h6 class="text-gray-500 text-sm md:text-base font-normal leading-relaxed">Batches Completed</h6>
-                                    </div>
-                                </div> */}
+                                
                                 <div class="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 p-4 md:p-6 bg-gray-50 rounded-2xl shadow-lg">
                                     {/* <!-- Card 1 --> */}
                                     <div
@@ -103,13 +86,7 @@ export default function AboutUs() {
                                         <h6 class="text-gray-500 text-xs md:text-sm font-medium leading-normal">Batches Completed</h6>
                                     </div>
                                 </div>
-
-
                             </div>
-                            {/* <Link to="/courses"><button
-                                class="sm:w-fit w-full px-6 py-3 bg-brand-blue hover:bg-brand-purple transition-all duration-300 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
-                                <span class="text-white font-bold leading-6">Explore our Programs</span>
-                            </button></Link> */}
                         </div>
                     </div>
                 </div>
@@ -213,7 +190,7 @@ export default function AboutUs() {
                     </div>  
                 </div>
             </section>
-            {/* <Companies />                                                         */}
+            {/* <Companies />*/}
         </>
     )
 }
