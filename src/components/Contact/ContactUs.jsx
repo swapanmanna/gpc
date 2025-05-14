@@ -1074,7 +1074,7 @@ export default function ContactUs() {
                                     id="form"
                                 >
                                     <input type="hidden" name="zf_referrer_name" value="" />
-                                    <input type="hidden" name="zf_redirect_url" value="" />
+                                    <input type="hidden" name="zf_redirect_url" value="https://globalprofessionalcertifications.com/contact" />
                                     <input type="hidden" name="zc_gad" value="" />
                                     <div className="flex gap-3 mb-6">
                                         <div className="w-full">
