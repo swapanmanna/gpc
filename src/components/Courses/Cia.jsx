@@ -192,7 +192,7 @@ const Cia = () => {
             <div className="max-w-5xl mx-auto my-24 px-4 md:px-0 md:flex md:flex-col md:items-center">
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
-                    <table className="min-w-[800px] bg-white border border-gray-300 shadow-lg rounded-lg overflow-hidden">
+                    <table className="min-w-[800px] bg-white border border-gray-300 shadow-md rounded-lg overflow-hidden">
 
                         {/* Style the table in a better way! */}
 
@@ -203,7 +203,7 @@ const Cia = () => {
                                 <th className="py-3 px-4 border-b">Non-Members</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="[&>*:nth-child(even)]:bg-gray-100 [&>*:nth-child(odd)]:bg-gray-50">
 
                             <tr className="border-b text-lg text-left">
                                 <td className="py-2 pr-4 pl-6">CIA Application Fees</td>
