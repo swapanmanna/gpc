@@ -1084,7 +1084,7 @@ export default function ContactUs() {
                                                 maxLength="255"
                                                 fieldType="7"
                                                 placeholder="First Name"
-                                                className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark placeholder-gray-500 focus:border-brand-gray w-full rounded border py-3 px-[14px] text-base outline-none"
+                                                className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark placeholder-gray-500 focus:border-brand-gray w-full rounded-md border py-3 px-[14px] text-base outline-none"
                                             />
                                             <p id="Name_error" className="text-red-500 text-sm mt-1" style={{ display: 'none' }}>Invalid value</p>
                                         </div>
@@ -1095,7 +1095,7 @@ export default function ContactUs() {
                                                 maxLength="255"
                                                 fieldType="7"
                                                 placeholder="Last Name"
-                                                className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark placeholder-gray-500 focus:border-brand-gray w-full rounded border py-3 px-[14px] text-base outline-none"
+                                                className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark placeholder-gray-500 focus:border-brand-gray w-full rounded-md border py-3 px-[14px] text-base outline-none"
                                             />
                                             <p id="Name_error" className="text-red-500 text-sm mt-1" style={{ display: 'none' }}>Invalid value</p>
                                         </div>
@@ -1108,7 +1108,7 @@ export default function ContactUs() {
                                             maxLength="255"
                                             fieldType="9"
                                             placeholder="Your Email"
-                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full rounded border py-3 px-[14px] text-base outline-none"
+                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full rounded-md border py-3 px-[14px] text-base outline-none"
                                         />
                                         <p id="Email_error" className="text-red-500 text-sm mt-1" style={{ display: 'none' }}>Invalid value</p>
                                     </div>
@@ -1125,7 +1125,7 @@ export default function ContactUs() {
                                             valType="number"
                                             phoneFormatType="1"
                                             placeholder="Your Phone Number"
-                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full rounded border py-3 px-[14px] text-base outline-none"
+                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full rounded-md border py-3 px-[14px] text-base outline-none"
                                         />
                                         <p id="PhoneNumber_error" className="text-red-500 text-sm mt-1" style={{ display: 'none' }}>Invalid value</p>
                                     </div>
@@ -1136,14 +1136,14 @@ export default function ContactUs() {
                                             maxLength="65535"
                                             placeholder="Your Message"
                                             rows="6"
-                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                                            className="border border-gray-300 shadow dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color placeholder-gray-500 focus:border-brand-gray w-full resize-none rounded-md border py-3 px-[14px] text-base outline-none"
                                         ></textarea>
                                         <p id="MultiLine_error" className="text-red-500 text-sm mt-1" style={{ display: 'none' }}>Invalid value</p>
                                     </div>
                                     <div>
                                         <button
                                             type="submit"
-                                            className="w-full p-3 text-white transition border rounded-lg border-primary bg-brand-blue hover:bg-opacity-90 hover:bg-brand-purple hover:border-brand-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-gray"
+                                            className="w-full p-3 text-white transition border rounded-md border-primary bg-brand-blue hover:bg-opacity-90 hover:bg-brand-purple hover:border-brand-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-gray"
                                         >
                                             Send message
                                         </button>
