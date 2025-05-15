@@ -31,7 +31,6 @@ const Cia = () => {
             <div className={`md:h-screen flex justify-center items-center bg-brand-blue sm:pt-${(16 + (height ? height - 4 : 0)).toString()}`}>
                 <div className="md:py-32 pt-32 mx-auto md:max-w-8xl md:flex md:justify-center md:items-center">
                     <div className="max-w-sm md:max-w-2xl mx-auto">
-                        {/* <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-200 ease-in-out">Globally recognised</button> */}
                         <div className="relative max-w-xl">
                             <p className="text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-5xl lg:leading-tight font-pj text-left">
                                 Become a <span className="text-orange-500">Globally Recognised</span> Certified Internal Auditor (CIA)
@@ -190,41 +189,39 @@ const Cia = () => {
             </div>
 
 
-            <div className="max-w-5xl mx-auto my-24 px-4 md:px-0">
+            <div className="max-w-5xl mx-auto my-24 px-4 md:px-0 md:flex md:flex-col md:items-center">
                 <h1 className="text-center text-3xl md:text-5xl font-extrabold mb-12 text-brand-blue">Fees and Membership Benefits</h1>
                 <div className="overflow-x-auto">
-                    <table className="min-w-full bg-white border border-gray-300 shadow-lg rounded-lg">
+                    <table className="min-w-[800px] bg-white border border-gray-300 shadow-lg rounded-lg overflow-hidden">
 
                         {/* Style the table in a better way! */}
 
                         <thead>
-                            <tr className="bg-brand-blue text-white text-xl">
-                                <th className="py-3 px-4 border-b">Fee Type</th>
+                            <tr className="bg-brand-blue text-white text-xl text-left font-bold">
+                                <th className="py-3 pr-4 pl-6 border-b">Fee Type</th>
                                 <th className="py-3 px-4 border-b">IIA Members</th>
                                 <th className="py-3 px-4 border-b">Non-Members</th>
                             </tr>
                         </thead>
                         <tbody>
 
-                            {/* transform transition duration-300 ease-in-out hover:scale-110 --> remove the bottom scroll wheel */}
-
-                            <tr className="border-b text-lg text-center">
-                                <td className="py-2 px-4">CIA Application Fees</td>
+                            <tr className="border-b text-lg text-left">
+                                <td className="py-2 pr-4 pl-6">CIA Application Fees</td>
                                 <td className="py-2 px-4 text-green-700 font-semibold">USD 90</td>
                                 <td className="py-2 px-4 text-red-700 font-semibold">USD 240</td>
                             </tr>
-                            <tr className="border-b text-lg text-center">
-                                <td className="py-2 px-4">CIA Part 1 Exam Fees</td>
+                            <tr className="border-b text-lg text-left">
+                                <td className="py-2 pr-4 pl-6">CIA Part 1 Exam Fees</td>
                                 <td className="py-2 px-4 text-green-700 font-semibold">USD 232.50</td>
                                 <td className="py-2 px-4 text-red-700 font-semibold">USD 445</td>
                             </tr>
-                            <tr className="border-b text-lg text-center">
-                                <td className="py-2 px-4">CIA Part 2 Exam Fees</td>
+                            <tr className="border-b text-lg text-left">
+                                <td className="py-2 pr-4 pl-6">CIA Part 2 Exam Fees</td>
                                 <td className="py-2 px-4 text-green-700 font-semibold">USD 210</td>
                                 <td className="py-2 px-4 text-red-700 font-semibold">USD 415</td>
                             </tr>
-                            <tr className="border-b text-lg text-center">
-                                <td className="py-2 px-4">CIA Part 3 Exam Fees</td>
+                            <tr className="border-b text-lg text-left">
+                                <td className="py-2 pr-4 pl-6">CIA Part 3 Exam Fees</td>
                                 <td className="py-2 px-4 text-green-700 font-semibold">USD 210</td>
                                 <td className="py-2 px-4 text-red-700 font-semibold">USD 415</td>
                             </tr>
@@ -243,10 +240,10 @@ const Cia = () => {
                     <hr className="border-2 border-solid border-gray-300 mb-6"></hr>
                     <ul className="space-y-6 list-disc pl-8">
                     {[
-                        "Complete your CIA Certification within 7–8 months",
+                        "Complete your CIA Certification within 7-8 months",
                         "Upcoming Batch Schedule: CIA Part 1 - May & June, CIA Part 2 - July & Aug, CIA Part 3 - Sep & Oct",
-                        "15–20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST)",
-                        "Recordings uploaded within 24–48 hours after class",
+                        "15-20 live classes for each part, each class 3 hours long (weekend mornings, 7:00 AM IST to 10:00 AM IST)",
+                        "Recordings uploaded within 24-48 hours after class",
                         "Access to LMS Portal with recorded sessions, PPT notes, and MCQs (no validity period)",
                         "Guidance from top CIA faculty in India, Mr. Arpit Garg",
                         "Access to Gleim software with soft copies of books and over 1000 MCQs (validity of 18 months)",
