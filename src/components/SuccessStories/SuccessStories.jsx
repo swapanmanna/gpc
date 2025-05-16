@@ -34,6 +34,7 @@ import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
 import { HiOutlineTrophy } from "react-icons/hi2";
 import { height } from "../Notifications/NotificationBanner";
+import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
 
 export default function SuccessStories() {
 
@@ -66,23 +67,30 @@ export default function SuccessStories() {
                     <div className="md:flex md:flex-col justify-center items-center">
                         <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
                         <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Our Elite Alumni!</h2>
-                        <h3 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Hear from Siva!</h3>
-                        <div className="flex justify-center items-center gap-10">
-                            <img src={sivaSubramanianTestimonialOne} className="h-[450px] rounded-lg mt-16"></img>
+                        <h3 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Hear from those who made it!</h3>
+                        <div className="flex justify-center items-center gap-6">
+                            {/* <img src={sivaSubramanianTestimonialOne} className="h-[450px] rounded-lg mt-16"></img> */}
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
                                 <video src={sivaSubramanianCiaTestimonial} className="h-[450px] rounded-lg" controls playsInline></video>
                             </div>
-                            <img src={sivaSubramanianTestimonialTwo} className="h-[450px] rounded-lg mt-16"></img>
+                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
+                                <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
+                            </div>
+                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
+                                <video src={simranGargTestimonial} className="h-[450px] rounded-lg" controls playsInline></video>
+                            </div>
+                            {/* <img src={sivaSubramanianTestimonialTwo} className="h-[450px] rounded-lg mt-16"></img> */}
                         </div>
-                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
-                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-16">Hear from Sanjeev!</h4>
-                        <div className="flex justify-center items-center gap-16">
+                        {/* <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
+                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-16">Hear from Sanjeev!</h4> */}
+                        {/* <div className="flex justify-center items-center gap-16">
                             <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
                                 <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
                             </div>
                             <img src={sanjeevKumarTestimonialWapp} className="h-[450px] rounded-lg mt-16"></img>
-                        </div>
-                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Transform your ambitions into reality like Sanjeev, who conquered all three parts of the CIA exam in just 4 months! With our expert guidance and your determination, you can fast-track your journey to becoming a globally recognized Certified Internal Auditor. Seize this opportunity and start achieving today!</p>
+                        </div> */}
+                        {/* <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Transform your ambitions into reality like Sanjeev, who conquered all three parts of the CIA exam in just 4 months! With our expert guidance and your determination, you can fast-track your journey to becoming a globally recognized Certified Internal Auditor. Seize this opportunity and start achieving today!</p> */}
+                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline, dedication, and our expert support, they turned their goals into success stories. Now, it’s your turn to take the first step.</p>
                     </div>
                 </div>
             </section>
