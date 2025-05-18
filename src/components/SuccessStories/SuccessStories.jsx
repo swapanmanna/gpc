@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import studentTestimonialOne from "../../assets/testimonial-mobile-screenshot-1.png"
 import studentTestimonialTwo from "../../assets/testimonial-mobile-screenshot-2.png"
 import studentTestimonialThree from "../../assets/testimonial-mobile-screenshot-3.png"
 import studentTestimonialFour from "../../assets/testimonial-mobile-screenshot-4.png"
-import studentTestimonialFive from "../../assets/testimonial-mobile-screenshot-5.png"
 import studentTestimonialSix from "../../assets/Testimonial-screenshot-1.png"
-import studentTestimonialSeven from "../../assets/Testimonial-screenshot-2.png"
 import studentTestimonialEight from "../../assets/Testimonial-screenshot-3.png"
 import studentTestimonialNine from "../../assets/Testimonial-screenshot-4.png"
 import studentTestimonialTen from "../../assets/Testimonial-screenshot-5.png"
@@ -21,10 +19,7 @@ import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.p
 import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
 import studentTestimonialTwentyOne from "../../assets/Testimonial-screenshot-16.png"
 import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
-import sivaSubramanianTestimonialOne from "../../assets/Siva-subramanian-testimonial-1.png"
-import sivaSubramanianTestimonialTwo from "../../assets/Siva-subramanian-testimonial-2.png"
 import sanjeevKumarTestimonialVideo from "../../assets/Sanjeev-kumar-testimonial-video.mp4"
-import sanjeevKumarTestimonialWapp from "../../assets/Sanjeev-kumar-testimonial-wapp.png"
 import vinodKumarTestimonial from "../../assets/Vinod-kumar-testimonial-wapp.png"
 import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
@@ -32,11 +27,47 @@ import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
-import { HiOutlineTrophy } from "react-icons/hi2";
 import { height } from "../Notifications/NotificationBanner";
 import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
+import mediaOne from "../../assets/Media1.mp4"
+import { GoDotFill } from "react-icons/go";
+
+import { MotionConfig, motion, AnimatePresence } from "motion/react";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 export default function SuccessStories() {
+
+    const testimonialVideos = [
+        sivaSubramanianCiaTestimonial,
+        sanjeevKumarTestimonialVideo,
+        simranGargTestimonial,
+        mediaOne,
+        sivaSubramanianCiaTestimonial,
+        sanjeevKumarTestimonialVideo,
+        simranGargTestimonial,
+        mediaOne,
+    ]
+
+    const videoRefs = useRef(testimonialVideos.map(() => React.createRef()));
+
+    const handleVideoPlay = (currentIndex) => {
+        videoRefs.current.forEach((ref, index) => {
+            if (index !== currentIndex && ref.current) {
+                ref.current.pause(); // Pause all other videos
+            }
+        });
+    };
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handlePrev = () => {
+        setCurrentIndex((prev) => (prev === 0 ? testimonialVideos.length - 3 : prev - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prev) => (prev === testimonialVideos.length - 3 ? 0 : prev + 1));
+    };
 
     return (
         <>
@@ -62,39 +93,58 @@ export default function SuccessStories() {
                     </div>
                 </div>
             </section>
-            <section className="bg-gray-50 pb-10 pt-24">
-                <div className="bg-[url('assets/bg.jpg')] max-w-6xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
+
+            <section className="bg-gray-50 pb-10 pt-20">
+                <div className="bg-[url('assets/bg.jpg')] max-w-5xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
-                        <h1 className="text-3xl sm:text-5xl text-brand-blue font-bold pt-20 text-center">Celebrating Our CIA Champions! <span><GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" /></span></h1>
-                        <h2 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Join the Legacy of Success with Our Elite Alumni!</h2>
-                        <h3 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-12">Hear from those who made it!</h3>
-                        <div className="flex justify-center items-center gap-6">
-                            {/* <img src={sivaSubramanianTestimonialOne} className="h-[450px] rounded-lg mt-16"></img> */}
-                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                                <video src={sivaSubramanianCiaTestimonial} className="h-[450px] rounded-lg" controls playsInline></video>
-                            </div>
-                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                                <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
-                            </div>
-                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                                <video src={simranGargTestimonial} className="h-[450px] rounded-lg" controls playsInline></video>
-                            </div>
-                            {/* <img src={sivaSubramanianTestimonialTwo} className="h-[450px] rounded-lg mt-16"></img> */}
+                    <h1 className="text-3xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
+                        Celebrating Our CIA Champions!{' '}
+                        <span>
+                        <GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" />
+                        </span>
+                    </h1>
+                    <h2 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-6">
+                        Join the Legacy of Success with Our Elite Alumni!
+                    </h2>
+                    <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-6">
+                        Hear from those who made it!
+                    </h3>
+                    <div className="relative flex flex-col items-center pt-10">
+                        <div className="overflow-hidden w-[542px]">
+                            <motion.div 
+                            animate={{ x: `-${currentIndex * (170 + 16)}px` }}
+                            className="flex gap-4">
+                            {testimonialVideos.map((video, index) => (
+                                <motion.div key={index} className="h-[300px] w-[170px] flex-shrink-0">
+                                    <video 
+                                    ref={videoRefs.current[index]}
+                                    onPlay={() => handleVideoPlay(index)}
+                                    src={video} className="w-full h-full object-cover rounded" controls playsInline></video>
+                                </motion.div>
+                            ))}
+                            </motion.div>
                         </div>
-                        {/* <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Unlock your potential and conquer the CIA exam like Siva and our triumphant alumni! With dedication and our proven guidance, you are not just preparing, you are paving the way to join an elite group of global professionals. Start your journey to success today!</p>
-                        <h4 className="text-3xl sm:text-4xl text-brand-blue font-bold pt-16">Hear from Sanjeev!</h4> */}
-                        {/* <div className="flex justify-center items-center gap-16">
-                            <div className="inline-flex p-6 rounded-xl border border-gray-300 shadow-lg mt-16">
-                                <video src={sanjeevKumarTestimonialVideo} className="h-[450px] rounded-lg" controls playsInline></video>
-                            </div>
-                            <img src={sanjeevKumarTestimonialWapp} className="h-[450px] rounded-lg mt-16"></img>
-                        </div> */}
-                        {/* <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Transform your ambitions into reality like Sanjeev, who conquered all three parts of the CIA exam in just 4 months! With our expert guidance and your determination, you can fast-track your journey to becoming a globally recognized Certified Internal Auditor. Seize this opportunity and start achieving today!</p> */}
-                        <p className="text-lg sm:text-2xl text-gray-800 mt-12 text-center max-w-5xl font-semibold">Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline, dedication, and our expert support, they turned their goals into success stories. Now, it’s your turn to take the first step.</p>
+                        <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
+                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600"><FaChevronLeft onClick={handlePrev}/></div>
+                            {/* <div className="flex gap-1">
+                                {testimonialVideos.map((_, index) => (
+                                    <GoDotFill key={index} className={`hover:text-gray-400 hover:cursor-pointer ${currentIndex === index ? "text-gray-400" : "text-gray-600"}`} onClick={() => setCurrentIndex(index)}  />
+                                ))}
+                            </div> */}
+                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600"><FaChevronRight onClick={handleNext}/></div>
+                        </div>
+                    </div>
+                    <p className="text-lg sm:text-xl text-gray-800 mt-12 text-center max-w-3xl font-semibold inline">
+                        Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline,
+                        dedication, and our expert support, they turned their goals into success stories. Now, it's your turn to take the
+                        first step.
+                    </p>
                     </div>
                 </div>
             </section>
-            <div className="mx-auto text-center pt-[100px] pb-20 bg-gray-50">
+
+
+            <div className="mx-auto text-center pt-[80px] pb-20 bg-gray-50">
                 <h2 className="font-display text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
                     What Our Students Say
                 </h2>
