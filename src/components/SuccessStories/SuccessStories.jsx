@@ -29,7 +29,8 @@ import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
 import { height } from "../Notifications/NotificationBanner";
 import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
-import mediaOne from "../../assets/Media1.mp4"
+import murtuzaTestimonial from "../../assets/Media1.mp4"
+import prathwiShettyTestimonial from "../../assets/Prathwi-shetty-testimonial.mp4"
 import { GoDotFill } from "react-icons/go";
 
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
@@ -42,11 +43,8 @@ export default function SuccessStories() {
         sivaSubramanianCiaTestimonial,
         sanjeevKumarTestimonialVideo,
         simranGargTestimonial,
-        mediaOne,
-        sivaSubramanianCiaTestimonial,
-        sanjeevKumarTestimonialVideo,
-        simranGargTestimonial,
-        mediaOne,
+        murtuzaTestimonial,
+        prathwiShettyTestimonial
     ]
 
     const videoRefs = useRef(testimonialVideos.map(() => React.createRef()));
@@ -95,7 +93,7 @@ export default function SuccessStories() {
             </section>
 
             <section className="bg-gray-50 pb-10 pt-20">
-                <div className="bg-[url('assets/bg.jpg')] max-w-5xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
+                <div className="bg-[url('assets/bg.jpg')] max-w-4xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
                     <h1 className="text-3xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
                         Celebrating Our CIA Champions!{' '}
@@ -125,13 +123,13 @@ export default function SuccessStories() {
                             </motion.div>
                         </div>
                         <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
-                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600"><FaChevronLeft onClick={handlePrev}/></div>
+                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600 transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
                             {/* <div className="flex gap-1">
                                 {testimonialVideos.map((_, index) => (
                                     <GoDotFill key={index} className={`hover:text-gray-400 hover:cursor-pointer ${currentIndex === index ? "text-gray-400" : "text-gray-600"}`} onClick={() => setCurrentIndex(index)}  />
                                 ))}
                             </div> */}
-                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600"><FaChevronRight onClick={handleNext}/></div>
+                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600 transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
                     </div>
                     <p className="text-lg sm:text-xl text-gray-800 mt-12 text-center max-w-3xl font-semibold inline">
