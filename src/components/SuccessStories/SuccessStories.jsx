@@ -31,6 +31,12 @@ import { height } from "../Notifications/NotificationBanner";
 import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
 import murtuzaTestimonial from "../../assets/Media1.mp4"
 import prathwiShettyTestimonial from "../../assets/Prathwi-shetty-testimonial.mp4"
+import priyankaWrittenTestimonial from "../../assets/Priyanka-written-testimonial.mp4"
+import simranThumbnail from "../../assets/Simran-thumbnail.png"
+import sivaThumbnail from "../../assets/Siva-subramanian-thumbnail.png"
+import sanjeevThumbnail from "../../assets/Sanjeev-kumar-thumbnail.png"
+import murtuzaThumbnail from "../../assets/Murtuza-thumbnail.png"
+import prathwiThumbnail from "../../assets/Prathwi-thumbnail.png"
 import { GoDotFill } from "react-icons/go";
 
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
@@ -44,8 +50,28 @@ export default function SuccessStories() {
         sanjeevKumarTestimonialVideo,
         simranGargTestimonial,
         murtuzaTestimonial,
-        prathwiShettyTestimonial
+        prathwiShettyTestimonial,
     ]
+
+    const thumbnails = [
+        sivaThumbnail,
+        sanjeevThumbnail,
+        simranThumbnail,
+        murtuzaThumbnail,
+        prathwiThumbnail
+    ]
+
+    const [loadedIndexes, setLoadedIndexes] = useState(
+        Array(testimonialVideos.length).fill(false)
+    )
+
+    const handleThumbnailClick = (index) => {
+        setLoadedIndexes((prev) => {
+            const updated = [...prev];
+            updated[index] = true;
+            return updated;
+        });
+    };
 
     const videoRefs = useRef(testimonialVideos.map(() => React.createRef()));
 
@@ -60,11 +86,11 @@ export default function SuccessStories() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? testimonialVideos.length - 3 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? testimonialVideos.length - 4 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === testimonialVideos.length - 3 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === testimonialVideos.length - 4 ? 0 : prev + 1));
     };
 
     return (
@@ -93,7 +119,7 @@ export default function SuccessStories() {
             </section>
 
             <section className="bg-gray-50 pb-10 pt-20">
-                <div className="bg-[url('assets/bg.jpg')] max-w-4xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
+                <div className="bg-[url('assets/bg.jpg')] max-w-5xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
                     <h1 className="text-3xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
                         Celebrating Our CIA Champions!{' '}
@@ -101,25 +127,47 @@ export default function SuccessStories() {
                         <GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" />
                         </span>
                     </h1>
-                    <h2 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-6">
+                    <h2 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-1">
                         Join the Legacy of Success with Our Elite Alumni!
                     </h2>
-                    <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-6">
+                    <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-3">
                         Hear from those who made it!
                     </h3>
                     <div className="relative flex flex-col items-center pt-10">
-                        <div className="overflow-hidden w-[542px]">
-                            <motion.div 
-                            animate={{ x: `-${currentIndex * (170 + 16)}px` }}
-                            className="flex gap-4">
-                            {testimonialVideos.map((video, index) => (
-                                <motion.div key={index} className="h-[300px] w-[170px] flex-shrink-0">
-                                    <video 
-                                    ref={videoRefs.current[index]}
-                                    onPlay={() => handleVideoPlay(index)}
-                                    src={video} className="w-full h-full object-cover rounded" controls playsInline></video>
+                        <div className="overflow-hidden w-[848px]">
+                            <motion.div
+                                animate={{ x: `-${currentIndex * (200 + 16)}px` }}
+                                className="flex gap-4"
+                            >
+                                {testimonialVideos.map((video, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="relative h-[350px] w-[200px] flex-shrink-0"
+                                >
+                                    {!loadedIndexes[index] ? (
+                                    <div
+                                        className="absolute top-0 left-0 w-full h-full cursor-pointer"
+                                        onClick={() => handleThumbnailClick(index)}
+                                    >
+                                        {/* Thumbnail */}
+                                        <img
+                                        src={thumbnails[index]}
+                                        alt={`Thumbnail for video ${index + 1}`}
+                                        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                                        />
+                                    </div>
+                                    ) : (
+                                    <video
+                                        ref={videoRefs.current[index]}
+                                        onPlay={() => handleVideoPlay(index)}
+                                        src={video}
+                                        className="w-full h-full object-cover rounded"
+                                        controls
+                                        playsInline
+                                    />
+                                    )}
                                 </motion.div>
-                            ))}
+                                ))}
                             </motion.div>
                         </div>
                         <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
@@ -132,7 +180,7 @@ export default function SuccessStories() {
                             <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600 transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
                     </div>
-                    <p className="text-lg sm:text-xl text-gray-800 mt-12 text-center max-w-3xl font-semibold inline">
+                    <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold inline">
                         Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline,
                         dedication, and our expert support, they turned their goals into success stories. Now, it's your turn to take the
                         first step.
