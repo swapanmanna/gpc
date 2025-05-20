@@ -32,11 +32,11 @@ import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
 import murtuzaTestimonial from "../../assets/Media1.mp4"
 import prathwiShettyTestimonial from "../../assets/Prathwi-shetty-testimonial.mp4"
 import priyankaWrittenTestimonial from "../../assets/Priyanka-written-testimonial.mp4"
-import simranThumbnail from "../../assets/Simran-thumbnail.png"
+import simranThumbnail from "../../assets/Simran-garg-thumbnail.png"
 import sivaThumbnail from "../../assets/Siva-subramanian-thumbnail.png"
 import sanjeevThumbnail from "../../assets/Sanjeev-kumar-thumbnail.png"
-import murtuzaThumbnail from "../../assets/Murtuza-thumbnail.png"
-import prathwiThumbnail from "../../assets/Prathwi-thumbnail.png"
+import murtuzaThumbnail from "../../assets/Murtuza-quresh-thumbnail.png"
+import prathwiThumbnail from "../../assets/Prathwi-shetty-thumbnail.png"
 import { GoDotFill } from "react-icons/go";
 
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
@@ -171,13 +171,13 @@ export default function SuccessStories() {
                             </motion.div>
                         </div>
                         <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
-                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600 transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
                             {/* <div className="flex gap-1">
                                 {testimonialVideos.map((_, index) => (
                                     <GoDotFill key={index} className={`hover:text-gray-400 hover:cursor-pointer ${currentIndex === index ? "text-gray-400" : "text-gray-600"}`} onClick={() => setCurrentIndex(index)}  />
                                 ))}
                             </div> */}
-                            <div className="p-2 rounded-full bg-gray-800 text-white hover:cursor-pointer hover:bg-gray-600 transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
                     </div>
                     <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold inline">
