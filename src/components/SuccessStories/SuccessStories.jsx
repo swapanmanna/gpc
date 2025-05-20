@@ -155,6 +155,13 @@ export default function SuccessStories() {
                                         alt={`Thumbnail for video ${index + 1}`}
                                         className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                                         />
+
+                                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-10 rounded-lg">
+                                            <button className="bg-gray-800 bg-opacity-50 text-white px-4 py-2 rounded-xl text-2xl text-sm">
+                                                ▶
+                                            </button>
+                                        </div>
+
                                     </div>
                                     ) : (
                                     <video
