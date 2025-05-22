@@ -179,11 +179,6 @@ export default function SuccessStories() {
                         </div>
                         <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
-                            {/* <div className="flex gap-1">
-                                {testimonialVideos.map((_, index) => (
-                                    <GoDotFill key={index} className={`hover:text-gray-400 hover:cursor-pointer ${currentIndex === index ? "text-gray-400" : "text-gray-600"}`} onClick={() => setCurrentIndex(index)}  />
-                                ))}
-                            </div> */}
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
                     </div>
