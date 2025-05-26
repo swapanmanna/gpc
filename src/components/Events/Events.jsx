@@ -16,6 +16,8 @@ import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png"
 import { RxCross1 } from "react-icons/rx";
 import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.webp"
 
+// Hi there
+
 import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages, iiaHyderabadImages } from "../../../eventImages";
 import EventCarousel from "../Carousels/EventCarousel";
 
