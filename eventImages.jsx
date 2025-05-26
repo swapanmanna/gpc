@@ -35,6 +35,14 @@ import wofaSix from "./src/assets/wofa-2025/wofa-6.jpeg"
 import wofaSeven from "./src/assets/wofa-2025/wofa-7.jpeg"
 import wofaEight from "./src/assets/wofa-2025/wofa-8.jpeg"
 
+import iiaHyderabadOne from "./src/assets/iia-hyderabad/iia-hyderabad-1.jpeg"
+import iiaHyderabadTwo from "./src/assets/iia-hyderabad/iia-hyderabad-2.jpeg"
+import iiaHyderabadThree from "./src/assets/iia-hyderabad/iia-hyderabad-3.jpeg"
+import iiaHyderabadFour from "./src/assets/iia-hyderabad/iia-hyderabad-4.jpeg"
+import iiaHyderabadFive from "./src/assets/iia-hyderabad/iia-hyderabad-5.jpeg"
+import iiaHyderabadSix from "./src/assets/iia-hyderabad/iia-hyderabad-6.jpeg"
+
+
 export const iiaBombayImages = [
         iiaBombayOne,
         iiaBombayTwo,
@@ -79,3 +87,12 @@ export const wofaImages = [
         wofaSeven,
         wofaEight
     ]
+
+export const iiaHyderabadImages = [
+        iiaHyderabadOne,
+        iiaHyderabadTwo,
+        iiaHyderabadThree,
+        iiaHyderabadFour,
+        iiaHyderabadFive,
+        iiaHyderabadSix
+]

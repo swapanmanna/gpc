@@ -12,10 +12,11 @@ import iiaBengaluruBanner from "../../assets/iia-bengaluru-banner.webp";
 import iiaMumbaiBanner from "../../assets/iia-mumbai-banner.webp";
 import MetaTags from "../MetaTags";
 import { motion } from "motion/react";
-import iiaHyderabadArpitGarg from "../../assets/IIA_Hyderabad_Arpit_Garg.jpg";
+import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png"
 import { RxCross1 } from "react-icons/rx";
+import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.webp"
 
-import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages } from "../../../eventImages";
+import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages, iiaHyderabadImages } from "../../../eventImages";
 import EventCarousel from "../Carousels/EventCarousel";
 
 
@@ -23,20 +24,24 @@ export default function Events(){
 
     const events = [
         {
-            id: "mumbai",
-            title: "IIA Mumbai",
+            id: "hyderabad",
+            title: "IIA Hyderabad",
         },
         {
-            id: "bangalore",
-            title: "IIA Bangalore",
+            id: "wofa",
+            title: "WOFA 2025",
         },
         {
             id: "kolkata",
             title: "IIA Kolkata",
         },
         {
-            id: "wofa",
-            title: "WOFA 2025",
+            id: "bangalore",
+            title: "IIA Bangalore",
+        },
+        {
+            id: "mumbai",
+            title: "IIA Mumbai",
         },
     ]
 
@@ -44,7 +49,8 @@ export default function Events(){
         mumbai: iiaBombayImages,
         bangalore: iiaBangaloreImages,
         kolkata: iiaKolkataImages,
-        wofa: wofaImages
+        wofa: wofaImages,
+        hyderabad: iiaHyderabadImages,
     }
 
     const [activeEvent, setActiveEvent] = useState(null)
@@ -138,7 +144,7 @@ export default function Events(){
                     <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR PAST EVENTS</button>
                     <h4 className="text-3xl md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
                     <p className="w-[600px] text-center text-[#444444] text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we've been a part of</p>
-                    <div className="max-w-[700px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
+                    <div className="max-w-[800px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
                         {events.map((evt) => {
                             return (
                                 <button 
@@ -161,7 +167,7 @@ export default function Events(){
                         onClick={() => setActiveEvent(null)}>
                             <div className="relative w-full h-[600px] max-w-6xl my-auto"
                             onClick={(e) => e.stopPropagation()}>
-                                <button className="absolute top-1 right-2 text-xl font-bold p-2 rounded-full bg-gray-200 text-red-700"
+                                <button className="absolute top-1 right-2 text-xl font-bold p-2 rounded-full bg-gray-200 text-red-700 hover:scale-110 transition duration-300 ease-in-out"
                                 onClick={() => setActiveEvent(null)}
                                 aria-label="Close"
                                 > <RxCross1 /> </button>
@@ -173,6 +179,25 @@ export default function Events(){
                         </motion.div>
                     )}
 
+                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                            <img src={iiaHyderabadOne} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("hyderabad")}></img>
+                            <div className="flex flex-col gap-4">
+                                <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Hyderabad Chapter event, we connected with insightful audit professionals to exchange perspectives on the evolving landscape of internal audit and risk management.</h5>
+                                <div className="flex gap-10">
+                                    <div className="flex gap-1">
+                                        <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                        <p className="font-bold text-[#444444]">Hyderabad, Telengana, India</p>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                        <p className="font-bold text-[#444444]">24th May 2025</p>
+                                    </div>
+                                </div>
+                                <p className="text-[#444444] mb-[25px] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
                         <div className="flex gap-8 max-w-[77rem] items-center"> 
                             <img src={wofaBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("wofa")}></img>
@@ -265,10 +290,10 @@ export default function Events(){
                     </div> */}
                     <div className="flex gap-10 max-w-6xl border border-gray-300 rounded-xl p-8 shadow-lg">
                         <Link 
-                        to="https://www.linkedin.com/posts/iia-india-hyderabad-chapter-962b62231_iia-internalaudit-riskmanagement-activity-7324053439271837697-L9Iy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADH4LLEBlGzvqJZR3IZWUHcH_kpqYLCJyKg"
+                        to="https://delhi.iiaindia.co/annual-conference/"
                         target="_blank"
                         >
-                        <img src={iiaHyderabadArpitGarg} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300 cursor-pointer"></img>
+                        <img src={iiaDelhiFlyer} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300 cursor-pointer"></img>
                         </Link>
                         {/* <img src={iiaDelhiFlyer} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300"></img> */}
                     </div>
