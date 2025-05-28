@@ -37,6 +37,8 @@ import sivaThumbnail from "../../assets/Siva-subramanian-thumbnail.png"
 import sanjeevThumbnail from "../../assets/Sanjeev-kumar-thumbnail.png"
 import murtuzaThumbnail from "../../assets/Murtuza-quresh-thumbnail.png"
 import prathwiThumbnail from "../../assets/Prathwi-shetty-thumbnail.png"
+import pramodThumbnail from "../../assets/Pramod-pujari-thumbnail.png"
+import pramodTestimonial from "../../assets/Pramod-pujari-testimonial.mp4"
 import { GoDotFill } from "react-icons/go";
 
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
@@ -51,6 +53,7 @@ export default function SuccessStories() {
         simranGargTestimonial,
         murtuzaTestimonial,
         prathwiShettyTestimonial,
+        pramodTestimonial,
     ]
 
     const thumbnails = [
@@ -58,7 +61,8 @@ export default function SuccessStories() {
         sanjeevThumbnail,
         simranThumbnail,
         murtuzaThumbnail,
-        prathwiThumbnail
+        prathwiThumbnail,
+        pramodThumbnail
     ]
 
     const [loadedIndexes, setLoadedIndexes] = useState(
