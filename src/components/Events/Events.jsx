@@ -18,6 +18,8 @@ import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.webp"
 
 // Hi there
 
+// <p onClick={() => setActiveEvent("hyderabad")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
+
 import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages, iiaHyderabadImages } from "../../../eventImages";
 import EventCarousel from "../Carousels/EventCarousel";
 
@@ -182,8 +184,9 @@ export default function Events(){
                     )}
 
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <div className="flex gap-8 max-w-[77rem] items-center relative"> 
                             <img src={iiaHyderabadOne} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("hyderabad")}></img>
+                            <p onClick={() => setActiveEvent("hyderabad")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Hyderabad Chapter event, we connected with insightful audit professionals to exchange perspectives on the evolving landscape of internal audit and risk management.</h5>
                                 <div className="flex gap-10">
@@ -196,13 +199,14 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">24th May 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
+                                <p className="text-[#444444] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
                             </div>
                         </div>
                     </div>
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <div className="flex gap-8 max-w-[77rem] items-center relative"> 
                             <img src={wofaBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("wofa")}></img>
+                            <p onClick={() => setActiveEvent("wofa")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">We were proud to be a part of WOFA 2025, where leaders and changemakers came together to drive innovation and empowerment.</h5>
                                 <div className="flex gap-10">
@@ -220,8 +224,9 @@ export default function Events(){
                         </div>
                     </div>
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <div className="flex gap-8 max-w-[77rem] items-center relative"> 
                             <img src={iiaKolkataBanner} className="rounded-xl w-[360px] h-[270px] cursor-pointer" onClick={() => setActiveEvent("kolkata")}></img>
+                            <p onClick={() => setActiveEvent("kolkata")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">We engaged with leading internal audit professionals at the IIA Kolkata Chapter event, exploring emerging trends in governance and risk.</h5>
                                 <div className="flex gap-10">
@@ -239,8 +244,9 @@ export default function Events(){
                         </div>
                     </div>
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <div className="flex gap-8 max-w-[77rem] items-center relative"> 
                             <img src={iiaBengaluruBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("bangalore")}></img>
+                            <p onClick={() => setActiveEvent("bangalore")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Bengaluru Chapter conference, we participated in insightful discussions on innovation in internal auditing.</h5>
                                 <div className="flex gap-10">
@@ -258,8 +264,9 @@ export default function Events(){
                         </div>
                     </div>
                     <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                        <div className="flex gap-8 max-w-[77rem] items-center relative"> 
                             <img src={iiaMumbaiBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("mumbai")}></img>
+                            <p onClick={() => setActiveEvent("mumbai")} className="absolute bottom-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">The IIA Mumbai Chapter event was a hub of ideas and industry insights, focused on enhancing audit excellence.</h5>
                                 <div className="flex gap-10">
