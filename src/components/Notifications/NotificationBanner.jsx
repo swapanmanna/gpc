@@ -15,7 +15,7 @@ export default function NotificationBanner () {
                 animate={{  scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 className="text-sm md:text-base">
-                <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-6 w-6" />New Batch has started! Watch our <span className="text-brown-700 font-semibold hover:underline"><Link className="" to="https://youtu.be/XNnXkttYQUY?si=ZnqZt5RBdUxY_LvH" target="_blank">orientation program</Link></span> to know more about the new syllabus of CIA <BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-6 w-6" />
+                <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-6 w-6" />New Batch of CIA Part 3 starting on 21st June! Click <span className="text-brown-700 font-semibold hover:underline"><Link className="" to="https://www.linkedin.com/feed/update/urn:li:activity:7333720768574312450" target="_blank">here</Link></span> to know about the orientation program! <BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-6 w-6" />
                 </motion.p>
             </div>
         </div>

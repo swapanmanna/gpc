@@ -15,6 +15,7 @@ import { motion } from "motion/react";
 import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png"
 import { RxCross1 } from "react-icons/rx";
 import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.webp"
+import iiaHyderabadSix from "../../assets/iia-hyderabad/iia-hyderabad-6.jpeg"
 
 // Hi there
 
@@ -88,10 +89,10 @@ export default function Events(){
                 canonicalUrl="https://globalprofessionalcertifications.com/events"
             />
             <div className="">
-                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
+                <div className="relative flex h-screen bg-[url('assets/iia-hyderabad/iia-hyderabad-5.jpeg')] bg-cover bg-center">
                     
                     {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    <div className="absolute inset-0 "></div>
 
                     <motion.p
                         animate={{scale: [1, 1.3, 1]}}
@@ -107,10 +108,8 @@ export default function Events(){
             </div>
 
             <section className="md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418]">
-                <div>
-                    <img src={iiaEvent} className="rounded-lg h-[600px] ml-16"></img>
-                </div>
-                <div className="flex flex-col gap-6">
+                <img src={iiaEvent} className="rounded-lg h-[600px] ml-16"></img>
+                <div className="flex flex-col gap-6 mr-10">
                     <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR EVENTS</button>
                     <h3 className="md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
                     <p className="font-bold text-lg text-[#444444]">At Global Professional Certifications, we don't just talk about growth, we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.</p>
@@ -181,8 +180,8 @@ export default function Events(){
                         </motion.div>
                     )}
 
-                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                    <div className="p-6 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[68rem] items-center"> 
                             <img src={iiaHyderabadOne} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("hyderabad")}></img>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Hyderabad Chapter event, we connected with insightful audit professionals to exchange perspectives on the evolving landscape of internal audit and risk management.</h5>
@@ -196,12 +195,12 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">24th May 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
+                                <p className="text-[#444444] mb-[15px] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                    <div className="p-6 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[68rem] items-center"> 
                             <img src={wofaBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("wofa")}></img>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">We were proud to be a part of WOFA 2025, where leaders and changemakers came together to drive innovation and empowerment.</h5>
@@ -219,8 +218,8 @@ export default function Events(){
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                    <div className="p-6 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[68rem] items-center"> 
                             <img src={iiaKolkataBanner} className="rounded-xl w-[360px] h-[270px] cursor-pointer" onClick={() => setActiveEvent("kolkata")}></img>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">We engaged with leading internal audit professionals at the IIA Kolkata Chapter event, exploring emerging trends in governance and risk.</h5>
@@ -238,8 +237,8 @@ export default function Events(){
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                    <div className="p-6 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[68rem] items-center"> 
                             <img src={iiaBengaluruBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("bangalore")}></img>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Bengaluru Chapter conference, we participated in insightful discussions on innovation in internal auditing.</h5>
@@ -257,8 +256,8 @@ export default function Events(){
                             </div>
                         </div>
                     </div>
-                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
-                        <div className="flex gap-8 max-w-[77rem] items-center"> 
+                    <div className="p-6 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex gap-8 max-w-[68rem] items-center"> 
                             <img src={iiaMumbaiBanner} className="rounded-xl cursor-pointer" onClick={() => setActiveEvent("mumbai")}></img>
                             <div className="flex flex-col gap-4">
                                 <h5 className="md:text-3xl font-bold text-[#141418]">The IIA Mumbai Chapter event was a hub of ideas and industry insights, focused on enhancing audit excellence.</h5>
