@@ -41,6 +41,9 @@ import iiaHyderabadThree from "./src/assets/iia-hyderabad/iia-hyderabad-3.jpeg"
 import iiaHyderabadFour from "./src/assets/iia-hyderabad/iia-hyderabad-4.jpeg"
 import iiaHyderabadFive from "./src/assets/iia-hyderabad/iia-hyderabad-5.jpeg"
 import iiaHyderabadSix from "./src/assets/iia-hyderabad/iia-hyderabad-6.jpeg"
+import iiaHyderabadSeven from "./src/assets/iia-hyderabad/iia-hyderabad-7.jpeg"
+import iiaHyderabadEight from "./src/assets/iia-hyderabad/iia-hyderabad-8.jpeg"
+import iiaHyderabadNine from "./src/assets/iia-hyderabad/iia-hyderabad-9.jpeg"
 
 
 export const iiaBombayImages = [
@@ -94,5 +97,8 @@ export const iiaHyderabadImages = [
         iiaHyderabadThree,
         iiaHyderabadFour,
         iiaHyderabadFive,
-        iiaHyderabadSix
+        iiaHyderabadSix,
+        iiaHyderabadSeven,
+        iiaHyderabadEight,
+        iiaHyderabadNine
 ]
