@@ -1143,7 +1143,7 @@ export default function ContactUs() {
                                     <div>
                                         <button
                                             type="submit"
-                                            className="w-full p-3 text-white transition border rounded-md border-primary bg-brand-blue hover:bg-opacity-90 hover:bg-brand-purple hover:border-brand-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-gray"
+                                            className="w-full p-3 text-white font-semibold text-lg transition border rounded-md border-primary bg-brand-blue hover:bg-opacity-90 hover:bg-brand-purple hover:border-brand-gray focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-gray"
                                         >
                                             Send message
                                         </button>

@@ -18,8 +18,8 @@ import studentTestimonialEighteen from "../../assets/Testimonial-screenshot-13.p
 import studentTestimonialNineteen from "../../assets/Testimonial-screenshot-14.png"
 import studentTestimonialTwenty from "../../assets/Testimonial-screenshot-15.png"
 import studentTestimonialTwentyOne from "../../assets/Testimonial-screenshot-16.png"
-import sivaSubramanianCiaTestimonial from "../../assets/Siva-Subramanian-cia-testimonial.mp4"
-import sanjeevKumarTestimonialVideo from "../../assets/Sanjeev-kumar-testimonial-video.mp4"
+import sivaSubramanianCiaTestimonial from "../../assets/video-testimonials/Siva-Subramanian-cia-testimonial.mp4"
+import sanjeevKumarTestimonialVideo from "../../assets/video-testimonials/Sanjeev-kumar-testimonial-video.mp4"
 import vinodKumarTestimonial from "../../assets/Vinod-kumar-testimonial-wapp.png"
 import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
@@ -28,17 +28,18 @@ import testimonialTwo from "../../assets/testimonial-2.png";
 import passoutStudents from "../../assets/Passout-students.jpeg"
 import MetaTags from "../MetaTags";
 import { height } from "../Notifications/NotificationBanner";
-import simranGargTestimonial from "../../assets/Simran-garg-testimonial.mp4"
-import murtuzaTestimonial from "../../assets/Media1.mp4"
-import prathwiShettyTestimonial from "../../assets/Prathwi-shetty-testimonial.mp4"
-import priyankaWrittenTestimonial from "../../assets/Priyanka-written-testimonial.mp4"
-import simranThumbnail from "../../assets/Simran-garg-thumbnail.png"
-import sivaThumbnail from "../../assets/Siva-subramanian-thumbnail.png"
-import sanjeevThumbnail from "../../assets/Sanjeev-kumar-thumbnail.png"
-import murtuzaThumbnail from "../../assets/Murtuza-quresh-thumbnail.png"
-import prathwiThumbnail from "../../assets/Prathwi-shetty-thumbnail.png"
-import pramodThumbnail from "../../assets/Pramod-pujari-thumbnail.png"
-import pramodTestimonial from "../../assets/Pramod-pujari-testimonial.mp4"
+import simranGargTestimonial from "../../assets/video-testimonials/Simran-garg-testimonial.mp4"
+import murtuzaTestimonial from "../../assets/video-testimonials/Murtuza-testimonial.mp4"
+import prathwiShettyTestimonial from "../../assets/video-testimonials/Prathwi-shetty-testimonial.mp4"
+import priyankaWrittenTestimonial from "../../assets/written-testimonials/Priyanka-written-testimonial.mp4"
+import deepakWrittenTestimonial from "../../assets/written-testimonials/Deepak-written-testimonial.mp4"
+import simranThumbnail from "../../assets/thumbnails/Simran-garg-thumbnail.png"
+import sivaThumbnail from "../../assets/thumbnails/Siva-subramanian-thumbnail.png"
+import sanjeevThumbnail from "../../assets/thumbnails/Sanjeev-kumar-thumbnail.png"
+import murtuzaThumbnail from "../../assets/thumbnails/Murtuza-quresh-thumbnail.png"
+import prathwiThumbnail from "../../assets/thumbnails/Prathwi-shetty-thumbnail.png"
+import pramodThumbnail from "../../assets/thumbnails/Pramod-pujari-thumbnail.png"
+import pramodTestimonial from "../../assets/video-testimonials/Pramod-pujari-testimonial.mp4"
 import { GoDotFill } from "react-icons/go";
 
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
