@@ -33,12 +33,16 @@ import murtuzaTestimonial from "../../assets/video-testimonials/Murtuza-testimon
 import prathwiShettyTestimonial from "../../assets/video-testimonials/Prathwi-shetty-testimonial.mp4"
 import priyankaWrittenTestimonial from "../../assets/written-testimonials/Priyanka-written-testimonial.mp4"
 import deepakWrittenTestimonial from "../../assets/written-testimonials/Deepak-written-testimonial.mp4"
+import simranjeetWrittenTestimonial from "../../assets/written-testimonials/Simranjeet-written-testimonial.mp4"
 import simranThumbnail from "../../assets/thumbnails/Simran-garg-thumbnail.png"
 import sivaThumbnail from "../../assets/thumbnails/Siva-subramanian-thumbnail.png"
 import sanjeevThumbnail from "../../assets/thumbnails/Sanjeev-kumar-thumbnail.png"
 import murtuzaThumbnail from "../../assets/thumbnails/Murtuza-quresh-thumbnail.png"
 import prathwiThumbnail from "../../assets/thumbnails/Prathwi-shetty-thumbnail.png"
 import pramodThumbnail from "../../assets/thumbnails/Pramod-pujari-thumbnail.png"
+import simranjeetThumbnail from "../../assets/thumbnails/Simranjeet-thumbnail.png"
+import deepakThumbnail from "../../assets/thumbnails/Deepak-thumbnail.png"
+import priyankaThumbnail from "../../assets/thumbnails/Priyanka-thumbnail.png"
 import pramodTestimonial from "../../assets/video-testimonials/Pramod-pujari-testimonial.mp4"
 import { GoDotFill } from "react-icons/go";
 
@@ -55,6 +59,9 @@ export default function SuccessStories() {
         murtuzaTestimonial,
         prathwiShettyTestimonial,
         pramodTestimonial,
+        priyankaWrittenTestimonial,
+        simranjeetWrittenTestimonial,
+        deepakWrittenTestimonial,
     ]
 
     const thumbnails = [
@@ -63,7 +70,10 @@ export default function SuccessStories() {
         simranThumbnail,
         murtuzaThumbnail,
         prathwiThumbnail,
-        pramodThumbnail
+        pramodThumbnail,
+        priyankaThumbnail,
+        simranjeetThumbnail,
+        deepakThumbnail,
     ]
 
     const [loadedIndexes, setLoadedIndexes] = useState(
