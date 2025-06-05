@@ -297,16 +297,12 @@ export default function Events(){
                 </section>
             </div>
 
-            <section className="bg-[url('assets/bg.png')]">
+            {/* <section className="bg-[url('assets/bg.png')]">
                 <div className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
                     <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">UPCOMING EVENTS</button>
                     <h4 className="text-3xl md:text-5xl font-bold">A Glimpse Into What's Ahead</h4>
                     <p className="w-[750px] text-center text-[#444444] text-xl mb-6">  From thought-provoking conferences to engaging sessions and networking opportunities, our upcoming events promise to spark ideas, foster collaboration, and keep you at the forefront of innovation
                     </p>
-                    {/* <div className="max-w-[700px] flex justify-center gap-3 py-6 px-10 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
-                        <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Hyderabad</button>
-                        <button className="px-4 py-2 rounded-full bg-[#F0F0F0] hover:bg-brand-purple hover:text-gray-50 font-bold transition duration-300 ease-in-out">IIA Delhi</button>
-                    </div> */}
                     <div className="flex gap-10 max-w-6xl border border-gray-300 rounded-xl p-8 shadow-lg">
                         <Link 
                         to="https://delhi.iiaindia.co/annual-conference/"
@@ -314,10 +310,9 @@ export default function Events(){
                         >
                         <img src={iiaDelhiFlyer} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300 cursor-pointer"></img>
                         </Link>
-                        {/* <img src={iiaDelhiFlyer} className="h-[700px] rounded-md hover:scale-105 transition ease-in-out duration-300"></img> */}
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }
