@@ -12,7 +12,7 @@ export default function Terms() {
             {/* pl-[177px] pr-[177px] */}
             <div className="w-full bg-gray-50">
                 <div className="pt-32 max-w-6xl mx-auto pb-20 text-brand-dark">
-                    <h3 className="font-bold text-xl">Terms and Conditions</h3>
+                    <h3 className="font-bold text-xl">Terms & Conditions</h3>
                     <br></br>
                     <p>Last updated: February 10, 2025</p>
                     <br></br>
@@ -118,10 +118,12 @@ export default function Terms() {
                     <br></br>
                     <h3  className="font-bold text-xl">Contact Us</h3>
                     <br></br>
-                    <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
+                    <p>If you have any questions about these Terms & Conditions, You can contact us:</p>
                     <br></br>
                     <ul className="list-disc ml-8">
-                        <li>By email: cia@globalprofessionalcertifications.com</li>
+                        <li>By email: <a href="mailto:cia@globalprofessionalcertifications.com?subject=Inquiry&body=Hi there, I would like to know more about..." className="hover:underline hover:text-brand-blue">
+                            cia@globalprofessionalcertifications.com
+                        </a></li>
                     </ul>
                     <br></br>
                 </div>
