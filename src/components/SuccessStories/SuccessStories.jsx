@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import studentTestimonialOne from "../../assets/testimonial-mobile-screenshot-1.png"
 import studentTestimonialTwo from "../../assets/testimonial-mobile-screenshot-2.png"
 import studentTestimonialThree from "../../assets/testimonial-mobile-screenshot-3.png"
@@ -25,7 +25,7 @@ import { GiConqueror } from "react-icons/gi";
 import pinkyPhoto from "../../assets/pinky-photo.jpg";
 import akshdeepSingh from "../../assets/akshdeep-singh.png";
 import testimonialTwo from "../../assets/testimonial-2.png";
-import passoutStudents from "../../assets/Passout-students.jpeg"
+
 import MetaTags from "../MetaTags";
 import { height } from "../Notifications/NotificationBanner";
 import simranGargTestimonial from "../../assets/video-testimonials/Simran-garg-testimonial.mp4"
@@ -46,6 +46,10 @@ import priyankaThumbnail from "../../assets/thumbnails/Priyanka-thumbnail.png"
 import pramodTestimonial from "../../assets/video-testimonials/Pramod-pujari-testimonial.mp4"
 import { GoDotFill } from "react-icons/go";
 
+import passoutStudents from "../../assets/Passout-students.jpeg"
+import wofaFive from "../../assets/wofa-2025/wofa-5.jpeg"
+import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.jpeg"
+
 import { MotionConfig, motion, AnimatePresence } from "motion/react";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
@@ -59,54 +63,117 @@ export default function SuccessStories() {
         murtuzaTestimonial,
         prathwiShettyTestimonial,
         pramodTestimonial,
+    ]
+
+    const writtenTestimonials = [
         priyankaWrittenTestimonial,
         simranjeetWrittenTestimonial,
         deepakWrittenTestimonial,
     ]
 
-    const thumbnails = [
+    const videoThumbnails = [
         sivaThumbnail,
         sanjeevThumbnail,
         simranThumbnail,
         murtuzaThumbnail,
         prathwiThumbnail,
         pramodThumbnail,
+    ]
+
+    const writtenThumbnails = [
         priyankaThumbnail,
         simranjeetThumbnail,
         deepakThumbnail,
     ]
 
-    const [loadedIndexes, setLoadedIndexes] = useState(
-        Array(testimonialVideos.length).fill(false)
-    )
+    const heroImages = [
+        passoutStudents,
+        wofaFive,
+        iiaHyderabadOne,
+        // passoutStudents
+    ]
 
-    const handleThumbnailClick = (index) => {
-        setLoadedIndexes((prev) => {
-            const updated = [...prev];
-            updated[index] = true;
-            return updated;
-        });
-    };
+    const [activeVideoIndex, setActiveVideoIndex] = useState(null);
+    const [activeWrittenIndex, setActiveWrittenIndex] = useState(null);
 
-    const videoRefs = useRef(testimonialVideos.map(() => React.createRef()));
-
-    const handleVideoPlay = (currentIndex) => {
-        videoRefs.current.forEach((ref, index) => {
-            if (index !== currentIndex && ref.current) {
-                ref.current.pause(); // Pause all other videos
-            }
-        });
-    };
-
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? testimonialVideos.length - 4 : prev - 1));
+        setCurrentVideoIndex((prev) => (prev === 0 ? testimonialVideos.length - 4 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === testimonialVideos.length - 4 ? 0 : prev + 1));
+        setCurrentVideoIndex((prev) => (prev === testimonialVideos.length - 4 ? 0 : prev + 1));
     };
+
+    const [currentHeroIndex, setCurrentHeroIndex] = useState(0)
+    const [isAnimating, setIsAnimating] = useState(true)
+    const timeoutRef = useRef(null)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentHeroIndex(prev => prev + 1);
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        // if (currentHeroIndex === heroImages.length) {
+        // // Temporarily disable animation
+        //     setTimeout(() => {
+        //     setIsAnimating(false);
+        //     setCurrentHeroIndex(0);
+        // }, 501); // Wait for slide transition to finish
+        // } 
+        // else {
+        //     setIsAnimating(true);
+        // }
+
+        if (currentHeroIndex === heroImages.length) {
+            setCurrentHeroIndex(0);
+        }
+    }, [currentHeroIndex]);
+
+    // const [loadedVideoIndexes, setLoadedVideoIndexes] = useState(
+    //     Array(testimonialVideos.length).fill(false)
+    // )
+    // const [loadedWrittenIndexes, setLoadedWrittenIndexes] = useState(
+    //     Array(writtenTestimonials.length).fill(false)
+    // )
+
+    // const handleVideoThumbnailClick = (index) => {
+    //     setLoadedVideoIndexes((prev) => {
+    //         const updated = [...prev];
+    //         updated[index] = true;
+    //         return updated;
+    //     });
+    // };
+    // const handleWrittenThumbnailClick = (index) => {
+    //     setLoadedWrittenIndexes((prev) => {
+    //         const updated = [...prev];
+    //         updated[index] = true;
+    //         return updated;
+    //     });
+    // };
+
+    // const videoRefs = useRef(testimonialVideos.map(() => React.createRef()));
+    // const writtenRefs = useRef(writtenTestimonials.map(() => React.createRef()));
+
+    // const handleVideoPlay = (currentIndex) => {
+    //     videoRefs.current.forEach((ref, index) => {
+    //         if (index !== currentIndex && ref.current) {
+    //             ref.current.pause(); // Pause all other videos
+    //         }
+    //     });
+    // };
+    // const handleWrittenPlay = (currentIndex) => {
+    //     writtenRefs.current.forEach((ref, index) => {
+    //         if (index !== currentIndex && ref.current) {
+    //             ref.current.pause(); // Pause all other videos
+    //         }
+    //     });
+    // };
 
     return (
         <>
@@ -126,10 +193,24 @@ export default function SuccessStories() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col"> {/* Wrap image and caption in a flex container */}
-                        <img src={passoutStudents} className="h-[450px] rounded-xl mb-2"></img> {/* Added margin-bottom */}
-                        <p className="text-gray-300 text-sm font-semibold">Our industrious alumni at the IIA Bombay International Conference</p> {/* Caption */}
+                    {/* <div className="flex flex-col">
+                        <img src={passoutStudents} className="h-[450px] rounded-xl mb-2"></img>
+                        <p className="text-gray-300 text-sm font-semibold">Our industrious alumni at the IIA Bombay International Conference</p>
+                    </div> */}
+                    <div className="relative flex flex-col items-center">
+                        <div className="overflow-hidden w-[560px] rounded-xl">
+                            <motion.div 
+                            animate={{ x: `-${currentHeroIndex * 560}px` }}
+                            transition={{duration: isAnimating ? 0.5 : 0, ease: "easeInOut"}}
+                            className="flex">
+                                {heroImages.map((image, index) => (
+                                    <img src={image} key={index} className="w-[560px] rounded-xl shrink-0 mb-2" />
+                                ))}
+                            </motion.div>
+                        </div>
+                        <p className="text-gray-300 text-sm font-semibold">Our industrious alumni who have made us proud!</p>
                     </div>
+
                 </div>
             </section>
 
@@ -145,13 +226,15 @@ export default function SuccessStories() {
                     <h2 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-1">
                         Join the Legacy of Success with Our Elite Alumni!
                     </h2>
-                    <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-3">
+                    <hr className="mt-6 mb-4 border-2 border-solid border-gray-300 w-5/6"></hr>
+                    {/* <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-3">
                         Hear from those who made it!
-                    </h3>
+                    </h3> */}
+                    <button className="mt-6 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Hear from those who made it!</button>
                     <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
                             <motion.div
-                                animate={{ x: `-${currentIndex * (200 + 16)}px` }}
+                                animate={{ x: `-${currentVideoIndex * (200 + 16)}px` }}
                                 className="flex gap-4"
                             >
                                 {testimonialVideos.map((video, index) => (
@@ -159,14 +242,14 @@ export default function SuccessStories() {
                                     key={index}
                                     className="relative h-[350px] w-[200px] flex-shrink-0"
                                 >
-                                    {!loadedIndexes[index] ? (
+                                    {!(index === activeVideoIndex) ? (
                                     <div
                                         className="absolute top-0 left-0 w-full h-full cursor-pointer"
-                                        onClick={() => handleThumbnailClick(index)}
+                                        onClick={() => setActiveVideoIndex(index)}
                                     >
                                         {/* Thumbnail */}
                                         <img
-                                        src={thumbnails[index]}
+                                        src={videoThumbnails[index]}
                                         alt={`Thumbnail for video ${index + 1}`}
                                         className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                                         />
@@ -180,8 +263,8 @@ export default function SuccessStories() {
                                     </div>
                                     ) : (
                                     <video
-                                        ref={videoRefs.current[index]}
-                                        onPlay={() => handleVideoPlay(index)}
+                                        // ref={videoRefs.current[index]}
+                                        // onPlay={() => handleVideoPlay(index)}
                                         src={video}
                                         className="w-full h-full object-cover rounded"
                                         controls
@@ -197,7 +280,66 @@ export default function SuccessStories() {
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
                     </div>
-                    <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold inline">
+
+                    <hr className="mt-6 border-2 border-solid border-gray-300 w-5/6"></hr>
+
+                    {/* <h4 className="text-3xl sm:text-2xl text-brand-blue font-bold mt-8">Read their journey!</h4> */}
+                    <button className="mt-10 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
+
+                    <div className="relative flex flex-col items-center pt-10">
+                        <div className="overflow-hidden w-[632px]">
+                            <motion.div
+                                // animate={{ x: `-${currentIndex * (200 + 16)}px` }}
+                                className="flex gap-4"
+                            >
+                                {writtenTestimonials.map((video, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="relative h-[350px] w-[200px] flex-shrink-0"
+                                >
+                                    {!(index === activeWrittenIndex) ? (
+                                    <div
+                                        className="absolute top-0 left-0 w-full h-full cursor-pointer"
+                                        onClick={() => setActiveWrittenIndex(index)}
+                                    >
+                                        {/* Thumbnail */}
+                                        <img
+                                        src={writtenThumbnails[index]}
+                                        alt={`Thumbnail for video ${index + 1}`}
+                                        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                                        />
+
+                                        <div className="absolute bottom-2 left-2 flex items-center justify-center bg-black bg-opacity-10 rounded-full">
+                                            <button className="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-2xl text-sm">
+                                                ▶
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    ) : (
+                                    <video
+                                        // ref={writtenRefs.current[index]}
+                                        // onPlay={() => handleWrittenPlay(index)}
+                                        src={video}
+                                        className="w-full h-full object-cover rounded"
+                                        controls
+                                        playsInline
+                                    />
+                                    )}
+                                </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
+
+                        {/* Uncomment the below arrows section when more videos are added */}
+
+                        {/* <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
+                        </div> */}
+                    </div>
+
+                    <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold">
                         Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline,
                         dedication, and our expert support, they turned their goals into success stories. Now, it's your turn to take the
                         first step.

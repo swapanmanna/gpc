@@ -222,9 +222,9 @@ export default function PrivacyPolicy() {
                     <p>If you have any questions about this Privacy Policy, You can contact us:</p>
                     <br></br>
                     <ul className="list-disc ml-8">
-                        <li>By email: <a href="mailto:cia@globalprofessionalcertifications.com?subject=Inquiry&body=Hi there, I would like to know more about..." className="hover:underline hover:text-brand-blue">
-                                            cia@globalprofessionalcertifications.com
-                                        </a> </li>
+                        <li>By email: <a href="mailto:cia@globalprofessionalcertifications.com?subject=Inquiry&body=Hi there, I would like to know more about..." className="underline hover:text-brand-blue">
+                            cia@globalprofessionalcertifications.com
+                        </a> </li>
                     </ul>
                 </div>
             </div>
