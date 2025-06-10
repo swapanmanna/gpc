@@ -9,7 +9,7 @@ export default function EventCarousel({images}){
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: images.length > 3 ? 3 : images.length,
         slidesToScroll: 1,
         arrows: true,
     };
@@ -22,7 +22,7 @@ export default function EventCarousel({images}){
                     <img 
                     src={image} 
                     key={index}
-                    className="h-96 object-cover rounded-md"
+                    className="object-cover rounded-md"
                     ></img>
                 )
             })}

@@ -202,7 +202,7 @@ export default function SuccessStories() {
                             <motion.div 
                             animate={{ x: `-${currentHeroIndex * 560}px` }}
                             transition={{duration: isAnimating ? 0.5 : 0, ease: "easeInOut"}}
-                            className="flex">
+                            className="flex rounded-xl">
                                 {heroImages.map((image, index) => (
                                     <img src={image} key={index} className="w-[560px] rounded-xl shrink-0 mb-2" />
                                 ))}
