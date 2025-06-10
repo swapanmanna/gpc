@@ -35,6 +35,8 @@ import priyankaWrittenTestimonial from "../../assets/written-testimonials/Priyan
 import deepakWrittenTestimonial from "../../assets/written-testimonials/Deepak-written-testimonial.mp4"
 import simranjeetWrittenTestimonial from "../../assets/written-testimonials/Simranjeet-written-testimonial.mp4"
 import danishTestimonial from "../../assets/written-testimonials/Danish-testimonial.mp4"
+import vishalTestimonial from "../../assets/video-testimonials/Vishal-testimonial.mp4"
+import vishalThumbnail from "../../assets/thumbnails/Vishal-thumbnail.png"
 import danishThumbnail from "../../assets/thumbnails/Danish-thumbnail.png"
 import simranThumbnail from "../../assets/thumbnails/Simran-garg-thumbnail.png"
 import sivaThumbnail from "../../assets/thumbnails/Siva-subramanian-thumbnail.png"
@@ -59,12 +61,13 @@ import { FaChevronRight } from "react-icons/fa";
 export default function SuccessStories() {
 
     const testimonialVideos = [
-        sivaSubramanianCiaTestimonial,
-        sanjeevKumarTestimonialVideo,
         simranGargTestimonial,
         murtuzaTestimonial,
         prathwiShettyTestimonial,
         pramodTestimonial,
+        vishalTestimonial,
+        sanjeevKumarTestimonialVideo,
+        sivaSubramanianCiaTestimonial,
     ]
 
     const writtenTestimonials = [
@@ -75,12 +78,13 @@ export default function SuccessStories() {
     ]
 
     const videoThumbnails = [
-        sivaThumbnail,
-        sanjeevThumbnail,
         simranThumbnail,
         murtuzaThumbnail,
         prathwiThumbnail,
         pramodThumbnail,
+        vishalThumbnail,
+        sanjeevThumbnail,
+        sivaThumbnail,
     ]
 
     const writtenThumbnails = [
