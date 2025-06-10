@@ -34,6 +34,8 @@ import prathwiShettyTestimonial from "../../assets/video-testimonials/Prathwi-sh
 import priyankaWrittenTestimonial from "../../assets/written-testimonials/Priyanka-written-testimonial.mp4"
 import deepakWrittenTestimonial from "../../assets/written-testimonials/Deepak-written-testimonial.mp4"
 import simranjeetWrittenTestimonial from "../../assets/written-testimonials/Simranjeet-written-testimonial.mp4"
+import danishTestimonial from "../../assets/written-testimonials/Danish-testimonial.mp4"
+import danishThumbnail from "../../assets/thumbnails/Danish-thumbnail.png"
 import simranThumbnail from "../../assets/thumbnails/Simran-garg-thumbnail.png"
 import sivaThumbnail from "../../assets/thumbnails/Siva-subramanian-thumbnail.png"
 import sanjeevThumbnail from "../../assets/thumbnails/Sanjeev-kumar-thumbnail.png"
@@ -66,6 +68,7 @@ export default function SuccessStories() {
     ]
 
     const writtenTestimonials = [
+        danishTestimonial,
         priyankaWrittenTestimonial,
         simranjeetWrittenTestimonial,
         deepakWrittenTestimonial,
@@ -81,6 +84,7 @@ export default function SuccessStories() {
     ]
 
     const writtenThumbnails = [
+        danishThumbnail,
         priyankaThumbnail,
         simranjeetThumbnail,
         deepakThumbnail,
@@ -287,7 +291,7 @@ export default function SuccessStories() {
                     <button className="mt-10 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
 
                     <div className="relative flex flex-col items-center pt-10">
-                        <div className="overflow-hidden w-[632px]">
+                        <div className="overflow-hidden w-[848px]">
                             <motion.div
                                 // animate={{ x: `-${currentIndex * (200 + 16)}px` }}
                                 className="flex gap-4"
