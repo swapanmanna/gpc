@@ -95,9 +95,9 @@ export default function SuccessStories() {
     ]
 
     const heroImages = [
+        iiaHyderabadOne,
         passoutStudents,
         wofaFive,
-        iiaHyderabadOne,
         // passoutStudents
     ]
 
@@ -116,7 +116,7 @@ export default function SuccessStories() {
 
     const [currentHeroIndex, setCurrentHeroIndex] = useState(0)
     const [isAnimating, setIsAnimating] = useState(true)
-    const timeoutRef = useRef(null)
+    // const timeoutRef = useRef(null)
 
     useEffect(() => {
         const interval = setInterval(() => {
