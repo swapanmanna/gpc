@@ -48,6 +48,8 @@ import simranjeetThumbnail from "../../assets/thumbnails/Simranjeet-thumbnail.pn
 import deepakThumbnail from "../../assets/thumbnails/Deepak-thumbnail.png"
 import priyankaThumbnail from "../../assets/thumbnails/Priyanka-thumbnail.png"
 import pramodTestimonial from "../../assets/video-testimonials/Pramod-pujari-testimonial.mp4"
+import vijayTestimonial from "../../assets/written-testimonials/Vijay-testimonial.mp4"
+import vijayThumbnail from "../../assets/thumbnails/Vijay-thumbnail.png"
 import { GoDotFill } from "react-icons/go";
 
 import passoutStudents from "../../assets/Passout-students.jpeg"
@@ -71,7 +73,8 @@ export default function SuccessStories() {
     ]
 
     const writtenTestimonials = [
-        danishTestimonial,
+        // danishTestimonial,
+        vijayTestimonial,
         priyankaWrittenTestimonial,
         simranjeetWrittenTestimonial,
         deepakWrittenTestimonial,
@@ -88,7 +91,8 @@ export default function SuccessStories() {
     ]
 
     const writtenThumbnails = [
-        danishThumbnail,
+        // danishThumbnail,
+        vijayThumbnail,
         priyankaThumbnail,
         simranjeetThumbnail,
         deepakThumbnail,
@@ -293,6 +297,8 @@ export default function SuccessStories() {
 
                     {/* <h4 className="text-3xl sm:text-2xl text-brand-blue font-bold mt-8">Read their journey!</h4> */}
                     <button className="mt-10 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
+
+                    // Written Testimonials
 
                     <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">

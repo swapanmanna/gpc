@@ -52,7 +52,7 @@ export default function Companies() {
 
     return (
         <>
-            <div className="pt-32 pb-20 mb-10 md:mb-20 max-w-[77rem] mx-auto flex flex-col items-center overflow-x-hidden">
+            <div className="pt-32 pb-20 mb-10 md:mb-20 max-w-[70rem] mx-auto flex flex-col items-center overflow-x-hidden">
                 <h1 className="text-xl md:text-4xl mb-24 font-bold text-brand-blue text-center">Our students are from Top Corporates</h1>
                 <div className="container mx-auto">
                     <div className="flex myGradient">
