@@ -115,6 +115,7 @@ export default function SuccessStories() {
     const [activeWrittenIndex, setActiveWrittenIndex] = useState(null);
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
         setCurrentVideoIndex((prev) => (prev === 0 ? testimonialVideos.length - 4 : prev - 1));
@@ -122,6 +123,14 @@ export default function SuccessStories() {
 
     const handleNext = () => {
         setCurrentVideoIndex((prev) => (prev === testimonialVideos.length - 4 ? 0 : prev + 1));
+    };
+
+    const handleWrittenPrev = () => {
+        setCurrentIndex((prev) => (prev === 0 ? writtenTestimonials.length - 4 : prev - 1));
+    };
+
+    const handleWrittenNext = () => {
+        setCurrentIndex((prev) => (prev === writtenTestimonials.length - 4 ? 0 : prev + 1));
     };
 
     const [currentHeroIndex, setCurrentHeroIndex] = useState(0)
@@ -249,6 +258,9 @@ export default function SuccessStories() {
                         Hear from those who made it!
                     </h3> */}
                     <button className="mt-6 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Hear from those who made it!</button>
+
+                    {/* Video Testimonials */}
+
                     <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
                             <motion.div
@@ -309,7 +321,7 @@ export default function SuccessStories() {
                     <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
                             <motion.div
-                                // animate={{ x: `-${currentIndex * (200 + 16)}px` }}
+                                animate={{ x: `-${currentIndex * (200 + 16)}px` }}
                                 className="flex gap-4"
                             >
                                 {writtenTestimonials.map((video, index) => (
@@ -353,10 +365,10 @@ export default function SuccessStories() {
 
                         {/* Uncomment the below arrows section when more videos are added */}
 
-                        {/* <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
-                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
-                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
-                        </div> */}
+                        <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handleWrittenPrev}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleWrittenNext}/></div>
+                        </div>
                     </div>
 
                     <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold">
