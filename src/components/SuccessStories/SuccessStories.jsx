@@ -50,6 +50,10 @@ import priyankaThumbnail from "../../assets/thumbnails/Priyanka-thumbnail.png"
 import pramodTestimonial from "../../assets/video-testimonials/Pramod-pujari-testimonial.mp4"
 import vijayTestimonial from "../../assets/written-testimonials/Vijay-testimonial.mp4"
 import vijayThumbnail from "../../assets/thumbnails/Vijay-thumbnail.png"
+import amitTestimonial from "../../assets/video-testimonials/Amit-testimonial.mp4"
+import amitThumbnail from "../../assets/thumbnails/Amit-mayani-thumbnail.png"
+
+
 import { GoDotFill } from "react-icons/go";
 
 import passoutStudents from "../../assets/Passout-students.jpeg"
@@ -63,6 +67,7 @@ import { FaChevronRight } from "react-icons/fa";
 export default function SuccessStories() {
 
     const testimonialVideos = [
+        amitTestimonial,
         simranGargTestimonial,
         murtuzaTestimonial,
         prathwiShettyTestimonial,
@@ -73,14 +78,15 @@ export default function SuccessStories() {
     ]
 
     const writtenTestimonials = [
-        // danishTestimonial,
         vijayTestimonial,
+        danishTestimonial,
         priyankaWrittenTestimonial,
         simranjeetWrittenTestimonial,
         deepakWrittenTestimonial,
     ]
 
     const videoThumbnails = [
+        amitThumbnail,
         simranThumbnail,
         murtuzaThumbnail,
         prathwiThumbnail,
@@ -91,8 +97,8 @@ export default function SuccessStories() {
     ]
 
     const writtenThumbnails = [
-        // danishThumbnail,
         vijayThumbnail,
+        danishThumbnail,
         priyankaThumbnail,
         simranjeetThumbnail,
         deepakThumbnail,
@@ -298,7 +304,7 @@ export default function SuccessStories() {
                     {/* <h4 className="text-3xl sm:text-2xl text-brand-blue font-bold mt-8">Read their journey!</h4> */}
                     <button className="mt-10 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
 
-                    // Written Testimonials
+                    {/* Written Testimonials */}
 
                     <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
