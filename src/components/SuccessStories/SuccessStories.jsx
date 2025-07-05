@@ -52,6 +52,12 @@ import vijayTestimonial from "../../assets/written-testimonials/Vijay-testimonia
 import vijayThumbnail from "../../assets/thumbnails/Vijay-thumbnail.png"
 import amitTestimonial from "../../assets/video-testimonials/Amit-testimonial.mp4"
 import amitThumbnail from "../../assets/thumbnails/Amit-mayani-thumbnail.png"
+import fazilTestimonial from "../../assets/written-testimonials/Fazil-testimonial.mp4"
+import fazilThumbnail from "../../assets/thumbnails/Fazil-thumbnail.png"
+import deepakGargTestimonial from "../../assets/written-testimonials/Deepak-garg-testimonial.mp4"
+import deepakGargThumbnail from "../../assets/thumbnails/Deepak-garg-thumbnail.png"
+import wajihaTestimonial from "../../assets/written-testimonials/Wajiha-testimonial.mp4"
+import wajihaThumbnail from "../../assets/thumbnails/Wajiha-thumbnail.png"
 
 
 import { GoDotFill } from "react-icons/go";
@@ -78,6 +84,9 @@ export default function SuccessStories() {
     ]
 
     const writtenTestimonials = [
+        wajihaTestimonial,
+        deepakGargTestimonial,
+        fazilTestimonial,
         vijayTestimonial,
         danishTestimonial,
         priyankaWrittenTestimonial,
@@ -97,6 +106,9 @@ export default function SuccessStories() {
     ]
 
     const writtenThumbnails = [
+        wajihaThumbnail,
+        deepakGargThumbnail,
+        fazilThumbnail,
         vijayThumbnail,
         danishThumbnail,
         priyankaThumbnail,
