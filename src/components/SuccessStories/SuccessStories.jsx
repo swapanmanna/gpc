@@ -58,7 +58,10 @@ import deepakGargTestimonial from "../../assets/written-testimonials/Deepak-garg
 import deepakGargThumbnail from "../../assets/thumbnails/Deepak-garg-thumbnail.png"
 import wajihaTestimonial from "../../assets/written-testimonials/Wajiha-testimonial.mp4"
 import wajihaThumbnail from "../../assets/thumbnails/Wajiha-thumbnail.png"
-
+import ajayThumbnail from "../../assets/thumbnails/Ajay-kumar-thumbnail.png"
+import harishankarThumbnail from "../../assets/thumbnails/Harishankar-thumbnail.png"
+import ajayTestimonial from "../../assets/written-testimonials/Ajay-kumar-testimonial.mp4"
+import harishankarTestimonial from "../../assets/video-testimonials/Harishankar-testimonial.mp4"
 
 import { GoDotFill } from "react-icons/go";
 
@@ -73,6 +76,7 @@ import { FaChevronRight } from "react-icons/fa";
 export default function SuccessStories() {
 
     const testimonialVideos = [
+        harishankarTestimonial,
         amitTestimonial,
         simranGargTestimonial,
         murtuzaTestimonial,
@@ -84,6 +88,7 @@ export default function SuccessStories() {
     ]
 
     const writtenTestimonials = [
+        ajayTestimonial,
         wajihaTestimonial,
         deepakGargTestimonial,
         fazilTestimonial,
@@ -95,6 +100,7 @@ export default function SuccessStories() {
     ]
 
     const videoThumbnails = [
+        harishankarThumbnail,
         amitThumbnail,
         simranThumbnail,
         murtuzaThumbnail,
@@ -106,6 +112,7 @@ export default function SuccessStories() {
     ]
 
     const writtenThumbnails = [
+        ajayThumbnail,
         wajihaThumbnail,
         deepakGargThumbnail,
         fazilThumbnail,
@@ -120,7 +127,6 @@ export default function SuccessStories() {
         iiaHyderabadOne,
         passoutStudents,
         wofaFive,
-        // passoutStudents
     ]
 
     const [activeVideoIndex, setActiveVideoIndex] = useState(null);

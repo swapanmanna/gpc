@@ -8,7 +8,7 @@ export default function VideoSection() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="md:max-w-6xl w-full flex justify-center items-center h-auto shadow-2xl">
+      <div className="max-w-md md:max-w-6xl w-full flex justify-center items-center h-auto shadow-2xl">
         <div className="relative w-full pb-[56.25%] h-0">
           {!isLoaded ? (
             <div
