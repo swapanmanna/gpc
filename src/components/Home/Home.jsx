@@ -20,7 +20,7 @@ export default function Home() {
         <div className="bg-gray-50">
             <Hero />
             <Companies />
-            <h1 className="md:text-4xl text-2xl justify-center w-full font-bold text-brand-blue mb-10 md:mb-24 inline-flex justify-center items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
+            <h1 className="md:text-4xl text-xl justify-center w-full font-bold text-brand-blue mb-10 md:mb-24 inline-flex justify-center items-end gap-2">Watch this video to know What We Do <span><FaChevronDown className="text-brand-purple hover:text-brand-blue transition duration-300"/></span></h1>
             <VideoSection />
             <section className="bg-[url('assets/bg.png')] flex flex-col px-20 mt-10 md:mt-20 py-6 md:py-10 mx-4 md:mx-auto md:max-w-6xl rounded-xl shadow-lg justify-center items-center border">
                 <h2 className="md:text-4xl text-2xl justify-center w-full font-bold text-brand-blue text-center">IIA India Authorized Learning Partner</h2>
