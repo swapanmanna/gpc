@@ -24,7 +24,7 @@ export default function Benefits() {
                             <span className="text-brand-dark font-semibold sm:text-lg text-md">Comprehensive support offers personalized assistance and resources, helping you succeed at every step of your learning journey</span>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center max-w-sm md:max-w-full md:mr-20 mx-auto transform scale-110">
+                    <div className="flex items-center justify-center max-w-sm md:max-w-full md:mr-20 mx-auto md:transform md:scale-110">
                         <img src={learningToLeadership} className="object-contain rounded-lg shadow-2xl shadow-gray-500/50 mask-image" alt="Sample" />
                     </div>
                 </div>
