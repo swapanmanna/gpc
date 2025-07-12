@@ -27,7 +27,7 @@ export default function NotificationBanner () {
                 <motion.p
                 animate={!isMobile ? {  scale: [1, 1.1, 1] } : {}}
                 transition={!isMobile ? { duration: 2, repeat: Infinity, ease: "linear" } : {}}
-                className="md:text-sm text-xs md:p-0 px-12 font-semibold md:text-base">
+                className="md:text-sm text-xs md:p-0 px-8 font-semibold md:text-base">
                 <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-4 w-4 md:h-6 md:h-6" />CIA Part 3 new batch starts soon! Click <span className="text-brown-700 font-semibold hover:underline"><Link to="https://youtu.be/Xn7lL67U2NI?si=OTUa4jZzE3GDJAbk" target="_blank">here</Link></span> to watch our orientation program and learn more about the course.<BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-4 w-4 md:h-6 md:h-6" />
                 </motion.p>
             </div>
