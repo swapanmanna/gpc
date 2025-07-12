@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import coursesPhoto from "../../assets/Courses-photo-1.png";
 import Card from "../Card/Card";
 import cisaLogo from "../../assets/cisa-logo-1.png";
@@ -9,6 +9,19 @@ import { FaArrowTurnDown } from "react-icons/fa6";
 import MetaTags from "../MetaTags";
 
 export default function CoursesOverview() {
+
+  let windowSize = window.innerWidth
+
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(windowSize < 768)
+    }
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   useEffect(() => {
     const img = new Image();
     img.src = coursesPhoto;
@@ -23,13 +36,13 @@ export default function CoursesOverview() {
       />
       {/* Hero */}
       <section className="md:h-screen flex justify-center items-center bg-brand-blue sm:pt-16">
-        <div className="md:px-4 md:py-32 pt-32 pb-4 mx-auto md:max-w-8xl md:px-6 lg:px-8 md:flex">
+        <div className="flex flex-col-reverse md:flex-row md:px-4 md:py-32 pt-32 pb-10 mx-auto md:max-w-7xl md:px-6 lg:px-8 md:flex">
           <div className="max-w-sm md:max-w-2xl mx-auto md:mr-20 md:mt-16">
-            <button className="px-6 py-3 bg-gray-50 border border-gray-400 text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transform hover:scale-105 transition duration-300 ease-in-out">
+            <button className="px-4 py-2 md:px-6 md:py-3 bg-gray-50 border border-gray-400 md:text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transform hover:scale-105 transition duration-300 ease-in-out">
               Globally recognised
             </button>
             <div className="relative max-w-xl mt-8">
-              <p className="relative mt-5 text-2xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight font-pj text-left">
+              <p className="relative text-xl md:text-6xl font-bold leading-tight text-gray-50 sm:leading-tight sm:text-5xl lg:text-4xl lg:leading-tight font-pj text-left">
                 Elevate Your Expertise: Master the Art of Auditing and Risk Management
               </p>
               <h1 className="pt-6 md:text-2xl text-gray-50">
@@ -37,7 +50,8 @@ export default function CoursesOverview() {
               </h1>
             </div>
 
-            <div className="md:ml- px-8 sm:px-0 sm:space-x-5 mt-9 md:flex">
+            {!isMobile ? 
+              <div className="px-8 sm:px-0 sm:space-x-5 mt-9 md:flex"> 
               <a
                 href="#courses"
                 title=""
@@ -47,12 +61,15 @@ export default function CoursesOverview() {
                 Kickstart your Career <span><FaArrowTurnDown className="absolute bottom-4 ml-2 font-semibold" /></span>
               </a>
             </div>
+            :
+            <button className="mt-8 px-4 py-2 bg-orange-500 text-white font-bold rounded-lg hover:bg-gray-50 hover:text-brand-dark transform hover:scale-105 transition duration-300 ease-in-out">Explore our courses below</button>
+          }
           </div>
           <div className="pb-12">
             <div className="relative">
               <div className="relative mx-auto lg:max-w-6xl p-2 transform lg:scale-110">
                 <img
-                  className="h-[500px] rounded-md hidden md:block"
+                  className="h-[500px] rounded-md"
                   src={coursesPhoto}
                   alt="homepage hero"
                 />
@@ -63,10 +80,10 @@ export default function CoursesOverview() {
       </section>
 
       {/* Courses cards in single row */}
-      <h1 id="courses" className="text-4xl font-bold text-brand-blue mb-10 text-center mt-24">
+      <h1 id="courses" className="text-2xl md:text-4xl font-bold text-brand-blue mb-10 text-center mt-10 md:mt-24">
         COURSES WE OFFER
       </h1>
-      <div className="flex md:justify-center md:flex-row flex-col items-center md:w-full md:mb-24">
+      <div className="flex md:justify-center md:flex-row flex-col gap-4 md:gap-0 items-center md:w-full mb-10 md:mb-24">
         <Card
           title="CIA all 3 Parts with Gleim Content"
           image={ciaLogo}

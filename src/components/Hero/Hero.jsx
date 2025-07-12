@@ -75,7 +75,7 @@ const Hero = () => {
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 {/* Text Content */}
                 <div className="w-full md:w-1/2 max-w-3xl">
-                    <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-base sm:text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-300 ease-in-out transform hover:scale-105 mb-6">
+                    <button className="px-4 py-2 bg-gray-50 border border-gray-400 text-base sm:text-lg text-brand-dark rounded-lg hover:bg-orange-500 hover:text-gray-50 font-bold font-inter transition duration-300 ease-in-out transform hover:scale-105 mb-2">
                         Trusted by Professionals from Top Corporates
                     </button>
                     <div className="max-w-2xl">
