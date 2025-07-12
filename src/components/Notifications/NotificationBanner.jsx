@@ -21,7 +21,7 @@ export default function NotificationBanner () {
     }, [])
 
     return (
-        <div className="fixed top-0 left-0 w-screen bg-[#ffebcd] text-[#964b00] flex items-center justify-center text-center h-12 z-50">
+        <div className="fixed top-0 left-0 w-screen bg-[#ffebcd] text-[#964b00] flex items-center justify-center text-center h-14 md:h-12 z-50">
             <div
             className="w-full">
                 <motion.p
