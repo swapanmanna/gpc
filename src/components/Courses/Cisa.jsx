@@ -48,25 +48,6 @@ const Cisa = () => {
         </section>
 
         {/* Enrollment Section */}
-        {/* <section className="flex justify-around items-center bg-orange-100 rounded-lg shadow-lg p-8 text-center">
-            <div className="flex md:flex-col">
-                <h2 className="text-3xl md:text-5xl font-semibold text-brand-blue mb-4">
-                    Enroll Now
-                </h2>
-                <p className="text-gray-700 text-2xl mb-4">
-                    Enrollment Cost: <span className="font-bold">INR 23,599</span> <span className="text-sm italic">(Including GST)</span>
-                </p>
-            </div>
-            <Link
-                to="https://rzp.io/rzp/VuvF84x"
-                target="_blank"
-                className="inline-block bg-orange-500 text-white py-3 px-6 rounded-lg md:text-2xl font-semibold hover:bg-orange-800 transition-colors"
-            >
-                Join the Course
-            </Link>
-        </section> */}
-
-        {/* Enrollment Section */}
         <section className="flex flex-col md:flex-row justify-around items-center bg-orange-100 rounded-lg shadow-lg p-6 md:p-8 text-center space-y-6 md:space-y-0 md:space-x-8">
             <div className="flex flex-col items-center md:items-start">
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-brand-blue mb-2">
