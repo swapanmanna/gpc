@@ -9,7 +9,7 @@ const Cisa = () => {
     <div className={`mt-[${marginTop}px] bg-gray-100 font-sans`}>
       {/* Header */}
       <header className="bg-brand-blue text-white py-8 md:py-12 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold">
+        <h1 className="px-4 md:px-0 text-3xl md:text-5xl font-bold">
           Certified Information Systems Auditor (CISA)
         </h1>
       </header>
