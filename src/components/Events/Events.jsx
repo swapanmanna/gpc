@@ -105,11 +105,11 @@ export default function Events(){
                 description="Stay updated with live sessions, webinars, and certification events hosted by Global Professional Certifications."
                 canonicalUrl="https://globalprofessionalcertifications.com/events"
             />
-            <div className="">
-                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
+            {/* <div className="">
+                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center"> */}
                     
                     {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                    {/* <div className="absolute inset-0 bg-black opacity-50"></div>
 
                     <motion.p
                         animate={{scale: [1, 1.3, 1]}}
@@ -122,92 +122,75 @@ export default function Events(){
                             Scroll down to view our events 
                     </motion.p>
                 </div>
+            </div> */}
+
+
+            <div className="">
+                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+
+                    <motion.p
+                        animate={{ scale: [1, 1.2, 1] }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "linear"
+                        }}
+                        className="absolute bottom-4 md:bottom-[2rem] text-white text-center md:left-[45%] mx-auto font-bold text-base md:text-lg left-[28%]"
+                    >
+                        Scroll down to view our events 
+                    </motion.p>
+                </div>
             </div>
-
-            {/* <section className="md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418]">
-                <div>
-                    <img src={iiaEvent} className="rounded-lg h-[600px] ml-16"></img>
-                </div>
-                <div className="flex flex-col gap-6">
-                    <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR EVENTS</button>
-                    <h3 className="md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
-                    <p className="font-bold text-lg text-[#444444]">At Global Professional Certifications, we don't just talk about growth, we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="flex flex-col w-full gap-4 border-r border-r-4 border-r-gray-200">
-                                <FaHandshakeAngle className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
-                                <p className="text-xl font-bold">Listen to our Mentor</p>
-                        </div>
-                        <div className="flex flex-col gap-4">
-                                <MdTipsAndUpdates className="h-20 w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
-                                <p className="text-xl font-bold">Get latest updates</p>
-                        </div>
-                    </div>
-                    <p className="text-[#444444] font-semibold">Joining us at events isn't just about attending, it is about engaging, evolving, and becoming part of a powerful global community.</p>
-                    <div className="flex gap-6">
-                        <button className="px-6 py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-lg rounded-lg font-semibold transition duration-300 ease-in-out">
-                            <Link to="/contact">JOIN US</Link>
-                        </button>
-                        <div className="flex gap-2 items-center"> 
-                            <div className="h-14 w-14 bg-brand-purple rounded-full flex items-center justify-center hover:bg-brand-blue transition duration-300">
-                                <FiPhone className="h-8 w-8 text-white" />
-                            </div>
-                            <div className="flex flex-col">
-                                <p>Call us:</p>
-                                <p className="font-bold font-md">+918736083099</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
 
             <section className="mt-8 mb-8 md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418] px-4 md:px-0">
-    <div className="mb-6 md:mb-0">
-        <img src={iiaEvent} className="rounded-lg h-auto md:h-[600px] mx-auto md:ml-16" alt="Event image" />
-    </div>
-    <div className="flex flex-col gap-4 md:gap-6">
-        <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-xs md:text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">
-            OUR EVENTS
-        </button>
-        <h3 className="text-2xl md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
-        <p className="font-bold text-base md:text-lg text-[#444444]">
-            At Global Professional Certifications, we don't just talk about growth, we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.
-        </p>
-        <div className="grid grid-cols-2 gap-6 md:gap-10">
-            <div className="flex flex-col w-full gap-4 md:border-r md:border-r-4 md:border-r-gray-200">
-                <FaHandshakeAngle className="h-16 w-16 md:h-20 md:w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
-                <p className="text-lg md:text-xl font-bold">Listen to our Mentor</p>
-            </div>
-            <div className="flex flex-col gap-4">
-                <MdTipsAndUpdates className="h-16 w-16 md:h-20 md:w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
-                <p className="text-lg md:text-xl font-bold">Get latest updates</p>
-            </div>
-        </div>
-        <p className="text-[#444444] font-semibold text-sm md:text-base">
-            Joining us at events isn't just about attending, it is about engaging, evolving, and becoming part of a powerful global community.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
-            <button className="px-4 py-2 md:px-6 md:py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-base md:text-lg rounded-lg font-semibold transition duration-300 ease-in-out">
-                <Link to="/contact">JOIN US</Link>
-            </button>
-            <div className="flex gap-2 items-center">
-                <div className="h-12 w-12 md:h-14 md:w-14 bg-brand-purple rounded-full flex items-center justify-center hover:bg-brand-blue transition duration-300">
-                    <FiPhone className="h-6 w-6 md:h-8 md:w-8 text-white" />
+                <div className="mb-6 md:mb-0">
+                    <img src={iiaEvent} className="rounded-lg h-auto md:h-[600px] mx-auto md:ml-16" alt="Event image" />
                 </div>
-                <div className="flex flex-col">
-                    <p className="text-sm md:text-base">Call us:</p>
-                    <p className="font-bold text-sm md:text-md">+918736083099</p>
+                <div className="flex flex-col gap-4 md:gap-6">
+                    <button className="px-3 py-1.5 bg-[#EFECFF] text-[#5033FF] w-[8rem] border border-[#5033FF] rounded-lg text-xs md:text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">
+                        OUR EVENTS
+                    </button>
+                    <h3 className="text-2xl md:text-4xl font-bold">Our Event Presence: Why It Matters</h3>
+                    <p className="font-bold text-base md:text-lg text-[#444444]">
+                        At Global Professional Certifications, we don't just talk about growth, we live it. Our active presence at industry-leading conferences, training programs, and networking forums across the globe reflects our commitment to staying ahead of the curve and bringing real-world insights to the professionals we serve.
+                    </p>
+                    <div className="grid grid-cols-2 gap-6 md:gap-10">
+                        <div className="flex flex-col w-full gap-4 md:border-r md:border-r-4 md:border-r-gray-200">
+                            <FaHandshakeAngle className="h-16 w-16 md:h-20 md:w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
+                            <p className="text-lg md:text-xl font-bold">Listen to our Mentor</p>
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <MdTipsAndUpdates className="h-16 w-16 md:h-20 md:w-20 bg-[#EFECFF] p-3 rounded-xl hover:text-brand-purple transition duration-300" />
+                            <p className="text-lg md:text-xl font-bold">Get latest updates</p>
+                        </div>
+                    </div>
+                    <p className="text-[#444444] font-semibold text-sm md:text-base">
+                        Joining us at events isn't just about attending, it is about engaging, evolving, and becoming part of a powerful global community.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
+                        <button className="px-4 py-2 md:px-6 md:py-3 bg-brand-blue hover:bg-brand-purple text-gray-50 text-base md:text-lg rounded-lg font-semibold transition duration-300 ease-in-out">
+                            <Link to="/contact">JOIN US</Link>
+                        </button>
+                        <div className="flex gap-2 items-center">
+                            <div className="h-12 w-12 md:h-14 md:w-14 bg-brand-purple rounded-full flex items-center justify-center hover:bg-brand-blue transition duration-300">
+                                <FiPhone className="h-6 w-6 md:h-8 md:w-8 text-white" />
+                            </div>
+                            <div className="flex flex-col">
+                                <p className="text-sm md:text-base">Call us:</p>
+                                <p className="font-bold text-sm md:text-md">+918736083099</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
 
             <div className="bg-[url('assets/bg.jpg')]">
                 <section className="flex flex-col items-center max-w-[77rem] mx-auto gap-6 py-20">
                     <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR PAST EVENTS</button>
-                    <h4 className="text-2xl px-8 md:px-0 md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
+                    <h4 className="text-2xl text-center px-8 md:px-0 md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
                     <p className="px-4 md:px-0 md:w-[600px] text-center text-[#444444] md:text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we've been a part of</p>
                     {!isMobile ? <div className="max-w-[800px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
                         {events.map((evt) => {
@@ -255,7 +238,7 @@ export default function Events(){
                             <img src={iiaHyderabadOne} className="rounded-xl"></img>
                             {!isMobile ? <p onClick={() => setActiveEvent("hyderabad")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
                             <div className="flex flex-col gap-4">
-                                <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Hyderabad Chapter event, we connected with insightful audit professionals to exchange perspectives on the evolving landscape of internal audit and risk management.</h5>
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">At the IIA Hyderabad Chapter event, we connected with insightful audit professionals to exchange perspectives on the evolving landscape of internal audit and risk management.</h5>
                                 <div className="flex flex-col md:flex-row gap-4 md:gap-10">
                                     <div className="flex gap-1">
                                         <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
@@ -266,7 +249,7 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">24th May 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
+                                <p className="text-[#444444] md:text-lg">A convergence of ideas and expertise, the event underscored the evolving role of auditors in a rapidly changing world.</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +260,7 @@ export default function Events(){
                             <img src={wofaBanner} className="rounded-xl"></img>
                             {!isMobile ? <p onClick={() => setActiveEvent("wofa")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
                             <div className="flex flex-col gap-4">
-                                <h5 className="md:text-3xl font-bold text-[#141418]">We were proud to be a part of WOFA 2025, where leaders and changemakers came together to drive innovation and empowerment.</h5>
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">We were proud to be a part of WOFA 2025, where leaders and changemakers came together to drive innovation and empowerment.</h5>
                                 <div className="flex flex-col md:flex-row gap-4 md:gap-10">
                                     <div className="flex gap-1">
                                         <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
@@ -288,7 +271,7 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">31st Jan 2025 - 2nd Feb 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">From powerful discussions to meaningful connections, the event was a celebration of global collaboration and forward thinking.</p>
+                                <p className="text-[#444444] md:mb-[25px] md:text-lg">From powerful discussions to meaningful connections, the event was a celebration of global collaboration and forward thinking.</p>
                             </div>
                         </div>
                     </div>
@@ -297,7 +280,7 @@ export default function Events(){
                             <img src={iiaKolkataBanner} className="rounded-xl w-[360px] h-[270px]"></img>
                             {!isMobile ? <p onClick={() => setActiveEvent("kolkata")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
                             <div className="flex flex-col gap-4">
-                                <h5 className="md:text-3xl font-bold text-[#141418]">We engaged with leading internal audit professionals at the IIA Kolkata Chapter event, exploring emerging trends in governance and risk.</h5>
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">We engaged with leading internal audit professionals at the IIA Kolkata Chapter event, exploring emerging trends in governance and risk.</h5>
                                 <div className="flex flex-col md:flex-row gap-4 md:gap-10">
                                     <div className="flex gap-1">
                                         <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
@@ -308,7 +291,7 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">10th Feb 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">The sessions fostered meaningful dialogue and highlighted the evolving role of auditors in today's dynamic landscape.</p>
+                                <p className="text-[#444444] md:mb-[25px] md:text-lg">The sessions fostered meaningful dialogue and highlighted the evolving role of auditors in today's dynamic landscape.</p>
                             </div>
                         </div>
                     </div>
@@ -317,7 +300,7 @@ export default function Events(){
                             <img src={iiaBengaluruBanner} className="rounded-xl"></img>
                             {!isMobile ? <p onClick={() => setActiveEvent("bangalore")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
                             <div className="flex flex-col gap-4">
-                                <h5 className="md:text-3xl font-bold text-[#141418]">At the IIA Bengaluru Chapter conference, we participated in insightful discussions on innovation in internal auditing.</h5>
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">At the IIA Bengaluru Chapter conference, we participated in insightful discussions on innovation in internal auditing.</h5> 
                                 <div className="flex flex-col md:flex-row gap-4 md:gap-10">
                                     <div className="flex gap-1">
                                         <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
@@ -328,7 +311,7 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">19th Feb 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">The event brought together experts and thought leaders, creating a powerful platform for knowledge exchange and collaboration.</p>
+                                <p className="text-[#444444] md:mb-[25px] md:text-lg">The event brought together experts and thought leaders, creating a powerful platform for knowledge exchange and collaboration.</p>
                             </div>
                         </div>
                     </div>
@@ -337,7 +320,7 @@ export default function Events(){
                             <img src={iiaMumbaiBanner} className="rounded-xl"></img>
                             {!isMobile ? <p onClick={() => setActiveEvent("mumbai")} className="absolute bottom-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
                             <div className="flex flex-col gap-4">
-                                <h5 className="md:text-3xl font-bold text-[#141418]">The IIA Mumbai Chapter event was a hub of ideas and industry insights, focused on enhancing audit excellence.</h5>
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">The IIA Mumbai Chapter event was a hub of ideas and industry insights, focused on enhancing audit excellence.</h5>
                                 <div className="flex flex-col md:flex-row gap-4 md:gap-10">
                                     <div className="flex gap-1">
                                         <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
@@ -348,7 +331,7 @@ export default function Events(){
                                         <p className="font-bold text-[#444444]">5th March 2025</p>
                                     </div>
                                 </div>
-                                <p className="text-[#444444] mb-[25px] text-lg">We connected with professionals driving change and shared in the mission to elevate internal audit practices across sectors.</p>
+                                <p className="text-[#444444] md:mb-[25px] md:text-lg">We connected with professionals driving change and shared in the mission to elevate internal audit practices across sectors.</p>
                             </div>
                         </div>
                     </div>
