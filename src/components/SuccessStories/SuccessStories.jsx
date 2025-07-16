@@ -180,6 +180,16 @@ export default function SuccessStories() {
         }
     }, [currentHeroIndex]);
 
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(()=>{
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768)
+        }
+        handleResize()
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    },[window.innerWidth])
+
     // const [loadedVideoIndexes, setLoadedVideoIndexes] = useState(
     //     Array(testimonialVideos.length).fill(false)
     // )
@@ -227,22 +237,18 @@ export default function SuccessStories() {
                 description="Hear from professionals who passed the CIA Challenge Exam with our guidance. Discover how our course made a difference in their careers."
                 canonicalUrl="https://globalprofessionalcertifications.com/success"
             />
-            <section className={`w-full bg-brand-blue flex justify-center items-center md:h-screen md:pt-${height.toString()}`}> 
-                <div className="py-[161px] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
+            <section className={`h-screen w-full bg-brand-blue flex justify-center items-center md:h-screen md:pt-${height.toString()}`}> 
+                <div className="md:py-[161px] flex flex-col gap-12 max-w-[25rem] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
                     <div className="relative flex justify-center h-full items-center gap-32">
                         <div className="flex flex-col justify-center">
-                            <h1 className="font-bold text-4xl pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
-                            <h3 className="font-semibold text-2xl pb-8 text-gray-50">Join over 250 professionals who have elevated their careers with the Certified Internal Auditor (CIA) certification.</h3>
-                            <div className="flex gap-4">
+                            <h1 className="font-bold text-2xl md:text-4xl pt-12 pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
+                            <h3 className="font-semibold text-lg md:text-2xl pb-8 text-gray-50">Join over 250 professionals who have elevated their careers with the Certified Internal Auditor (CIA) certification.</h3>
+                            <div className="flex justify-center md:justify-start">
                                 <a href="#testimonials"><button className="py-3 px-6 text-xl bg-orange-500 text-gray-50 font-semibold transition ease-in-out duration-300 hover:bg-gray-50 hover:text-black rounded-lg">Read Testimonials below</button></a>
                             </div>
                         </div>
                     </div>
-                    {/* <div className="flex flex-col">
-                        <img src={passoutStudents} className="h-[450px] rounded-xl mb-2"></img>
-                        <p className="text-gray-300 text-sm font-semibold">Our industrious alumni at the IIA Bombay International Conference</p>
-                    </div> */}
-                    <div className="relative flex flex-col items-center">
+                    {!isMobile ? <div className="relative flex flex-col items-center">
                         <div className="overflow-hidden w-[560px] rounded-xl">
                             <motion.div 
                             animate={{ x: `-${currentHeroIndex * 560}px` }}
@@ -254,32 +260,45 @@ export default function SuccessStories() {
                             </motion.div>
                         </div>
                         <p className="text-gray-300 text-sm font-semibold">Our industrious alumni who have made us proud!</p>
-                    </div>
+                    </div> : <div className="relative flex flex-col items-center">
+                        <div className="overflow-hidden w-[400px] rounded-xl">
+                            <motion.div 
+                            animate={{ x: `-${currentHeroIndex * 400}px` }}
+                            transition={{duration: isAnimating ? 0.5 : 0, ease: "easeInOut"}}
+                            className="flex rounded-xl">
+                                {heroImages.map((image, index) => (
+                                    <img src={image} key={index} className="w-[560px] rounded-xl shrink-0 mb-2" />
+                                ))}
+                            </motion.div>
+                        </div>
+                        <p className="text-gray-300 text-sm font-semibold">Our industrious alumni who have made us proud!</p>
+                    </div>}
 
                 </div>
             </section>
 
+
             <section className="bg-gray-50 pb-10 pt-20">
                 <div className="bg-[url('assets/bg.jpg')] max-w-5xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
-                    <h1 className="text-3xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
-                        Celebrating Our CIA Champions!{' '}
+                    <h1 className="text-2xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
+                        Celebrating Our CIA Champions!{" "}
                         <span>
                         <GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" />
                         </span>
                     </h1>
-                    <h2 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-1">
+                    <h2 className="text-xl sm:text-2xl text-brand-blue font-bold pt-1 px-4 md:px-0">
                         Join the Legacy of Success with Our Elite Alumni!
                     </h2>
-                    <hr className="mt-6 mb-4 border-2 border-solid border-gray-300 w-5/6"></hr>
+                    <hr className="mt-6 mb-4 border-2 border-solid border-gray-300 w-5/6 mx-auto"></hr>
                     {/* <h3 className="text-3xl sm:text-2xl text-brand-blue font-bold pt-3">
                         Hear from those who made it!
                     </h3> */}
-                    <button className="mt-6 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Hear from those who made it!</button>
+                    <button className="md:mt-6 px-3 py-1.5 md:px-6 md:py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg md:text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300 block mx-auto md:inline">Hear from those who made it!</button>
 
                     {/* Video Testimonials */}
 
-                    <div className="relative flex flex-col items-center pt-10">
+                    {!isMobile ? <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
                             <motion.div
                                 animate={{ x: `-${currentVideoIndex * (200 + 16)}px` }}
@@ -327,16 +346,64 @@ export default function SuccessStories() {
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
                         </div>
-                    </div>
+                    </div> : <div className="relative flex flex-col items-center pt-10">
+                        <div className="overflow-hidden w-[408px]">
+                            <motion.div
+                                animate={{ x: `-${currentVideoIndex * (200 + 8)}px` }}
+                                className="flex gap-2"
+                            >
+                                {testimonialVideos.map((video, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="relative h-[350px] w-[200px] flex-shrink-0"
+                                >
+                                    {!(index === activeVideoIndex) ? (
+                                    <div
+                                        className="absolute top-0 left-0 w-full h-full cursor-pointer"
+                                        onClick={() => setActiveVideoIndex(index)}
+                                    >
+                                        {/* Thumbnail */}
+                                        <img
+                                        src={videoThumbnails[index]}
+                                        alt={`Thumbnail for video ${index + 1}`}
+                                        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                                        />
 
-                    <hr className="mt-6 border-2 border-solid border-gray-300 w-5/6"></hr>
+                                        <div className="absolute bottom-2 left-2 flex items-center justify-center bg-black bg-opacity-10 rounded-full">
+                                            <button className="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-2xl text-sm">
+                                                ▶
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    ) : (
+                                    <video
+                                        // ref={videoRefs.current[index]}
+                                        // onPlay={() => handleVideoPlay(index)}
+                                        src={video}
+                                        className="w-full h-full object-cover rounded"
+                                        controls
+                                        playsInline
+                                    />
+                                    )}
+                                </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
+                        <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handlePrev}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleNext}/></div>
+                        </div>
+                    </div>}
+
+                    <hr className="mt-6 border-2 border-solid border-gray-300 w-5/6 mx-auto"></hr>
 
                     {/* <h4 className="text-3xl sm:text-2xl text-brand-blue font-bold mt-8">Read their journey!</h4> */}
-                    <button className="mt-10 px-6 py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
+                    <button className="block md:inline mx-auto mt-4 md:mt-10 px-3 py-1.5 md:px-6 md:py-1.5 bg-[#EFECFF] text-brand-blue border border-brand-blue rounded-lg md:text-2xl font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">Read their journey!</button>
 
                     {/* Written Testimonials */}
 
-                    <div className="relative flex flex-col items-center pt-10">
+                    {!isMobile ? <div className="relative flex flex-col items-center pt-10">
                         <div className="overflow-hidden w-[848px]">
                             <motion.div
                                 animate={{ x: `-${currentIndex * (200 + 16)}px` }}
@@ -387,9 +454,60 @@ export default function SuccessStories() {
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handleWrittenPrev}/></div>
                             <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleWrittenNext}/></div>
                         </div>
-                    </div>
+                    </div> : <div className="relative flex flex-col items-center pt-10">
+                        <div className="overflow-hidden w-[408px]">
+                            <motion.div
+                                animate={{ x: `-${currentIndex * (200 + 8)}px` }}
+                                className="flex gap-2"
+                            >
+                                {writtenTestimonials.map((video, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="relative h-[350px] w-[200px] flex-shrink-0"
+                                >
+                                    {!(index === activeWrittenIndex) ? (
+                                    <div
+                                        className="absolute top-0 left-0 w-full h-full cursor-pointer"
+                                        onClick={() => setActiveWrittenIndex(index)}
+                                    >
+                                        {/* Thumbnail */}
+                                        <img
+                                        src={writtenThumbnails[index]}
+                                        alt={`Thumbnail for video ${index + 1}`}
+                                        className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                                        />
 
-                    <p className="text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold">
+                                        <div className="absolute bottom-2 left-2 flex items-center justify-center bg-black bg-opacity-10 rounded-full">
+                                            <button className="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-2xl text-sm">
+                                                ▶
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    ) : (
+                                    <video
+                                        // ref={writtenRefs.current[index]}
+                                        // onPlay={() => handleWrittenPlay(index)}
+                                        src={video}
+                                        className="w-full h-full object-cover rounded"
+                                        controls
+                                        playsInline
+                                    />
+                                    )}
+                                </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
+
+                        {/* Uncomment the below arrows section when more videos are added */}
+
+                        <div className="flex justify-center gap-2 items-center px-4 w-full mt-6">
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronLeft onClick={handleWrittenPrev}/></div>
+                            <div className="p-2 rounded-full bg-brand-dark text-white hover:cursor-pointer hover:bg-brand-purple transition duration-300 ease-in-out"><FaChevronRight onClick={handleWrittenNext}/></div>
+                        </div>
+                    </div>}
+
+                    <p className="px-2 sm:px-0 sm:text-lg sm:text-xl text-gray-800 mt-8 text-center max-w-3xl font-semibold">
                         Join a growing network of accomplished CIA professionals who began their journey with us. Through discipline,
                         dedication, and our expert support, they turned their goals into success stories. Now, it's your turn to take the
                         first step.
@@ -448,7 +566,7 @@ const SuccessTestimonials = ({ start, end }) => {
     return (
         <section className="py-12 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {displayedTestimonials.map((testimonial, index) => (
                         <div
                             key={index}
