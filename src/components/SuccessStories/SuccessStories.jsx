@@ -281,13 +281,13 @@ export default function SuccessStories() {
             <section className="bg-gray-50 pb-10 pt-20">
                 <div className="bg-[url('assets/bg.jpg')] max-w-5xl mx-auto border border-gray-300 pb-10 rounded-xl shadow-lg">
                     <div className="md:flex md:flex-col justify-center items-center">
-                    <h1 className="text-2xl sm:text-3xl text-brand-blue font-bold pt-10 text-center">
+                    <h1 className="text-2xl sm:text-3xl text-brand-blue font-bold pt-10 px-12 md:px-0 text-center">
                         Celebrating Our CIA Champions!{" "}
                         <span>
                         <GiConqueror className="inline h-16 w-16 pb-4 text-brand-dark" />
                         </span>
                     </h1>
-                    <h2 className="text-xl sm:text-2xl text-brand-blue font-bold pt-1 px-4 md:px-0">
+                    <h2 className="text-xl sm:text-2xl text-brand-blue font-bold pt-1 px-12 md:px-0">
                         Join the Legacy of Success with Our Elite Alumni!
                     </h2>
                     <hr className="mt-6 mb-4 border-2 border-solid border-gray-300 w-5/6 mx-auto"></hr>
