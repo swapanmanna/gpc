@@ -105,11 +105,11 @@ export default function Events(){
                 description="Stay updated with live sessions, webinars, and certification events hosted by Global Professional Certifications."
                 canonicalUrl="https://globalprofessionalcertifications.com/events"
             />
-            {/* <div className="">
-                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center"> */}
+            {!isMobile ? <div className="">
+                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
                     
-                    {/* Dark overlay */}
-                    {/* <div className="absolute inset-0 bg-black opacity-50"></div>
+                    {/* Dark overlay */} 
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
 
                     <motion.p
                         animate={{scale: [1, 1.3, 1]}}
@@ -122,29 +122,12 @@ export default function Events(){
                             Scroll down to view our events 
                     </motion.p>
                 </div>
-            </div> */}
+            </div> : <div className="mt-[130px] px-2 flex justify-center items-center h-[80px]">
+                <p className="text-brand-blue text-3xl font-bold">Walk with Us through our Events!</p>
+            </div>}
 
 
-            <div className="">
-                <div className="relative flex h-screen bg-[url('assets/iia-conference.jpg')] bg-cover bg-center">
-                    {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black opacity-50"></div>
-
-                    <motion.p
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            ease: "linear"
-                        }}
-                        className="absolute bottom-4 md:bottom-[2rem] text-white text-center md:left-[45%] mx-auto font-bold text-base md:text-lg left-[28%]"
-                    >
-                        Scroll down to view our events 
-                    </motion.p>
-                </div>
-            </div>
-
-            <section className="mt-8 mb-8 md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418] px-4 md:px-0">
+            <section className="mt-4 mb-8 md:mt-20 md:mb-20 grid grid-cols-1 md:grid-cols-2 max-w-[77rem] mx-auto text-[#141418] px-4 md:px-0">
                 <div className="mb-6 md:mb-0">
                     <img src={iiaEvent} className="rounded-lg h-auto md:h-[600px] mx-auto md:ml-16" alt="Event image" />
                 </div>
