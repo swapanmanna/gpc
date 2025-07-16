@@ -238,11 +238,11 @@ export default function SuccessStories() {
                 canonicalUrl="https://globalprofessionalcertifications.com/success"
             />
             <section className={`h-screen w-full bg-brand-blue flex justify-center items-center md:h-screen md:pt-${height.toString()}`}> 
-                <div className="md:py-[161px] flex flex-col gap-12 max-w-[25rem] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
-                    <div className="relative flex justify-center h-full items-center gap-32">
-                        <div className="flex flex-col justify-center">
-                            <h1 className="font-bold text-2xl md:text-4xl pt-12 pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
-                            <h3 className="font-semibold text-lg md:text-2xl pb-8 text-gray-50">Join over 250 professionals who have elevated their careers with the Certified Internal Auditor (CIA) certification.</h3>
+                <div className="md:py-[161px] flex flex-col gap-6 max-w-[25rem] md:grid md:grid-cols-2 md:max-w-[72rem] md:gap-8 md:mx-auto">
+                    <div className="relative flex justify-center h-full items-center md:gap-32">
+                        <div className="">
+                            <h1 className="font-bold text-2xl md:text-4xl pt-12 md:pt-0 pb-4 md:pb-8 text-gray-50">Success Stories: CIA-Certified Professionals on Career Growth</h1>
+                            <h3 className="font-semibold text-lg md:text-2xl pb-4 md:pb-8 text-gray-50">Join over 250 professionals who have elevated their careers with the Certified Internal Auditor (CIA) certification.</h3>
                             <div className="flex justify-center md:justify-start">
                                 <a href="#testimonials"><button className="py-3 px-6 text-xl bg-orange-500 text-gray-50 font-semibold transition ease-in-out duration-300 hover:bg-gray-50 hover:text-black rounded-lg">Read Testimonials below</button></a>
                             </div>
