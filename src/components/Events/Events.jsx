@@ -122,8 +122,8 @@ export default function Events(){
                             Scroll down to view our events 
                     </motion.p>
                 </div>
-            </div> : <div className="mt-[130px] px-2 flex justify-center items-center h-[80px]">
-                <p className="text-brand-blue text-3xl font-bold">Walk with Us through our Events!</p>
+            </div> : <div className="mt-[130px] flex justify-center items-center h-[80px]">
+                <p className="text-brand-blue px-2 text-2xl font-bold">Walk with us through our Events!</p>
             </div>}
 
 
