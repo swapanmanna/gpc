@@ -143,6 +143,7 @@ const Navbar = ({topOffset}) => {
           {["Courses", "Events", "About", "Success", "Contact"].map((item, index) => (
             <li key={index} className="w-full text-center">
               <NavLink
+                onClick={() => setIsOpen(false)}
                 to={item.toLowerCase()}
                 className={({ isActive }) =>
                   `block w-full py-2 text-lg font-medium ${
