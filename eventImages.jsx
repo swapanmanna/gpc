@@ -27,6 +27,17 @@ import iiaHyderabadSeven from "./src/assets/iia-hyderabad/iia-hyderabad-7.jpeg"
 import iiaHyderabadEight from "./src/assets/iia-hyderabad/iia-hyderabad-8.jpeg"
 import iiaHyderabadNine from "./src/assets/iia-hyderabad/iia-hyderabad-9.jpeg"
 
+import iiaDelhiChapterOne from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-1.jpeg"
+import iiaDelhiChapterTwo from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-2.jpeg"
+import iiaDelhiChapterThree from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-3.jpeg"
+import iiaDelhiChapterFour from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-4.jpeg"
+import iiaDelhiChapterFive from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-5.jpeg"
+import iiaDelhiChapterSix from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-6.jpeg"
+import iiaDelhiChapterSeven from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-7.jpeg"
+import iiaDelhiChapterEight from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-8.jpeg"
+import iiaDelhiChapterNine from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-9.jpeg"
+import iiaDelhiChapterTen from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-10.jpeg"
+
 
 export const iiaBombayImages = [
         iiaBombayOne,
@@ -65,4 +76,17 @@ export const iiaHyderabadImages = [
         iiaHyderabadSeven,
         iiaHyderabadEight,
         iiaHyderabadNine
+]
+
+export const agmIIADelhiChapterImages = [
+        iiaDelhiChapterOne,
+        iiaDelhiChapterTwo,
+        iiaDelhiChapterThree,
+        iiaDelhiChapterFour,
+        iiaDelhiChapterFive,
+        iiaDelhiChapterSix,
+        iiaDelhiChapterSeven,
+        iiaDelhiChapterEight,
+        iiaDelhiChapterNine,
+        iiaDelhiChapterTen
 ]

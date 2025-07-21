@@ -63,6 +63,8 @@ import harishankarThumbnail from "../../assets/thumbnails/Harishankar-thumbnail.
 import ajayTestimonial from "../../assets/written-testimonials/Ajay-kumar-testimonial.mp4"
 import harishankarTestimonial from "../../assets/video-testimonials/Harishankar-testimonial.mp4"
 
+import agmIiaDelhiChapter from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter.png"
+
 import { GoDotFill } from "react-icons/go";
 
 import passoutStudents from "../../assets/Passout-students.jpeg"
@@ -124,6 +126,7 @@ export default function SuccessStories() {
     ]
 
     const heroImages = [
+        agmIiaDelhiChapter,
         iiaHyderabadOne,
         passoutStudents,
         wofaFive,

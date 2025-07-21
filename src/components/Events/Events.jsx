@@ -15,12 +15,13 @@ import { motion } from "motion/react";
 import iiaDelhiFlyer from "../../assets/IIA_Delhi_flyer.png"
 import { RxCross1 } from "react-icons/rx";
 import iiaHyderabadOne from "../../assets/iia-hyderabad/iia-hyderabad-1.webp"
+import agmIiaDelhiChapter from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter.png"
 
 // Hi there
 
 // <p onClick={() => setActiveEvent("hyderabad")} className="absolute top-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer">Click here for more photos</p>
 
-import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages, iiaHyderabadImages } from "../../../eventImages";
+import { iiaBangaloreImages, iiaKolkataImages, iiaBombayImages, wofaImages, iiaHyderabadImages, agmIIADelhiChapterImages } from "../../../eventImages";
 import EventCarousel from "../Carousels/EventCarousel";
 
 
@@ -47,6 +48,10 @@ export default function Events(){
             id: "mumbai",
             title: "IIA Mumbai",
         },
+        {
+            id: "delhi",
+            title: "AGM IIA Delhi",
+        }
     ]
 
     const imageMap = {
@@ -55,6 +60,7 @@ export default function Events(){
         kolkata: iiaKolkataImages,
         wofa: wofaImages,
         hyderabad: iiaHyderabadImages,
+        delhi: agmIIADelhiChapterImages,
     }
 
     const [activeEvent, setActiveEvent] = useState(null)
@@ -175,7 +181,7 @@ export default function Events(){
                     <button className="px-4 py-1.5 bg-[#EFECFF] text-[#5033FF] border border-[#5033FF] rounded-md text-sm font-bold hover:text-brand-purple hover:border-brand-purple transition duration-300">OUR PAST EVENTS</button>
                     <h4 className="text-2xl text-center px-8 md:px-0 md:text-5xl font-bold">A Look Back at the Events That Shaped Us</h4>
                     <p className="px-4 md:px-0 md:w-[600px] text-center text-[#444444] md:text-xl">From insightful keynotes to candid behind-the-scenes moments, our photo gallery captures the energy, learning, and connections from every event we've been a part of</p>
-                    {!isMobile ? <div className="max-w-[800px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
+                    {!isMobile ? <div className="max-w-[1000px] flex justify-center gap-3 py-8 px-14 rounded-full border border-gray-300 bg-white shadow-md text-[#141418] mb-10">
                         {events.map((evt) => {
                             return (
                                 <button 
@@ -315,6 +321,27 @@ export default function Events(){
                                     </div>
                                 </div>
                                 <p className="text-[#444444] md:mb-[25px] md:text-lg">We connected with professionals driving change and shared in the mission to elevate internal audit practices across sectors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-8 border border-gray-300 shadow-lg rounded-xl">
+                        <div className="flex flex-col md:flex-row gap-8 max-w-[77rem] items-center relative"> 
+                            <img src={agmIiaDelhiChapter} className="rounded-xl"></img>
+                            {!isMobile ? <p onClick={() => setActiveEvent("delhi")} className="absolute bottom-1 left-1 rounded-lg tracking-wide uppercase px-1.5 py-1 bg-gray-100 text-xs font-bold text-black cursor-pointer hover:scale-y-105 transition-all duration-100 ease-in-out">Click here for more photos</p> : null}
+                            <div className="flex flex-col gap-4">
+                                <h5 className="text-lg md:text-3xl font-bold text-[#141418]">
+                                    At the AGM IIA Delhi Chapter, we collaborated with audit experts to discuss advancements and strategies for elevating internal audit practices.</h5>
+                                <div className="flex flex-col md:flex-row gap-4 md:gap-10">
+                                    <div className="flex gap-1">
+                                        <IoLocationOutline className="h-6 w-6 text-brand-blue"/>
+                                        <p className="font-bold text-[#444444]">New Delhi, India</p>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <BsCalendarDate className="h-6 w-6 text-brand-blue"/>
+                                        <p className="font-bold text-[#444444]">18th July 2025</p>
+                                    </div>
+                                </div>
+                                <p className="text-[#444444] md:mb-[25px] md:text-lg">The AGM IIA Delhi Chapter united audit professionals to share insights and strategies, advancing the future of internal auditing.</p>
                             </div>
                         </div>
                     </div>
