@@ -63,7 +63,8 @@ import harishankarThumbnail from "../../assets/thumbnails/Harishankar-thumbnail.
 import ajayTestimonial from "../../assets/written-testimonials/Ajay-kumar-testimonial.mp4"
 import harishankarTestimonial from "../../assets/video-testimonials/Harishankar-testimonial.mp4"
 
-import agmIiaDelhiChapter from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter.png"
+import agmIiaDelhiChapterOne from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-9-success.png"
+import agmIiaDelhiChapterTwo from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-7-success.png"
 
 import { GoDotFill } from "react-icons/go";
 
@@ -126,7 +127,8 @@ export default function SuccessStories() {
     ]
 
     const heroImages = [
-        agmIiaDelhiChapter,
+        agmIiaDelhiChapterOne,
+        agmIiaDelhiChapterTwo,
         iiaHyderabadOne,
         passoutStudents,
         wofaFive,

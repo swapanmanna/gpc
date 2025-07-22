@@ -27,16 +27,17 @@ import iiaHyderabadSeven from "./src/assets/iia-hyderabad/iia-hyderabad-7.jpeg"
 import iiaHyderabadEight from "./src/assets/iia-hyderabad/iia-hyderabad-8.jpeg"
 import iiaHyderabadNine from "./src/assets/iia-hyderabad/iia-hyderabad-9.jpeg"
 
-import iiaDelhiChapterOne from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-1.jpeg"
-import iiaDelhiChapterTwo from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-2.jpeg"
-import iiaDelhiChapterThree from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-3.jpeg"
-import iiaDelhiChapterFour from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-4.jpeg"
-import iiaDelhiChapterFive from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-5.jpeg"
-import iiaDelhiChapterSix from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-6.jpeg"
-import iiaDelhiChapterSeven from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-7.jpeg"
-import iiaDelhiChapterEight from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-8.jpeg"
-import iiaDelhiChapterNine from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-9.jpeg"
-import iiaDelhiChapterTen from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-Chapter-10.jpeg"
+import iiaDelhiChapterOne from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-1.webp"
+import iiaDelhiChapterTwo from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-2.webp"
+import iiaDelhiChapterThree from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-3.webp"
+import iiaDelhiChapterFour from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-4.webp"
+import iiaDelhiChapterFive from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-5.webp"
+import iiaDelhiChapterSix from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-6.webp"
+import iiaDelhiChapterSeven from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-7.webp"
+import iiaDelhiChapterEight from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-8.webp"
+import iiaDelhiChapterNine from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-9.webp"
+import iiaDelhiChapterTen from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-10.webp"
+import iiaDelhiChapterEleven from "./src/assets/AGM-IIA-Delhi/AGM-IIA-Delhi-11.webp"
 
 
 export const iiaBombayImages = [
@@ -88,5 +89,6 @@ export const agmIIADelhiChapterImages = [
         iiaDelhiChapterSeven,
         iiaDelhiChapterEight,
         iiaDelhiChapterNine,
-        iiaDelhiChapterTen
+        iiaDelhiChapterTen,
+        iiaDelhiChapterEleven
 ]
