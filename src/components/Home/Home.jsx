@@ -14,7 +14,7 @@ import MetaTags from "../MetaTags";
 
 export default function Home() {
 
-    const paddingTop = ((16 + (height ? height - 4 : 0)) * 4).toString()
+    // const paddingTop = ((16 + (height ? height - 4 : 0)) * 4).toString()
 
     return (
         <>

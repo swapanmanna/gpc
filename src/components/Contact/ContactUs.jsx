@@ -994,7 +994,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom"; // Assuming react-router-dom is installed
 import { TiArrowRight } from "react-icons/ti";
 
-// --- Validation Constants and Helper Functions ---
+// --- Validation Constants and Helper Arrays ---
 // These arrays define which fields are mandatory and all fields to be validated.
 const zf_MandArray = [
   "Name_First",
@@ -1018,6 +1018,71 @@ const zf_FieldArray = [
   "MultiLine", // Your Message
 ];
 
+// Regex for date and month formats (initialized globally as per original JS)
+let dateAndMonthRegexFormateArray = [];
+let zf_DateRegex;
+let zf_MonthYearRegex;
+
+// Function to set date and month regex based on format
+// This function is called once to initialize the regexes
+const zf_SetDateAndMonthRegexBasedOnDateFormate = (dateFormat) => {
+  let dateFormatRegExp;
+  let monthYearFormatRegExp;
+
+  if (dateFormat === "dd-MMM-yyyy") {
+    dateFormatRegExp =
+      "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp =
+      "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "dd-MMMM-yyyy") {
+    dateFormatRegExp =
+      "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)[-](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp =
+      "^(January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)[-](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "MMMM-dd-yyyy") {
+    dateFormatRegExp =
+      "^(January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)[-](([0][1-9])|([1-2][0-9])|([3][0-1]))[-](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp =
+      "^(January|February|March|April|May|June|July|August|September|October|November|December|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)[-](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "dd/MM/yyyy") {
+    dateFormatRegExp =
+      "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[\\/]([0][1-9]|1[012])[\\/](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp = "^([0][1-9]|1[012])[\\/](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "dd-MM-yyyy") {
+    dateFormatRegExp =
+      "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-]([0][1-9]|1[012])[-](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp = "^([0][1-9]|1[012])[-](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "MM/dd/yyyy") {
+    dateFormatRegExp =
+      "^([0][1-9]|1[012])[\\/](([0][1-9])|([1-2][0-9])|([3][0-1]))[\\/](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp = "^([0][1-9]|1[012])[\\/](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "yyyy-MM-dd") {
+    dateFormatRegExp =
+      "^(?:(?:19|20)[0-9]{2})[-]([0][1-9]|1[012])[-](([0][1-9])|([1-2][0-9])|([3][0-1]))$";
+    monthYearFormatRegExp = "^(?:(?:19|20)[0-9]{2})[-]([0][1-9]|1[012])$";
+  } else if (dateFormat === "yyyy/MM/dd") {
+    dateFormatRegExp =
+      "^(?:(?:19|20)[0-9]{2})[\\/]([0][1-9]|1[012])[\\/](([0][1-9])|([1-2][0-9])|([3][0-1]))$";
+    monthYearFormatRegExp = "^(?:(?:19|20)[0-9]{2})[\\/]([0][1-9]|1[012])$";
+  } else if (dateFormat === "dd.MM.yyyy") {
+    dateFormatRegExp =
+      "^(([0][1-9])|([1-2][0-9])|([3][0-1]))[.]([0][1-9]|1[012])[.](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp = "^([0][1-9]|1[012])[.](?:(?:19|20)[0-9]{2})$";
+  } else if (dateFormat === "MM-dd-yyyy") {
+    dateFormatRegExp =
+      "^([0][1-9]|1[012])[-](([0][1-9])|([1-2][0-9])|([3][0-1]))[-](?:(?:19|20)[0-9]{2})$";
+    monthYearFormatRegExp = "^([0][1-9]|1[012])[-](?:(?:19|20)[0-9]{2})$";
+  }
+  return [new RegExp(dateFormatRegExp), new RegExp(monthYearFormatRegExp)];
+};
+
+// Initialize regexes when the component loads or the script runs
+// In a React context, this would typically be done in a useEffect or outside the component
+// if they are truly global and static. For this example, we'll assume they are initialized.
+[zf_DateRegex, zf_MonthYearRegex] = zf_SetDateAndMonthRegexBasedOnDateFormate(
+  "dd-MMM-yyyy"
+); // Default format
+
 // Helper function to validate numbers (used for 'Years of Experience')
 const zf_ValidateNumber = (value) => {
   if (!value) return true; // Empty value is valid if not mandatory
@@ -1028,6 +1093,51 @@ const zf_ValidateNumber = (value) => {
     const strChar = numValue.charAt(i);
     if (strChar === "-" && i !== 0) return false;
     if (validChars.indexOf(strChar) === -1) return false;
+  }
+  return true;
+};
+
+// Helper function to validate date format
+const zf_ValidateDateFormat = (value) => {
+  const dateValue = String(value).replace(/^\s+|\s+$/g, "");
+  if (dateValue === "") {
+    return true;
+  } else {
+    return zf_DateRegex.test(dateValue);
+  }
+};
+
+// Helper function to validate currency
+const zf_ValidateCurrency = (value) => {
+  if (!value) return true; // Empty value is valid if not mandatory
+  let numValue = String(value).replace(/^\s+|\s+$/g, "");
+  if (numValue.charAt(0) === "-") {
+    numValue = numValue.substring(1, numValue.length);
+  }
+  const validChars = "0123456789.";
+  if (numValue !== null && numValue !== "") {
+    for (let i = 0; i < numValue.length; i++) {
+      const strChar = numValue.charAt(i);
+      if (validChars.indexOf(strChar) === -1) {
+        return false;
+      }
+    }
+    return true;
+  } else {
+    return true;
+  }
+};
+
+// Helper function to validate decimal length for currency
+const zf_ValidateDecimalLength = (value, decimalLen) => {
+  const numValue = String(value);
+  if (numValue.indexOf(".") >= 0) {
+    const decimalLength = numValue.substring(numValue.indexOf(".") + 1).length;
+    if (decimalLength > decimalLen) {
+      return false;
+    } else {
+      return true;
+    }
   }
   return true;
 };
@@ -1046,17 +1156,37 @@ const zf_ValidateEmailID = (value) => {
   return true;
 };
 
+// Helper function to validate live URL
+const zf_ValidateLiveUrl = (value) => {
+  let urlValue = value;
+  if (urlValue !== null && typeof urlValue !== "undefined") {
+    urlValue = String(urlValue).replace(/^\s+|\s+$/g, "");
+    if (urlValue !== "") {
+      const urlregex = new RegExp(
+        "^(((https|http|ftps|ftp)://[a-zA-Z\\d]+((_|-|@)[a-zA-Z\\d]+)*(\\.[a-zA-Z\\d]+((_|-|@)[a-zA-Z\\d]+)*)+(:\\d{1,5})?)|((w|W){3}(\\.[a-zA-Z\\d]+((_|-|@)[a-zA-Z\\d]+)*){2,}(:\\d{1,5})?)|([a-zA-Z\\d]+((_|-)[a-zA-Z\\d]+)*(\\.[a-zA-Z\\d]+((_|-)[a-zA-Z\\d]+)*)+(:\\d{1,5})?))(/[-\\w.?,:'/\\\\+=&;%$#@()!~]*)?$",
+        "i"
+      );
+      return urlregex.test(urlValue);
+    }
+  }
+  return true;
+};
+
 // Helper function to validate phone numbers
 const zf_ValidatePhone = (value, phoneFormat, phoneFormatType) => {
   const ZFPhoneRegex = {
     PHONE_INTE_ALL_REG: /^[+]{0,1}[()0-9-. ]+$/,
     PHONE_INTE_NUMERIC_REG: /^[0-9]+$/,
+    PHONE_CONT_CODE_REG: /^[+][0-9]{1,4}$/, // Added from original JS
+    PHONE_USA_REG: /^[0-9]+$/, // Added from original JS
   };
 
   const fieldInpVal = String(value).replace(/^\s+|\s+$/g, "");
   if (!fieldInpVal) return true; // Empty value is valid if not mandatory
 
   if (phoneFormat === 1) {
+    // This part assumes 'valType' and 'isCountryCodeEnabled' are handled by props
+    // For simplicity, we'll use the main regexes based on phoneFormatType
     const regex =
       phoneFormatType === "2"
         ? ZFPhoneRegex.PHONE_INTE_NUMERIC_REG
@@ -1065,13 +1195,93 @@ const zf_ValidatePhone = (value, phoneFormat, phoneFormatType) => {
   } else if (phoneFormat === 2) {
     // This part of the original logic is simplified for React.
     // Full Zoho Forms phone validation can be complex and might require external libraries or more detailed regex.
-    const USARexp = ZFPhoneRegex.PHONE_INTE_NUMERIC_REG;
+    const USARexp = ZFPhoneRegex.PHONE_USA_REG;
+    // Original JS also checks maxlength, which can be done at the input level or here if needed.
     return USARexp.test(fieldInpVal);
   }
   return true;
 };
 
-// Custom Hook for Form Validation
+// Helper function to validate month year format
+const zf_ValidateMonthYearFormat = (value) => {
+  const monthYearValue = String(value).replace(/^\s+|\s+$/g, "");
+  if (monthYearValue === "") {
+    return true;
+  } else {
+    return zf_MonthYearRegex.test(monthYearValue);
+  }
+};
+
+// --- Signature related functions (requires a canvas element with specific IDs) ---
+// These functions are included as per the request not to omit any, but they will
+// not actively function without a `<canvas>` element and associated logic in the JSX.
+const zf_IsSignaturePresent = (objElem, linkName, canvasElem) => {
+  if (!canvasElem) return false; // Ensure canvas element exists
+  const context = canvasElem.getContext("2d");
+  const canvasWidth = canvasElem.width;
+  const canvasHeight = canvasElem.height;
+  const canvasData = context.getImageData(0, 0, canvasWidth, canvasHeight);
+  const signLen = canvasData.data.length;
+  let flag = false;
+  for (let index = 0; index < signLen; index++) {
+    if (canvasData.data[index]) {
+      flag = true;
+      break;
+    }
+  }
+  return flag;
+};
+
+const zf_ValidateSignature = (objElem) => {
+  const linkName = objElem.getAttribute("compname");
+  // In React, you'd use a ref to get the canvas element
+  const canvasElem = document.getElementById("drawingCanvas-" + linkName); // Direct DOM access
+  const isValidSign = zf_IsSignaturePresent(objElem, linkName, canvasElem);
+  const hiddenSignInputElem = document.getElementById(
+    "hiddenSignInput-" + linkName
+  ); // Direct DOM access
+  if (isValidSign) {
+    if (hiddenSignInputElem) hiddenSignInputElem.value = canvasElem.toDataURL();
+  } else {
+    if (hiddenSignInputElem) hiddenSignInputElem.value = "";
+  }
+  return isValidSign;
+};
+
+const zf_MandatoryCheckSignature = (objElem) => {
+  const linkName = objElem.getAttribute("compname");
+  // In React, you'd use a ref to get the canvas element
+  const canvasElem = document.getElementById("drawingCanvas-" + linkName); // Direct DOM access
+  const isValid = zf_IsSignaturePresent(objElem, linkName, canvasElem);
+  return isValid;
+};
+
+// Function for focusing next element (direct DOM manipulation, typically handled with refs in React)
+const zf_FocusNext = (elem, event) => {
+  if (event.keyCode === 9 || event.keyCode === 16) {
+    return;
+  }
+  if (event.keyCode >= 37 && event.keyCode <= 40) {
+    return;
+  }
+  const compname = elem.getAttribute("compname");
+  const inpElemName = elem.getAttribute("name");
+  if (inpElemName === compname + "_countrycode") {
+    if (elem.value.length === 3) {
+      // Direct DOM access, would use refs in a typical React app
+      const nextField = document.getElementsByName(compname + "_first")[0];
+      if (nextField) nextField.focus();
+    }
+  } else if (inpElemName === compname + "_first") {
+    if (elem.value.length === 3) {
+      // Direct DOM access, would use refs in a typical React app
+      const nextField = document.getElementsByName(compname + "_second")[0];
+      if (nextField) nextField.focus();
+    }
+  }
+};
+
+// --- Custom Hook for Form Validation ---
 const useFormValidation = () => {
   // Initialize form state with all fields and their initial values
   const [formState, setFormState] = useState({
@@ -1095,7 +1305,7 @@ const useFormValidation = () => {
 
   // Handles changes to input fields and updates the form state
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type, checked, getAttribute } = e.target;
 
     if (type === "checkbox") {
       setFormState((prev) => {
@@ -1141,13 +1351,41 @@ const useFormValidation = () => {
         let fieldIsValid = true;
         let errorMessage = "Invalid value"; // Default error message
 
-        if (fieldName === "Email") {
-          fieldIsValid = zf_ValidateEmailID(value);
-        } else if (fieldName === "PhoneNumber_countrycode") {
-          // Assuming phoneFormat="1" and phoneFormatType="1" from your HTML
-          fieldIsValid = zf_ValidatePhone(value, 1, "1");
-        } else if (fieldName === "Number") {
+        // Determine checktype for the field (assuming fieldType is passed as a prop or derived)
+        // For simplicity, we'll hardcode checktypes based on fieldName as in the original JS
+        let checkType;
+        if (fieldName === "Email") checkType = "c5";
+        else if (fieldName === "PhoneNumber_countrycode") checkType = "c7";
+        else if (fieldName === "Number") checkType = "c2";
+        // Add more checktypes if new fields are introduced that use them
+        // For example:
+        // else if (fieldName === "DateField") checkType = "c4";
+        // else if (fieldName === "CurrencyField") checkType = "c3";
+        // else if (fieldName === "UrlField") checkType = "c6";
+        // else if (fieldName === "SignatureField") checkType = "c8";
+        // else if (fieldName === "MonthYearField") checkType = "c9";
+
+        if (checkType === "c2") {
           fieldIsValid = zf_ValidateNumber(value);
+        } else if (checkType === "c3") {
+          fieldIsValid = zf_ValidateCurrency(value) && zf_ValidateDecimalLength(value, 10);
+        } else if (checkType === "c4") {
+          fieldIsValid = zf_ValidateDateFormat(value);
+        } else if (checkType === "c5") {
+          fieldIsValid = zf_ValidateEmailID(value);
+        } else if (checkType === "c6") {
+          fieldIsValid = zf_ValidateLiveUrl(value);
+        } else if (checkType === "c7") {
+          // Assuming phoneFormat="1" and phoneFormatType="1" from your HTML for this field
+          fieldIsValid = zf_ValidatePhone(value, 1, "1");
+        } else if (checkType === "c8") {
+          // Signature validation requires direct DOM access to canvas, which is not React idiomatic.
+          // This will need a ref and a canvas element to work correctly.
+          // For now, it's included but won't function without a canvas.
+          // fieldIsValid = zf_ValidateSignature(document.forms.form[fieldName]);
+          fieldIsValid = true; // Placeholder, as direct DOM access is problematic here
+        } else if (checkType === "c9") {
+          fieldIsValid = zf_ValidateMonthYearFormat(value);
         }
 
         if (!fieldIsValid) {
@@ -1283,7 +1521,7 @@ export default function ContactUs() {
                   action="https://forms.zohopublic.in/globalprofessionalcertificat1/form/test/formperma/dhyWRo9OQq2PMHOBuot4MO6FFak81uSy8doxun7Y2nw/htmlRecords/submit"
                   name="form"
                   method="POST"
-                  onSubmit={handleSubmit} // Use the React handleSubmit
+                  onSubmit={handleSubmit}
                   acceptCharset="UTF-8"
                   encType="multipart/form-data"
                   id="form"
@@ -1470,7 +1708,7 @@ export default function ContactUs() {
                   <div className="my-2 ml-1">
                     <label className="mb-1 block text-base font-medium text-gray-600 dark:text-white">
                       Courses Interested In{" "}
-                      {/* <em className="text-red-500">*</em>  */}
+                      <em className="text-red-500">*</em>{" "}
                     </label>
                     <div className="flex flex-wrap items-center text-gray-600">
                       {[
