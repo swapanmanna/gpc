@@ -36,13 +36,14 @@ import equitas from "../../assets/Equitas.png"
 import bse from "../../assets/BSE.png"
 import wipro from "../../assets/Wipro.png"
 import zensar from "../../assets/Zensar.png"
+import luthra from "../../assets/luthra_logo.png"
 
 // importing marquee
 import Marquee from "../Marquee/Marquee";
 
 export default function Companies() {
 
-    const companiesOne = [emami, atlas, gitlab, kpmg, suzlon, wellsFargo, hpLogo, pwcLogo, eyLogo]
+    const companiesOne = [emami, atlas, gitlab, kpmg, suzlon, wellsFargo, hpLogo, pwcLogo, eyLogo, luthra]
 
     const companiesTwo = [deloitteLogo, bdoLogo, comptrollerLogo, vodafoneLogo, deutscheBankLogo, kotakMahindraBankLogo, sbiLifeInsuranceLogo, yesBankLogo, courseraLogo]
 

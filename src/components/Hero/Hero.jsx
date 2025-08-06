@@ -58,6 +58,9 @@ import { Link } from 'react-router-dom';
 import { height } from "../Notifications/NotificationBanner";
 
 const Hero = () => {
+
+    // pt-32 -> className of the first div when the screen width is equivalent to laptop or desktop
+
     useEffect(() => {
         // Preload the hero image when the component mounts
         const img = new Image();
@@ -69,7 +72,7 @@ const Hero = () => {
 
     return (
         <div 
-            className="min-h-[100vh] pt-32 flex items-center justify-center bg-brand-blue sm:pt-16"
+            className="min-h-[100vh]  flex items-center justify-center bg-brand-blue sm:pt-16"
             style={{ paddingTop }}
         >
             <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
