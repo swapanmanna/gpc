@@ -30,7 +30,7 @@ export default function NotificationBanner () {
                     animate={{  scale: [1, 1.1, 1] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                     className="md:text-sm text-xs md:p-0 px-8 font-semibold md:text-base">
-                    <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-4 w-4 md:h-6 md:h-6" />Don't miss our FREE Orientation for CIA Part 2 by renowned mentor, Arpit Garg! <Link to="https://forms.zohopublic.in/globalprofessionalcertificat1/form/CISARegistration/formperma/XCSPbyS407UGWqXk-0oxeG7qxhKqYOo7uFJ57ZnhQPQ" target="_blank" className="text-brown-700 hover:underline">Register Now</Link>!<BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-4 w-4 md:h-6 md:h-6" />
+                    <BsLightbulbFill className="inline text-red-600 mr-1 pb-1 h-4 w-4 md:h-6 md:h-6" />Not sure how to start your CIA journey? Watch our <Link to="https://www.youtube.com/@global-professional-cert" target="_blank" className="text-red-600 hover:underline">orientation programs</Link> for each part or <Link className="text-red-600" to="/contact">contact us</Link> to get started!<BsLightbulbFill className="inline text-red-600 ml-1 pb-1 h-4 w-4 md:h-6 md:h-6" />
                     </motion.p> 
                     : 
                     <p className="md:text-sm text-xs md:p-0 px-8 font-semibold md:text-base">
