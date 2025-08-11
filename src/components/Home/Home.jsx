@@ -25,10 +25,10 @@ export default function Home() {
         />
         <div className="bg-gray-50">
 
-            <section className="mt-32 md:mt-0 py-8 md:py-[170px] bg-gray-50 h-screen">
-                <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8">
+            {/* <section className="mt-32 md:mt-0 py-8 md:py-[170px] bg-gray-50 h-screen">
+                <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-center gap-8"> */}
                     {/* Catchy Text and Call to Action */}
-                    <div className="md:w-1/2 text-center md:text-left">
+                    {/* <div className="md:w-1/2 text-center md:text-left">
                         <h2 className="text-3xl md:text-5xl font-bold md:mb-6 text-brand-blue leading-tight">
                             Unlock Your Potential with Our Free Orientation
                         </h2>
@@ -42,9 +42,9 @@ export default function Home() {
                         >
                             Register Now
                         </a>
-                    </div>
+                    </div> */}
                     {/* Event Flyer Image */}
-                    <div className="md:w-1/2">
+                    {/* <div className="md:w-1/2">
                     <Link to="https://forms.zohopublic.in/globalprofessionalcertificat1/form/CISARegistration/formperma/XCSPbyS407UGWqXk-0oxeG7qxhKqYOo7uFJ57ZnhQPQ" target="_blank">
                         <img
                             src={ciaPart2Flyer}
@@ -54,7 +54,7 @@ export default function Home() {
                     </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <Hero />
             <Companies />
