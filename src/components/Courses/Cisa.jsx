@@ -43,7 +43,17 @@ const Cisa = () => {
             <li className="marker:text-brand-blue marker:text-xl">Complete everything in recorded class itself - detailed discussion of every topic, Mock Tests, MCQs discussion</li>
             <li className="marker:text-brand-blue marker:text-xl">Get access to LMS Portal which includes recorded sessions + PPT notes + MCQs (with no validity period)</li>
             <li className="marker:text-brand-blue marker:text-xl">Get guidance from one of the best CISA faculty in India, Mr. Arpit Garg</li>
-            <li className="marker:text-brand-blue marker:text-xl">Enroll with us and get our end-to-end support till you clear all your exams</li>
+            <li className="marker:text-brand-blue marker:text-xl">Enroll with us and get our end-to-end support till you clear your exam</li>
+          </ul>
+        </section>
+
+        <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
+          <h2 className="text-2xl md:text-5xl font-semibold text-brand-blue mb-4 md:mb-8">
+            Exam Logistics
+          </h2>
+          <ul className="list-disc list-inside text-gray-700 text-md md:text-xl md:space-y-2">
+            <li className="marker:text-brand-blue marker:text-xl">150 MCQs - No Negative Marking</li>
+            <li className="marker:text-brand-blue marker:text-xl">Exam duration: 4 hours</li>
           </ul>
         </section>
 
