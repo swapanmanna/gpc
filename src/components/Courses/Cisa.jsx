@@ -54,7 +54,7 @@ const Cisa = () => {
                     Enroll Now
                 </h2>
                 <p className="text-gray-700 text-lg sm:text-xl md:text-2xl mb-2">
-                    Enrollment Cost: <span className="font-bold">INR 23,599</span>{" "}
+                    Enrollment Cost: <span className="font-bold">INR 17,700</span>{" "}
                     <span className="text-sm italic">(Including GST)</span>
                 </p>
             </div>
