@@ -64,6 +64,8 @@ import ajayTestimonial from "../../assets/written-testimonials/Ajay-kumar-testim
 import harishankarTestimonial from "../../assets/video-testimonials/Harishankar-testimonial.mp4"
 import sachinTestimonial from "../../assets/video-testimonials/Sachin-testimonial.mp4"
 import sachinThumbnail from "../../assets/thumbnails/Sachin-thumbnail.png"
+import jigneshTestimonial from "../../assets/video-testimonials/Jignesh-testimonial.mp4"
+import jigneshThumbnail from "../../assets/thumbnails/Jignesh-thumbnail.png"
 
 import agmIiaDelhiChapterOne from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-9-success.png"
 import agmIiaDelhiChapterTwo from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-7-success.png"
@@ -81,6 +83,7 @@ import { FaChevronRight } from "react-icons/fa";
 export default function SuccessStories() {
 
     const testimonialVideos = [
+        jigneshTestimonial,
         sachinTestimonial,
         harishankarTestimonial,
         amitTestimonial,
@@ -106,6 +109,7 @@ export default function SuccessStories() {
     ]
 
     const videoThumbnails = [
+        jigneshThumbnail,
         sachinThumbnail,
         harishankarThumbnail,
         amitThumbnail,
