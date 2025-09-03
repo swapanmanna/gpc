@@ -64,12 +64,14 @@ import ajayTestimonial from "../../assets/written-testimonials/Ajay-kumar-testim
 import harishankarTestimonial from "../../assets/video-testimonials/Harishankar-testimonial.mp4"
 import sachinTestimonial from "../../assets/video-testimonials/Sachin-testimonial.mp4"
 import sachinThumbnail from "../../assets/thumbnails/Sachin-thumbnail.png"
-import jigneshTestimonial from "../../assets/video-testimonials/Jignesh-video-testimonial.mp4"
+import jigneshTestimonial from "../../assets/video-testimonials/Jignesh-testimonial.mp4"
 import jigneshThumbnail from "../../assets/thumbnails/Jignesh-thumbnail.png"
-import archanaTestimonial from "../../assets/video-testimonials/Archana-video-testimonial.mp4"
+import archanaTestimonial from "../../assets/video-testimonials/Archana-testimonial.mp4"
 import archanaThumbnail from "../../assets/thumbnails/Archana-thumbnail.png"
 import ranveerTestimonial from "../../assets/video-testimonials/Ranveer-testimonial.mp4"
 import ranveerThumbnail from "../../assets/thumbnails/Ranveer-thumbnail.png"
+import bhargavTestimonial from "../../assets/video-testimonials/Bhargav-testimonial.mp4"
+import bhargavThumbnail from "../../assets/thumbnails/Bhargav-thumbnail.png"
 
 import agmIiaDelhiChapterOne from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-9-success.png"
 import agmIiaDelhiChapterTwo from "../../assets/AGM-IIA-Delhi/AGM-IIA-Delhi-7-success.png"
@@ -87,6 +89,7 @@ import { FaChevronRight } from "react-icons/fa";
 export default function SuccessStories() {
 
     const testimonialVideos = [
+        bhargavTestimonial,
         ranveerTestimonial,
         archanaTestimonial,
         jigneshTestimonial,
@@ -115,6 +118,7 @@ export default function SuccessStories() {
     ]
 
     const videoThumbnails = [
+        bhargavThumbnail,
         ranveerThumbnail,
         archanaThumbnail,
         jigneshThumbnail,
